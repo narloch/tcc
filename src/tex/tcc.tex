@@ -275,7 +275,9 @@ TODO
   % inserir lista de abreviaturas e siglas
   % ---
   \begin{siglas}
-    \item[IT] Item
+    \item[PMBOK] Project Management Body of Knowledge
+    \item[PMI]  Project Management Institute
+    \item[UFSC] Universidade Federal de Santa Catarina
  \end{siglas}
   % ---
 
@@ -378,10 +380,12 @@ Segundo o PMBOK \cite{PMBOK:2017}: "Projeto é um esforço temporário empreendi
 
 A área de gerência de projetos objetiva que estes empreendimentos temporários sejam executados de forma eficaz e eficiente. Para que, dessa maneira, as organizações sejam bem sucedidas no cumprimento dos requisitos dos projetos. Este suporte é realizado através da aplicação de conhecimentos, habilidades, ferramentas e técnicas às atividades do projeto \cite{PMBOK:2017}. 
 
-A gerência de projetos identifica componentes-chave dos projetos que devem ser bem gerenciados para que o empreendimento obtenha êxito. Tais componentes estão descritos na Tabela \ref{tab:KeyComponents}.
+\citeonline{SOMMERVILLE:2011} considera a gerência de projetos uma peça fundamental da engenharia de software. Para ele, apesar do bom gerenciamento do projeto não resultar necessariamente no sucesso do projeto, o mau gerenciamento costuma ocasionar a falha do empreendimento. 
+
+Assim, para garantir um bom gerenciamento de projeto e assim aumentar as chances de sucesso, o PMBOK \cite{PMBOK:2017} identifica componentes-chave que devem ser gerenciados. Tais componentes estão descritos na Tabela \ref{tab:KeyComponents}.
 
 \begin{longtable}{p{5cm}p{10cm}}
-    \caption{Descrição dos componentes-chaves de um projeto}
+    \caption{Descrição dos componentes-chave do Guia PMBOK}
     \label{tab:KeyComponents}
     \centering
               \cr \textbf{Componentes-Chave} & \textbf{Descrição} 
@@ -414,7 +418,44 @@ A gerência de projetos identifica componentes-chave dos projetos que devem ser 
               \caption*{\textbf{Fonte:} Adaptado de PMBOK \cite{PMBOK:2017}}
 \end{longtable}
 
+Esses conceitos-chave são inter-relacionados, assim, o ciclo de vida contém as fases pelos quais o projeto passa. Ele fornece, portanto, a estrutura básica para o gerenciamento do projeto. As fases são um conjunto de atividades descritas por atributos tais quais nome da fase, número de fases, duração, requisitos de recursos e critérios de entrada e saída. O processo de revisão de fase ocorre ao fim de uma fase e resulta em uma decisão que pode ser prosseguir para a fase seguinte, terminar o projeto, continuar na fase ou repeti-la.
 
+Para a gerência do ciclo de vida do projeto, são utilizados processos de gerenciamento de projeto. Eles são atividades que produzem uma ou mais saídas de uma ou mais entradas. As saídas podem ser tanto uma entrada para outro processo quanto uma entrega ou fase do projeto. Alguns exemplos de processos são: Desenvolver o Termo de Abertura do Projeto, Adquirir Recursos e Definir as Atividades. E, esses podem ser divididos em processos utilizados apenas uma vez, processos periódicos ou conforme a necessidade e processos contínuos \cite{PMBOK:2017}.
+
+Além disso, o PMBOK \cite{PMBOK:2017} apresenta cinco Grupos de Processo de Gerenciamento de Projetos e dez Áreas de Conhecimento em Gerenciamento de Projetos, que categorizam os processos de gerenciamento. Os grupos de processo são organizados da seguinte forma:
+
+\begin{itemize}
+    \item \textbf{Grupo de processos de iniciação:}
+    \item \textbf{Grupo de processos de planejamento:}
+    \item \textbf{Grupo de processos de execução:}
+    \item \textbf{Grupo de processos de monitoramento e controle:}
+    \item \textbf{Grupo de processos de encerramento:}
+\end{itemize}
+
+Já as áreas de conhecimento, categorizam os processos em requisitos de conhecimento. As áreas de conhecimento são dispostas da seguinte forma:
+
+\begin{itemize}
+    \item \textbf{Gerenciamento da integração do projeto:}
+    \item \textbf{Gerenciamento do escopo do projeto:}
+    \item \textbf{Gerenciamento do cronograma do projeto:}
+    \item \textbf{Gerenciamento dos custos do projeto:}
+    \item \textbf{Gerenciamento da qualidade do projeto:}
+    \item \textbf{Gerenciamento dos recursos do projeto:}
+    \item \textbf{Gerenciamento das comunicações do projeto:}
+    \item \textbf{Gerenciamento dos riscos do projeto:}
+    \item \textbf{Gerenciamento das aquisições do projeto:}
+    \item \textbf{Gerenciamento das partes interessadas do projeto:}
+\end{itemize}
+
+A Figura \ref{interrelacaoConceitos} demonstra as inter-relações dos conceitos-chave do PMBOK \cite{PMBOK:2017}:
+
+\begin{figure}[h]
+    \centering
+    \caption{Comparação entre métodos preditivos e ágeis}
+    \includegraphics[width=\textwidth]{src/tex/img/interrelacaoPMBOKpg18.png}
+    \label{interrelacaoConceitos}
+    \textbf{Fonte:} PMBOK \cite{PMBOK:2017}
+\end{figure}
 
 \section{Gestão de riscos}
 
@@ -480,7 +521,6 @@ Além dos quatro valores, o Manifesto Ágil \cite{AGILEMANIFEST:2001} também é
     \textbf{Fonte:} PMBOK \cite{PMBOK:2017}
 \end{figure}
 
-
 \subsection{Lean}
 \subsection{XP}
 \subsection{Scrum}
@@ -530,7 +570,6 @@ Além dos quatro valores, o Manifesto Ágil \cite{AGILEMANIFEST:2001} também é
 
   % Imprime uma página indicando o início dos apêndices
   \partapendices
-
   % ----------------------------------------------------------
   % \chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
   % ac pretium ante justo a nulla curabitur tristique arcu eu metus}
