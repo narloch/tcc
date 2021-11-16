@@ -49,6 +49,8 @@
   \usepackage[section]{placeins}
   \usepackage{csquotes}
   \usepackage{longtable}
+  \usepackage[table]{xcolor}
+\usepackage{multirow}
 
   % ---
   % Pacotes de citações
@@ -105,6 +107,8 @@
 
   % ---
   % Configurações de aparência do PDF final
+    \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+    \let\endchangemargin=\endlist 
 
   % alterando o aspecto da cor azul
   \definecolor{blue}{RGB}{41,5,195}
@@ -278,6 +282,7 @@ TODO
     \item[PMBOK] Project Management Body of Knowledge
     \item[PMI]  Project Management Institute
     \item[UFSC] Universidade Federal de Santa Catarina
+    \item[RSL] Revisão Sistemática da Literatura
  \end{siglas}
   % ---
 
@@ -384,36 +389,37 @@ A área de gerência de projetos objetiva que estes empreendimentos temporários
 
 Assim, para garantir um bom gerenciamento de projeto e assim aumentar as chances de sucesso, o PMBOK \cite{PMBOK:2017} identifica componentes-chave que devem ser gerenciados. Tais componentes estão descritos na Tabela \ref{tab:KeyComponents}.
 
-\begin{longtable}{p{5cm}p{10cm}}
+\begin{longtable}{|p{5cm}|p{10cm}|}
     \caption{Descrição dos componentes-chave do Guia PMBOK}
     \label{tab:KeyComponents}
-    \centering
-              \cr \textbf{Componentes-Chave} & \textbf{Descrição} 
-              \\ \hline \addlinespace[0.1cm]
+              \centering
+              \cr \rowcolor{lightgray}
+              \textbf{Componentes-Chave} & \textbf{Descrição} 
+              \\ \hline 
               \textbf{Ciclo de vida do projeto} &
               A série de fases pelas quais um projeto passa, do início ao término.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+              \\ \hline
               
               \textbf{Fase do projeto} &
               Um conjunto de atividades do projeto relacionadas de maneira lógica que culmina na conclusão de uma ou mais entregas
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+              \\ \hline 
               
                 
               \textbf{Revisão de fase} &
               Uma análise no final de uma fase em que uma decisão é tomada em relação a passar para a fase seguinte, continuar com modificações ou finalizar um programa ou projeto.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+              \\\hline 
               
               \textbf{Processos de gerenciamento de projetos} &
               Uma série de atividades sistemáticas direcionadas para alcançar um resultado final de tal forma que se aja em relação a uma ou mais entradas a fim de criar uma ou mais saídas.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+              \\\hline 
               
               \textbf{Grupo de processos de gerenciamento de projetos} &
               Um agrupamento lógico de entradas, ferramentas, técnicas e saídas de gerenciamento de projetos. Os grupos de processos de gerenciamento de projetos incluem iniciar, planejar, executar, monitorar, controlar e encerrar. Os grupos de processos de gerenciamento de projetos não são fases do projeto.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+              \\\hline 
               
               \textbf{Área de conhecimento em gerenciamento de projetos} &
               Uma área identificada de gerenciamento de projetos definida por seus requisitos de conhecimentos e descrita em termos dos processos que a compõem: suas práticas, entradas, saídas, ferramentas e técnicas.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.5cm]
+              \\\hline 
                  
               \caption*{\textbf{Fonte:} Adaptado de PMBOK \cite{PMBOK:2017}}
 \end{longtable}
@@ -470,6 +476,7 @@ Já o PMBOK \cite{PMBOK:2017} inclui neste conceito a possibilidade de que risco
 negativo em um ou mais objetivos do projeto.". E o risco geral do projeto " é o efeito da incerteza do projeto no seu todo, decorrente de todas as fontes de incerteza, incluindo riscos individuais, representando a exposição das partes interessadas às implicações de variações no resultado do projeto, sejam positivas ou negativas."
 
 \citeonline{SOMMERVILLE:2011} ainda cita três categorias de risco relacionados a projetos de \textit{software}, são elas:
+
 \begin{itemize}
     \item\textbf{Riscos de projeto:} São incertezas que podem impactar o cronograma ou os recursos do projeto.  
     \item\textbf{Riscos de produto:} Os riscos relacionados ao \textit{software} sendo desenvolvido, capazes de afetar a qualidade do produto.
@@ -489,9 +496,73 @@ Para obter tais benefícios a partir da gestão de riscos, \citeonline{HOPKIN:20
 Esse processo completo foi formalizado pelo PMBOK \cite{PMBOK:2017} através da definição de sete processos de gerenciamento de riscos. São eles: Planejar o Gerenciamento de Riscos, Indentificar os Riscos, Realizar a Análise Qualitativa dos Riscos, Realizar a Análise Quantitativa dos Riscos, Planejar Respostas aos Riscos, Implementar Respostas a Riscos e Monitorar os Riscos. Cada um deles é apresentado com mais detalhes nas subseções a seguir.
 
 \subsection{Planejar o Gerenciamento dos Riscos}
+
+Segundo o \cite{PMBOK:2017}, o primeiro passo no processo de gerenciamento de risco é definir como serão conduzidas as atividades de gerenciamento. A definição é feita na concepção do projeto e deve estar concluída no início do projeto. Contudo, o processo pode ser revisitado caso ocorra, por exemplo, uma grande mudança no escopo do projeto.
+
+Para a realização do Planejamento do Gerenciamento dos Riscos, o \citeonline{PMBOK:2017} prevê as seguintes entradas:
+
+\begin{itemize}
+    \item\textbf{Termo de abertura do projeto:} O documento que formaliza o início do projeto e descreve sem riqueza de detalhes os limites, requisitos e riscos do projeto.  
+    \item\textbf{Plano de gerenciamento do projeto:} Para que o plano de gerenciamento de riscos seja coerente, deve-se levar em consideração os todos os planos de gerenciamento do projeto aprovados.
+    \item\textbf{Documento do projeto:} O documento de projeto utilizado de entrada para essa fase pode ser o registro das partes interessadas, pois a partir desse documento é possível formalizar o papel de cada uma das partes dentro do projeto. E, assim, definir os responsáveis pelo gerenciamento de risco.
+    \item\textbf{Fatores ambientais da empresa:} Fatores que podem impactar o planejamento como os limites gerais de riscos definidos pela organização.
+    \item\textbf{Ativos de processos organizacionais:} Ativos que podem influenciar o processo de planejar o gerenciamento, como papéis e responsabilidades e a política organizacional de riscos.
+\end{itemize}
+
+Já as ferramentas e técnicas a serem utilizadas delimitadas pelo \citeonline{PMBOK:2017} são a \textbf{opinião especializada}, a \textbf{análise de dados} e \textbf{reuniões}. A primeira se refere ao aproveitamento da expertise de pessoas ou grupos em assuntos relacionados a gerenciamento de risco. A análise de dados trata em especial da análise das partes interessadas. E, por fim, as reuniões de início de projeto ou reuniões de planejamento podem incluir o desenvolvimento do \textbf{plano de gerenciamento de risco}.
+
+O \textbf{plano de gerenciamento de risco} é a saída esperada dessa fase e pode incluir elementos como:
+
+\begin{itemize}
+    \item Estratégia dos riscos
+    \item Metodologia
+    \item Papéis e responsabilidades
+    \item Financiamento
+    \item Prazos
+    \item Categoria dos riscos
+    \item Apetite a riscos das partes interessadas
+    \item Definições de probabilidade e impacto dos riscos
+    \item Matriz de probabilidade e impacto
+    \item Formatos de relatórios
+    \item Acompanhamento
+\end{itemize}
+
 \subsection{Identificar os Riscos}
+
+Sobre a identificação de riscos, \citeonline{PRESSMAN:2011} afirma que:
+
+\begin{changemargin}{4cm}{0cm}
+\begin{footnotesize}
+A identificação do risco é uma tentativa sistemática para especificar ameaças ao plano do projeto (estimativas, cronograma, recursos etc.). Identificando os riscos conhecidos e previsíveis, o gerente de projeto dá o primeiro passo no sentido de evitá-los quando possível e controlá-los quando necessário.
+\end{footnotesize}
+\end{changemargin}
+
+Assim, o objetivo desse processo é identificar os riscos individuais e fontes de risco. A partir da identificação, documenta-se as características dos riscos encontrados. Dessa forma, é possível agregar informações importantes para que a equipe do projeto possa responder adequadamente aos riscos \cite{PMBOK:2017}.
+
+É importante destacar que a identificação de riscos é um processo iterativo e deve ocorrer ao longo do projeto. Além disso, todas as partes interessadas do projeto devem ser incentivadas a participar da identificação dos riscos \cite{PMBOK:2017}. 
+
+Segundo \citeonline{WAZLAWICK:2013}, também é recomendável que os responsáveis pela identificação de riscos tenham acesso a um catálogo de riscos identificados em projetos semelhantes anteriores. 
+
+Existem diversas maneiras de identificar os riscos individuais do projeto, entre elas estão o uso de \textit{checklists} predefinidos que podem ser obtidos na literatura ou na \textit{Internet}, reuniões e \textit{brainstormings} e a análise de cenários de projetos semelhantes anteriores \cite{WAZLAWICK:2013}.
+
+O \citeonline{PMBOK:2017} também cita algumas entradas que podem ser utilizadas de apoio para a identificação de riscos, como o plano de gerenciamento de risco, documentos do projeto, acordos, documentação de aquisições, fatores ambientais da empresa e ativos de processos organizacionais.
+
+As saídas esperadas desse processo são o registro dos riscos identificados, que deve seguir um formato uniforme para garantir a clareza e compreensão dos riscos, e o relatório de riscos \cite{PMBOK:2017}. 
+
 \subsection{Realizar a Análise Qualitativa dos Riscos}
+
+Os riscos agora identificados precisam passar por uma análise para se determinar a importância de cada um deles, com o objetivo de determinar quais são os realmente relevantes para que sejam aplicados recursos na prevenção \cite{WAZLAWICK:2013}.
+
+A análise \textbf{qualitativa} dos riscos é subjetiva, ou seja, baseia-se na percepção dos membros da equipe do projeto. Através dessa análise são priorizados os riscos, utilizando como parâmetro a probabilidade e o impacto da ocorrência \cite{PMBOK:2017}.
+
+Esse processo, assim como a identificação de riscos, é iterativo e é realizado à medida que novos riscos são identificados. O objetivo desse processo é garantir que seja demandado maior esforço nos riscos considerados mais prioritários \cite{PMBOK:2017}.
+
+Algumas ferramentas e técnicas sugeridas pelo \citeonline{PMBOK:2017} são opinião especializada, técnicas de coleta de dados como entrevistas, análise de dados, o uso de um facilitador, categorização dos riscos e reuniões.
+
 \subsection{Realizar a Análise Quantitativa dos Riscos}
+
+
+
 \subsection{Planejar Respostas aos Riscos}
 \subsection{Implementar Respostas aos Riscos}
 \subsection{Monitorar Riscos}
@@ -540,34 +611,36 @@ Ao refletir sobre o Manifesto Ágil \cite{AGILEMANIFEST:2001}, \citeonline{PRESS
 
 Métodos ágeis são um termo geral para uma gama de \textit{frameworks} e técnicas \cite{PMIAGILE:2017}. Portanto, cada método ágil utiliza processos distintos para instanciar os princípios da filosofia ágil demonstrados no Manifesto Ágil \cite{AGILEMANIFEST:2001}. Mesmo assim, os métodos ágeis possuem alguns pontos importantes em comum, explicitados na tabela abaixo:
 
-\begin{longtable}{p{5cm}p{10cm}}
+\begin{longtable}{|p{5cm}|p{10cm}|}
     \caption{Princípios compartilhados pelos métodos ágeis}
     \label{tab:KeyComponents}
     \centering
-              \cr \textbf{Princípios} & \textbf{Descrição} 
-              \\ \hline \addlinespace[0.1cm]
-              \textbf{Envolvimento do cliente} &
-              Os clientes devem estar intimamente envolvidos no processo de desenvolvimento. Seu papel é fornecer e priorizar novos requisitos do sistema e avaliar suas iterações.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+            \centering
+            \cr \rowcolor{lightgray}
+            \textbf{Princípios} & \textbf{Descrição}
+            \\ \hline
               
-              \textbf{Entrega incremental} &
-              0 software é desenvolvido em incrementos com o cliente, especificando os requisitos para serem incluídos em cada um.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+            \textbf{Envolvimento do cliente} &
+            Os clientes devem estar intimamente envolvidos no processo de desenvolvimento. Seu papel é fornecer e priorizar novos requisitos do sistema e avaliar suas iterações.
+            \\\hline
               
-                
-              \textbf{Pessoas, não processos} &
-              As habilidades da equipe de desenvolvimento devem ser reconhecidas e exploradas. Membros da equipe devem desenvolver suas próprias maneiras de trabalhar, sem processos prescritivos.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+            \textbf{Entrega incremental} &
+            0 software é desenvolvido em incrementos com o cliente, especificando os requisitos para serem incluídos em cada um.
+            \\\hline
               
-              \textbf{Aceitar as mudanças} &
-              Deve-se ter em mente que os requisitos do sistema vão mudar. Por isso, projete o sistema de maneira a acomodar essas mudanças.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+            \textbf{Pessoas, não processos} &
+            As habilidades da equipe de desenvolvimento devem ser reconhecidas e exploradas. Membros da equipe devem desenvolver suas próprias maneiras de trabalhar, sem processos prescritivos.
+            \\\hline 
               
-              \textbf{Manter a simplicidade} &
-              Focalize a simplicidade, tanto do software a ser desenvolvido quanto do processo de desenvolvimento. Sempre que possível, trabalhe ativamente para eliminar a complexidade do sistema.
-              \\\addlinespace[0.1cm] \hline \addlinespace[0.1cm]
+            \textbf{Aceitar as mudanças} &
+            Deve-se ter em mente que os requisitos do sistema vão mudar. Por isso, projete o sistema de maneira a acomodar essas mudanças.
+            \\\hline 
               
-              \caption*{\textbf{Fonte:} Adaptado de \citeonline{SOMMERVILLE:2011}}
+            \textbf{Manter a simplicidade} &
+            Focalize a simplicidade, tanto do software a ser desenvolvido quanto do processo de desenvolvimento. Sempre que possível, trabalhe ativamente para eliminar a complexidade do sistema.
+            \\\hline
+              
+            \caption*{\textbf{Fonte:} Adaptado de \citeonline{SOMMERVILLE:2011}}
 \end{longtable}
 
 A Figura \ref{metodosAgeis} destaca algumas abordagens ágeis conhecidas e o compartilhamento de princípios e valores entre elas.
@@ -582,14 +655,404 @@ A Figura \ref{metodosAgeis} destaca algumas abordagens ágeis conhecidas e o com
 
 Nas subseções seguintes alguns dos métodos ágeis serão apresentados e elucidados.
 
-\subsection{Lean}
+\subsection{ \textit{Lean} }
+
+A abordagem \textit{Lean} proposta inicialmente pela Toyota é em primeiro lugar um sistema humano e não apenas focado em cerimônias e artefatos. Ou seja, ela coloca em foco os colaborados da empresa e dá mais autonomia a eles. Essa filosofia de produção é importante para o cenário tecnológico atual ao considerar as constantes mudanças e incertezas, através da maximização do potencial humano \cite{LEANENT:2016}.
+
+Apesar do \textit{Lean} ter sido fundamentado na indústria automobilística ele foi adaptado à indústria de software. E, nestes dias, é denominado \textit{Lean Software Development}, termo foi utilizado pela primeira vez por Tom e Mary Poppendieck \cite{WAZLAWICK:2013}.
+
+\citeonline{Poppendieck:2006} também desenharam os princípios do \textit{Lean} para desenvolvimento de \textit{software}. São eles:
+
+\begin{itemize}
+    \item \textbf{Eliminar o desperdício:} No desenvolvimento de \textit{software} podem ser identificados diversos desperdícios, por exemplo: funcionalidades extras, levantar requisitos ou realizar testes muito cedo. Para isso, é necessário despender esforços apenas com o necessário e com o que agregue valor ao cliente.
+    \item \textbf{Criar conhecimento:} Realizar ciclos de \textit{feedback}, utilizar o método científico e estimular a busca por conhecimento dentro da organização. 
+    \item \textbf{Decidir tardiamente:} Ter em mente que os requisitos podem mudar e não é necessário aguardar a especificação completa para iniciar o desenvolvimento.     
+    \item \textbf{Entregar o mais rápido possível:} Desenvolver \textit{software} em ciclos curtos e incrementais. E, dessa forma, garantir entregas frequentes e evitar atrasos.
+    \item \textbf{Respeitar as pessoas:} Engajar e empoderar o time através de respeito mútuo e confiança.
+    \item \textbf{Otimizar o todo:} Considerar o todo e não apenas as partes do \textit{software} que estão sendo desenvolvidas no momento.
+    \item \textbf{Manter a qualidade:} Priorizar um código modular e incremental, evitar permanecer desenvolvendo código legado e focar nos cenários de teste.
+\end{itemize}
+
+Assim, a filosofia \textit{Lean} agrega a base para outros métodos ágeis como XP, Scrum, Kanban e Scrumban ao instaciar conceitos como foco no valor, entregas pequenas e eliminação de desperdício \cite{PMIAGILE:2017}.
+
 \subsection{XP}
-\subsection{Scrum}
+
+\textit{Extreme Programming} (XP) é um método utilizado desde o final da década de 80, quando teve os conceitos iniciais definidos. Porém, esse método ágil foi formalizado apenas nos anos 2000 por Kent Beck. Inicialmente, o XP era apenas aplicado em pequenas e médias equipes, porém alguns anos depois foi proposta a variação do XP, chamada \textit{Industrial XP} (IXP). Essa, por sua vez, permite a aplicação de um processo ágil em organizações de grande porte \cite{PRESSMAN:2011}. 
+
+\citeonline{WAZLAWICK:2013} enumera os principais valores de XP da seguinte forma:
+
+\begin{itemize}
+    \item \textbf{Simplicidade:} Deve-se focar apenas nos requisitos necessários para o projeto. Ou seja, mirar em um produto simples que oferece aquilo que sabe-se que o cliente necessita.
+    \item \textbf{Respeito:} O respeito deve estar presente entre os membros da equipe e também nas relações equipe-cliente. 
+    \item \textbf{Coragem:} Uma equipe XP deve possuir coragem para aceitar que mudanças são inevitáveis e para acomodar essas mudanças no projeto.
+\end{itemize}
+
+Para implementar o \textit{Extreme Programming} (XP), as equipes precisam aplicar uma série de práticas baseadas nos princípios ágeis. Na figura \ref{cicloRelease} está representado um ciclo comum de entregas no XP.
+
+\begin{figure}[h]
+    \centering
+    \caption{Ciclo de entregas do XP}
+    \includegraphics[scale=0.4]{src/tex/img/cicloReleaseXPSommerVille.png}\\
+    \label{cicloRelease}
+    \textbf{Fonte:} \citeonline{SOMMERVILLE:2011}
+\end{figure}
+
+As práticas necessárias para concluir um ciclo de \textit{release} do XP envolvem atividades desde o planejamento até especificações de como a equipe deve interagir. A primeira delas é o planejamento incremental, na qual se utiliza as histórias de usuário divididas em tarefas para realizar o planejamento de cada \textit{release}. É importante destacar que essas entregas devem ser pequenas, contínuas e contendo apenas o conjunto mínimo de funcionalidades úteis e isso reflete no princípio de que o projeto deve ser simples e apenas contemplar as atuais necessidades do cliente \cite{SOMMERVILLE:2011}.
+
+Outra prática é o Desenvolvimento Orientado a Testes (TDD), ou seja, implementar primeiramente os testes automatizados e, após, a funcionalidade em si. No XP também é essencial que o código seja constantemente refatorado e melhorado. Esse método ágil também prevê a programação em pares (\textit{pair programming}), neste cenário os desenvolvedores trabalham em duplas, o que facilita a troca de conhecimento \cite{SOMMERVILLE:2011}.
+
+No XP, o código deve ser de posse coletiva e, dessa forma, estabelece que esse pode ser modificado por qualquer membro da equipe sem a necessidade de permissão. Além disso, o desenvolvimento deve manter um ritmo sustentável, sem a exigência de muitas horas extras, que podem prejudicar a qualidade do produto. E, por fim, o XP considera o cliente como parte da equipe e ele deve estar disponível para diminuir possíveis barreiras de comunicação \cite{WAZLAWICK:2013}.
+
+\subsection{\textit{Scrum}}
+As bases do método ágil \textit{Scrum} foram definidas em 1986 a partir do artigo: "\textit{The New New Product Development Game} de \citeonline{Takeuchi:1986}. Esse artigo ilustrava o modelo de produção de automóveis da Honda que demonstrava algumas influências da filosofia \textit{Lean} \cite{WAZLAWICK:2013}.
+
+Na área de desenvolvimento de \textit{software}, \textit{Scrum} é um \textit{framework} ágil formalizado por \citeonline{Sutherland:2013} através do "Um guia definitivo para o \textit{Scrum}: As regras do jogo". O nome do método tem origem em um termo de rúgbi e é um momento onde os jogadores se unem aos companheiros de time e trabalham em equipe para empurrar a bola em direção ao fundo do campo \cite{PRESSMAN:2011}. 
+
+Segundo o Guia do \textit{Scrum} \cite{Sutherland:2013}, "o \textit{framework} \textit{Scrum} consiste nos times do Scrum associadas a papéis, eventos, artefatos e
+regras." E, a partir desse \textit{framework}, as equipes podem resolver problemas complexos e adaptativos, ao mesmo tempo que garantem uma entrega de alto valor. 
+
+Os papéis do time de \textit{Scrum} são: \textit{Scrum master} (mestre de \textit{Scrum}), \textit{product owner} (dono do produto) e \textit{development team} (equipe de desenvolvimento). O primeiro papel representa um membro da equipe com bastante conhecimento na aplicação do \textit{Scrum}. Apesar de representar um papel de lideranças, o \textit{Scrum} master não atua tal qual um gerente, ele age como um facilitador para aproximar a equipe das regras do \textit{Scrum} \cite{WAZLAWICK:2013}.
+
+Já o \textit{product owner}, é o membro da equipe responsável pelo projeto e é quem define as funcionalidades a serem desenvolvidos a cada \textit{sprint}. Esse papel tem como objetivo identificar as necessidades do cliente e aplicá-las da maneira menos custosa possível. Por fim, o \textit{development team} são os membros que de fato desenvolvem o projeto, sem distinção entre papéis como desenvolvedores, analistas, \textit{designers} e testadores \cite{WAZLAWICK:2013}.
+
+\citeonline{PRESSMAN:2011} destaca que o \textit{Scrum} utiliza um conjunto de padrões de processo que define um conjunto de ações de desenvolvimento. Esses padrões estão representados na Tabela abaixo e divididos em dois grupos: Eventos e Artefatos.
+
+\begin{longtable}{|c|c|}
+    \caption{Eventos e Artefatos do \textit{Scrum}}
+    \label{tab:KeyComponents}
+    \centering
+              \centering
+              \cr \rowcolor{lightgray}
+
+            \textbf{Eventos} & \textbf{Artefatos} \\
+            \hline 
+            \textit{Sprint} & \textit{Product backlog}\\
+
+            \textit{Sprint planning} & \textit{Sprint backlog}\\
+
+            \textit{Daily scrum} & Incrementos\\
+
+            \textit{Sprint review} & \\
+
+            \textit{Sprint retrospective} & \\ \hline
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Adaptado de \citeonline{PMIAGILE:2017}}
+\end{longtable}
+
+Os \textit{backlogs} são o registro de trabalhos pendentes. Consiste em uma lista priorizada com os requisitos a serem cumpridos \cite{PRESSMAN:2011}. O \textit{product backlog} costuma possuir histórias de usuário com uma descrição simples, um identificador e prioridade. Enquanto o \textit{sprint backlog} contém o plano daquela iteração corrente e já com os requisitos detalhados em formas de tarefas para as equipes de desenvolvimento realizarem. E, os incrementos são todo o trabalho realizado no período de uma \textit{sprint} \cite{WAZLAWICK:2013}.
+
+As \textit{sprints} recebem esse nome por serem associadas à corridas de curta distância. Elas consistem em uma janela de tempo em que os trabalhos do \textit{sprint backlog} devem ser desenvolvidos. Elas ocorrem em forma de iterações, ao término o \textit{sprint backlog} é ajustado \cite{PRESSMAN:2011}.
+
+Tratando agora das cerimônias do \textit{Scrum}, no começo de cada nova \textit{sprint} é feito o \textit{Sprint planning}, uma reunião na qual a equipe seleciona os elementos do \textit{product backlog} a serem desenvolvidos naquele ciclo. Essa reunião responde as perguntas: "O que pode ser entregue como resultado do incremento da próxima Sprint?" e "Como o trabalho necessário para entregar o incremento será realizado?" \cite{Sutherland:2013}.
+
+A \textit{Daily scrum} é uma reunião diária que tem como o objetivo inspecionar o trabalho desenvolvido pela equipe desde a última \textit{Daily scrum} e também identificar obstáculos que estejam impedindo o progresso do time de desenvolvimento \cite{Sutherland:2013}. 
+
+A \textit{Sprint review} e \textit{Sprint retrospective} devem ocorrer ao final de cada \textit{sprint}. A primeira, trata-se de uma avaliação do produto desenvolvido durante a \textit{sprint} e onde é feita a validação dos requisitos. Já a \textit{Sprint retrospective} trata da avaliação do processo de desenvolvimento e da equipe. A equipe, então, reflete sobre o passado e discute aquilo que deu certo e aquilo que precisa ser melhorado \cite{WAZLAWICK:2013}.
+
 \subsection{Kanban}
-\subsection{Scrumban}
+
+\section{Guia para gestão ágil de riscos}
+
 
 \chapter{Estado da arte}
 \label{sec:EstadoArte}
+
+O objetivo deste capítulo é apresentar o estado da arte do tema proposto por este trabalho. Para isso, foi realizada uma Revisão Sistemática da Literatura (RSL) nas bases de dados em conjunto com o trabalho de mestrado do aluno Fernando Vedoin Garcia. A RSL foi desenvolvida com base nas etapas propostas por \citeonline{Kitchenham:2004} no relatório "\textit{Procedures for performing systematic reviews}". 
+
+O foco principal desta Revisão Sistemática da Literatura é identificar e analisar os atuais estudos empíricos sobre a aplicação de técnicas de gestão de riscos em contextos de desenvolvimento ágil. Levando em consideração quais técnicas foram aplicadas e os resultados obtidos a partir da aplicação.
+
+\section{Revisão Sistemática da Literatura}
+
+A realização da RSL utilizou as três etapas definidas por \citeonline{Kitchenham:2004}, identificadas abaixo: 
+
+\begin{enumerate}
+    \item Planejamento da revisão
+        \begin{enumerate}
+            \item Identificação da necessidade da revisão
+            \item Desenvolvimento do protocolo de busca
+        \end{enumerate}
+    \item Condução da revisão
+        \begin{enumerate}
+            \item Identificação da pesquisa
+            \item Seleção dos estudos primários
+            \item Avaliação da qualidade dos estudos
+            \item Extração de dados e monitoramento
+            \item Sintetização dos dados
+        \end{enumerate}
+    \item Relatório da RSL
+\end{enumerate}
+
+\section{Definição do Protocolo de Revisão}
+
+Com base nos objetivos da pesquisa identificada para este trabalho, foi definida a seguinte questão geral de pesquisa: "Quais são os resultados dos estudos empíricos de gestão de riscos em métodos ágeis?".
+
+Após, foi utilizada a metodologia PICOC, sigla de População, Intervenção, Comparação, \textit{Outcome} (Resultado) e Contexto derivada da estratégia PICO utilizada na área médica \cite{SANTOS:2007}. Assim, foram definidos os seguintes elementos:
+
+\begin{longtable}{|c|p{10cm}|}
+    \caption{Descrição dos elementos PICOC}
+    \label{tab:PICOCElements}
+    \centering
+              \centering
+              \cr \rowcolor{lightgray}
+
+            \textbf{Critérios} & \textbf{Descrição} 
+            \\\hline 
+            
+            População & Organizações de \textit{software}.
+            \\\hline
+            
+            Intervenção & Aplicação de técnicas de gerência de risco no contexto da organização.
+            \\\hline
+
+            Comparação & N/A
+            \\\hline
+
+            Resultado & Analisar se a qualidade do produto, prazo de entrega e características gerais do projeto foram impactadas.
+            \\\hline
+
+            Contexto & Utilização de métodos ágeis.
+            \\\hline
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
+\end{longtable}
+
+A partir da identificação dos elementos da Tabela \ref{tab:PICOCElements}, foram levantadas as seguintes questões de pesquisa: 
+
+\begin{itemize} [label={}]
+    \item \textbf{Q1.} Quais são os estudos que tratam de integração de práticas de gestão de riscos nos métodos ágeis?
+    \item \textbf{Q2.} Qual contexto de uso de práticas de gestão de riscos nos métodos ágeis?
+    \item \textbf{Q3.} Quais as características do ambiente de aplicação?
+    \item \textbf{Q4.} Qual a motivação para a introdução de práticas explícitas de gestão de riscos nos métodos ágeis?
+    \item \textbf{Q5.} Quais práticas de gestão de riscos são introduzidas nos métodos ágeis?
+    \item \textbf{Q6.} Quais riscos são gerenciados?
+    \item \textbf{Q7.} Quais os resultados da introdução de práticas explícitas de gestão de riscos nos métodos ágeis?
+\end{itemize}
+
+\section{Bases de dados}
+
+\citeonline{Kitchenham:2004} destaca a importância do uso de bases de dados digitais para a área de Engenharia de \textit{Software}. Por isso, foram selecionadas três bibliotecas e bases de dados digitais relevantes para a área deste trabalho, são elas: ACM Digital Library, IEEExplore e Scopus. 
+
+\section{Critérios de pesquisa}
+
+Após a seleção das bases de dados, foram determinados critérios de busca para a seleção de artigos. Segundo \citeonline{Kitchenham:2004}, os estudos devem passar por uma série de estágios para serem escolhidos. O primeiro deles é aplicar os critérios de elegibilidade, após, filtra-se pelos títulos e resumos. Por fim, os trabalhos que não forem excluídos são analisados mais detalhadamente. Os critérios utilizados para realizar o primeiro filtro dos trabalhos foram:
+
+\begin{itemize}
+    \item Critérios de inclusão
+        \begin{itemize}
+            \item Estudos publicados em conferências, periódicos ou revistas científicas
+            \item Estudos em Inglês ou Português.
+            \item Artigos completos.
+            \item Estudos publicados a partir de 2001.
+        \end{itemize}
+    \item Critérios de exclusão
+        \begin{itemize}
+            \item Estudos teóricos, não empíricos.
+            \item Estudos duplicados.
+            \item Estudos que não estejam acessíveis pela rede da Universidade Federal de Santa Catarina (UFSC).
+            \item Estudos sem foco principal em desenvolvimento de \textit{software}.
+        \end{itemize}
+    \item Critérios de qualidade
+        \begin{itemize}
+            \item Estudos primários publicados que passaram por revisão por pares.
+            \item Estudos do tipo empíricos.
+            \item Estudos que deixem explícito quais foram as estratégias e técnicas adotadas na gestão de risco.
+        \end{itemize}
+\end{itemize}
+
+
+\section{Termos de pesquisa}
+
+Foram selecionados, então, os termos de buscas mais relevantes para o tema deste trabalho. A Tabela \ref{tab:ResearchTerms} apresenta os termos utilizados para refinar as buscas nas bases de dados e seus respectivos sinônimos. Entre eles estão \textit{software}, \textit{Risk management} e \textit{agile}. Os termos foram extraídos a partir de alguns elementos do PICOC. \\ \\
+
+\begin{longtable}{|p{2.5cm}|p{4cm}|p{8cm}|}
+    \caption{Termos de busca.}
+    \label{tab:ResearchTerms}
+    \centering
+              \centering
+              \cr \rowcolor{lightgray}
+            \textbf{Critério} & \textbf{Termo} & \textbf{Sinônimos} 
+            \\ \hline 
+            
+            \textbf{População} & \textit{Software} & N/A
+            \\ \hline
+
+            \textbf{Invervenção} & \textit{Risk Management} & \textit{Risk analysis, Risk administration, Management of risk}
+            \\ \hline
+
+            \textbf{Contexto} & \textit{Agile} & \textit{Scrum}, XP, \textit{Extreme Programming}, \textit{Lean}, Kanban, FDD, \textit{Feature Driven Development}, \textit{Crystal}, \textit{Iterative Development}
+            \\ \hline 
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
+\end{longtable}
+
+\section{\textit{Strings} de busca}
+
+As \textit{strings} de busca sofreram adaptações para que retornassem resultados relacionados ao tema do presente trabalho. Na Tabela \ref{tab:StringsBusca} são apresentadas as \textit{strings} de busca utilizadas para cada base de dados.
+
+\begin{longtable}{|c|p{11cm}|}
+    \caption{\textit{Strings} de busca}
+    \label{tab:StringsBusca}
+    \centering
+              \centering
+              \cr \rowcolor{lightgray}
+
+            \textbf{Base de dados} & \textbf{\textit{Strings} adaptadas} 
+            \\ \hline 
+            
+            ACM Digital Library & (Abstract:(risk) AND Abstract:(agile OR scrum OR xp OR "extreme programming" OR lean OR kanban OR scrumban OR fdd OR "feature driven development" OR  Crystal OR "Iterative Development")) OR (Title:(risk) AND Title:(agile OR scrum OR xp OR "extreme programming" OR lean OR kanban OR scrumban OR fdd OR "feature driven development" OR  Crystal OR "Iterative Development"))
+            \\ \hline
+            
+            IEEEXplore & All Metadata":risk AND ("All Metadata":agile OR "All Metadata":scrum OR "All Metadata":xp OR "All Metadata":"extreme programming" OR "All Metadata":lean OR "All Metadata":kanban OR "All Metadata":scrumban OR "All Metadata":fdd OR "All Metadata":“feature driven development” OR "All Metadata":Crystal OR "All Metadata":"Iterative Development")
+            \\ \hline
+
+            Scopus & (TITLE-ABS-KEY (risk) AND (TITLE-ABS-KEY(agile) OR TITLE-ABS-KEY (scrum) OR TITLE-ABS-KEY (xp) OR TITLE-ABS-KEY (extreme AND programming) OR TITLE-ABS-KEY (lean) OR TITLE-ABS-KEY (kanban) OR TITLE-ABS-KEY (scrumban) OR TITLE-ABS-KEY (fdd) OR TITLE-ABS-KEY (feature AND driven AND development) OR TITLE-ABS-KEY (crystal) OR TITLE-ABS-KEY (iterative AND development)) AND (LIMIT-TO (SUBJAREA,"COMP")))
+            \\ \hline
+
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
+\end{longtable}
+
+As bases de dados retornaram no total 3339 estudos após a aplicação das \textit{strings}. E, os estudos foram distribuídos conforme a Figura \ref{EstudosRetornados}.
+
+\begin{figure}[h]
+    \centering
+    \caption{Estudos retornados em cada base de dados}
+    \includegraphics[scale=0.55]{src/tex/img/graficoBuscas.png} \\
+    \label{EstudosRetornados}
+    \textbf{Fonte:} Desenvolvido pela autora (2021).
+    \centering
+\end{figure}
+
+\section{Seleção dos artigos}
+
+Mesmo com as \textit{strings} de busca limitando o conteúdo dos estudos retornados, ainda assim as buscas resultaram em um volume grande de estudos. Por isso, foi realizada uma filtragem através da leitura dos títulos.
+
+A partir dos artigos restantes, fez-se uma segunda filtragem que teve como critério a leitura dos resumos e a estrutura geral dos artigos. Desta forma, foi possível aplicar os critérios de inclusão, exclusão e qualidade para cada um deles. 
+
+Enfim, após a segunda filtragem, foi realizada a leitura integral do texto de cada trabalho. Com base nesta leitura, foi possível identificar aqueles mais relevantes com base nas perguntas de pesquisa. Esses, então, foram selecionados para a extração e análise dos dados.
+
+\section{Extração de dados}
+
+Para realizar a coleta de dados, foram selecionados dados relevantes a serem levantados nos artigos com base nas perguntas de pesquisa. A partir de tais dados, foram criadas questões de análise. As questões foram definidas segundo a Tabela \ref{tab:QAnalise}.
+
+\begin{longtable}{|p{8cm}|p{5cm}|}
+    \caption{Questões de análise.}
+    \label{tab:QAnalise}
+    \centering
+            \centering
+            \cr \rowcolor{lightgray}
+            \textbf{Questão de pesquisa} & \textbf{Questões de análise} 
+            \\ \hline 
+            
+            \multirow{1}{12em}{\textbf{Q2.} Qual contexto de uso de práticas de gestão de riscos nos métodos ágeis?}
+            & \textbf{Q2.1} Contexto de uso \\
+            & \textbf{Q2.2} Método Ágil \\
+            & \textbf{Q2.3} Tipo do estudo
+            \\ \hline
+            
+            \multirow{1}{12em}{\textbf{Q3.} Quais as características do ambiente de aplicação?}
+            & \textbf{Q3.1} Tamanho da equipe \\
+            & \textbf{Q3.2} Domínio da aplicação \\
+            & \textbf{Q3.3} Tipo do produto 
+            \\ \hline
+            
+            \multirow{1}{12em}{\textbf{Q5.} Quais práticas de gestão de riscos são introduzidas nos métodos ágeis?}
+            & \textbf{Q5.1} Lista de práticas \\ & \\ & \\ &
+            \\ \hline
+            
+            \multirow{1}{12em}{\textbf{Q6.} Quais riscos são gerenciados?}
+            & \textbf{Q6.1} Lista de riscos \\ & 
+            \\ \hline
+            
+            \multirow{1}{12em}{\textbf{Q7.} Quais os resultados da introdução de práticas explícitas de gestão de riscos nos métodos ágeis?}
+            & \textbf{Q6.1} Lista de resultados \\ & \\ & \\ &
+            \\ \hline
+\end{longtable}
+
+\section{Análise dos resultados}
+
+Nesta seção foi realizada a síntese e classificação dos estudos selecionados, estes estão numerados e referenciados no Apêndice \ref{sec:ApendiceA}.
+
+\begin{longtable}{|p{4cm}|p{4cm}|p{8cm}|}
+    \caption{Classificação dos estudos.}
+    \label{tab:ClassificacaoEstudos}
+    \centering
+             \centering
+             \cr \rowcolor{lightgray}
+            \multicolumn{2}{|c|}{\textbf{Classificação}} & \textbf{Estudos} 
+            \\ \hline 
+            
+            \multirow{1}{10em}{Contexto de uso}
+            & Indústria & [1], [2], [3], [4], [5], [8], [9], [11], [13], [14], [15], [16], [17], [18], [19] \\ 
+            & Academia & [6], [7], [10], [12]
+            \\ \hline
+            
+            \multirow{1}{10em}{Métodos ágeis utilizados no estudo}
+            & \textit{Scrum} & [3], [5], [6], [7], [10], [11], [13], [18] \\ 
+            & Kanban & [9], [18] \\ 
+            & XP & [1], [13], [15], [18] \\
+            & DSDM & [13] \\
+            & Lean & [14] \\
+            & Não informado & [2], [4], [8], [12], [16], [17], [19]
+            \\ \hline
+            
+            \multirow{1}{10em}{Tipo do estudo}
+            & Experimento & [1], [10], [11], [12] \\ 
+            & Estudo de caso & [2], [3], [4], [5], [6], [8], [13], [14], [15], [16], [17], [18], [19] \\ 
+            & Prova de conceito & [9] 
+            \\ \hline
+            
+            \multirow{1}{10em}{Tamanho da equipe}
+            & <10 & [3], [5], [6], [7], [11], [12], [15], [16]\\ 
+            & >10 & [4], [5], [11] \\ 
+            & Não informado & [1], [2], [8], [10], [13], [14], [17], [18], [19]
+            \\ \hline
+            
+            \multirow{1}{10em}{Domínio da aplicação}
+            & Militar & [2]\\ 
+            & Financeiro & [3] \\ 
+            & \textit{E-commerce} & [4], [7], [9] \\
+            & Múltiplos domínios & [8], [13], [14] \\
+            & Gestão & [15], [16], [18] \\
+            & Saúde & [17], [18] \\
+            & Telecomunicação & [19] \\
+            & Não informado & [1], [5], [6], [10], [11], [12]
+            \\ \hline
+            
+            \multirow{1}{10em}{Tamanho do produto}
+            & Grande & [2], [3], [4], [8], [9], [13], [14], [17], [18], [19] \\ 
+            & Pequeno & [6], [7] \\ 
+            & Não informado & [1], [5], [10], [11], [12], [15]
+            \\ \hline
+            
+            \multirow{1}{10em}{Tipo do produto}
+            & \textit{Mobile} & [16]\\ 
+            & Web & [2], [7], [16], [19] \\ 
+            & Misto & [1], [18] \\
+            & \textit{Hardware e software} & [17] \\
+            & Não informado & [3], [4], [5], [6], [8], [9], [10], [11], [12], [13], [14], [15]
+            \\ \hline
+        
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
+\end{longtable}
+
+\subsection{Contexto das organizações}
+
+\subsection{Métodos ágeis utilizados}
+
+\subsection{Práticas de gestão de riscos adotadas}
+
+\subsection{Riscos gerenciados}
+
+\subsection{Resultados obtidos com os estudos}
+
+\section{Ameaças à validade}
+
+
+
+\chapter{Processo Atual da Organização}
+\label{sec:Processo}
 
 
 \chapter{Proposta do Trabalho}
@@ -628,14 +1091,82 @@ Nas subseções seguintes alguns dos métodos ágeis serão apresentados e eluci
   % Inicia os apêndices
   % ---
   \begin{apendicesenv}
-
+    
   % Imprime uma página indicando o início dos apêndices
   \partapendices
   % ----------------------------------------------------------
-  % \chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-  % ac pretium ante justo a nulla curabitur tristique arcu eu metus}
-  % ----------------------------------------------------------
-  % \lipsum[55-57]
+ \chapter{Estudos Selecionados na Revisão Sistemática da Literatura}
+ \label{sec:ApendiceA}
+ 
+ O quadro abaixo apresenta os estudos selecionados durante a Revisão Sistemática da Literatura.
+
+\begin{longtable}{|p{1cm}|p{4cm}|p{9.5cm}|}
+    \centering
+            \rowcolor{lightgray}
+            \textbf{ID} & \textbf{Título} & \textbf{Referência} 
+            \\ \hline 
+            
+            \flushleft{\textbf{[1]}} & \flushleft{\textit{Identifying Risks in XP Projects through Process Modelling}} & \flushleft{KIRK, D.; TEMPERO, E.. Identifying risks in XP projects through process modelling. \textbf{Australian Software Engineering Conference (Aswec'06)}, [S.L.], p. 10-420, 2006. IEEE. http://dx.doi.org/10.1109/aswec.2006.31.}
+            \\ \hline
+
+            \flushleft{\textbf{[2]}} & \flushleft{\textit{Reference framework and model for integration of risk management in agile systems engineering lifecycle of the defense acquisition management framework}} & \flushleft{CROWE, Portia; MOSTASHARI, Ali; MANSOURI, Mo; CLOUTIER, Robert. 9.2.1 Reference Framework and Model for Integration of Risk Management in Agile Systems Engineering Lifecycle of the Defense Acquisition Management Framework. \textbf{Incose International Symposium}, [S.L.], v. 19, n. 1, p. 1391-1405, jul. 2009. Wiley. http://dx.doi.org/10.1002/j.2334-5837.2009.tb01022.x.}
+            \\ \hline
+
+            \flushleft{\textbf{[3]}} & \flushleft{\textit{A risk management framework for distributed scrum using prince2 methodology}} & \flushleft{ESTEKI, Mohammad; GANDOMANI, Taghi Javdani; FARSANI, Hadi Khosravi. A risk management framework for distributed scrum using PRINCE2 methodology. \textbf{Bulletin Of Electrical Engineering And Informatics}, [S.L.], v. 9, n. 3, p. 1299-1310, 1 jun. 2020. Institute of Advanced Engineering and Science. http://dx.doi.org/10.11591/eei.v9i3.1905.}
+            \\ \hline \hline
+            
+            \flushleft{\textbf{[4]}} & \flushleft{\textit{Improving Risk Management in a Scaled Agile Environment}} & \flushleft{SCHÖN, Eva-Maria; RADTKE, Dirk; JORDAN, Christian. Improving Risk Management in a Scaled Agile Environment. \textbf{Lecture Notes In Business Information Processing}, [S.L.], p. 132-141, 2020. Springer International Publishing. http://dx.doi.org/10.1007/978-3-030-49392-99}
+            \\ \hline        
+ 
+            \flushleft{\textbf{[5]}} & \flushleft{\textit{Risk assessment forum: A proposal for agile software development teams ruled by Scrum}} & \flushleft{CARVALLO, Juliette Michelle Parada; OKTABA, Hanna; HERNANDEZ, Elsa Ramirez. Risk Assessment Forum. \textbf{2018 6Th International Conference In Software Engineering Research And Innovation (Conisoft)}, [S.L.], p. 132-141, out. 2018. IEEE. http://dx.doi.org/10.1109/conisoft.2018.8645949.}
+            \\ \hline
+            
+            \flushleft{\textbf{[6]}} & \flushleft{\textit{Agile risk management using software agents}} & \flushleft{ODZALY, Edzreena Edza; GREER, Des; STEWART, Darryl. Agile risk management using software agents. \textbf{Journal Of Ambient Intelligence And Humanized Computing}, [S.L.], v. 9, n. 3, p. 823-841, 2 maio 2017. Springer Science and Business Media LLC. http://dx.doi.org/10.1007/s12652-017-0488-2.}
+            \\ \hline                
+
+            \flushleft{\textbf{[7]}} & \flushleft{\textit{A risk poker based testing model for scrum}} & \flushleft{GHAZALI, Siti Noor Hasanah; SALIM, Siti Salwah; INAYAT, Irum; HAMID, Siti Hafizah Ab. A Risk Poker Based Testing Model for Scrum. \textbf{Computer Systems Science And Engineering}, [S.L.], v. 33, n. 3, p. 169-185, 2018. Computers, Materials and Continua (Tech Science Press). http://dx.doi.org/10.32604/csse.2018.33.169.} 
+            \\ \hline \hline
+            
+            \flushleft{\textbf{[8]}} & \flushleft{\textit{Characterization and prediction of issue-related risks in software projects}} & \flushleft{CHOETKIERTIKUL, Morakot; DAM, Hoa Khanh; TRAN, Truyen; GHOSE, Aditya. Characterization and Prediction of Issue-Related Risks in Software Projects. \textbf{2015 Ieee/Acm 12Th Working Conference On Mining Software Repositories}, [S.L.], maio 2015. IEEE. http://dx.doi.org/10.1109/msr.2015.33.}
+            \\ \hline    
+            
+            \flushleft{\textbf{[9]}} & \flushleft{\textit{Agile approach with Kanban in information security risk management}} & \flushleft{DORCA, Vasile; MUNTEANU, Radu; POPESCU, Sorin; CHIOREANU, Adrian; PELESKEI, Claudius. Agile approach with Kanban in information security risk management. \textbf{2016 Ieee International Conference On Automation, Quality And Testing, Robotics (Aqtr)}, [S.L.], p. 1-6, maio 2016. IEEE. http://dx.doi.org/10.1109/aqtr.2016.7501278.}
+            \\ \hline                
+            
+            \flushleft{\textbf{[10]}} & \flushleft{\textit{Integrating Risk Management in Scrum Framework}} & \flushleft{HAMMAD, Muhammad; INAYAT, Irum. Integrating Risk Management in Scrum Framework.\textbf{ 2018 International Conference On Frontiers Of Information Technology (Fit)}, [S.L.], p. 158-163, dez. 2018. IEEE. http://dx.doi.org/10.1109/fit.2018.00035.}
+            \\ \hline                
+            
+            \flushleft{\textbf{[11]}} & \flushleft{\textit{Risk Assessment Forum}} & \flushleft{CARVALLO, Juliette Michelle Parada; OKTABA, Hanna; HERNANDEZ, Elsa Ramirez. Risk Assessment Forum. \textbf{2018 6Th International Conference In Software Engineering Research And Innovation (Conisoft)}, [S.L.], out. 2018. IEEE. http://dx.doi.org/10.1109/conisoft.2018.8645949.}
+            \\ \hline \hline
+
+            \flushleft{\textbf{[12]}} & \flushleft{\textit{A Risk Management Tool for Agile Software Development}} & \flushleft{TAVARES, Breno Gontijo; KEIL, Mark; SILVA, Carlos Eduardo Sanches da; SOUZA, Adler Diniz de. A Risk Management Tool for Agile Software Development. \textbf{Journal Of Computer Information Systems}, [S.L.], p. 1-10, 7 dez. 2020. Informa UK Limited. http://dx.doi.org/10.1080/08874417.2020.1839813.}
+            \\ \hline
+
+            \flushleft{\textbf{[13]}} & \flushleft{\textit{Prioritizing and optimizing risk factors in agile software development}} & \flushleft{ AGRAWAL, Ruchi; SINGH, Deepali; SHARMA, Ashish. Prioritizing and optimizing risk factors in agile software development. \textbf{2016 Ninth International Conference On Contemporary Computing (Ic3)}, [S.L.], p. 1-7, ago. 2016. IEEE. http://dx.doi.org/10.1109/ic3.2016.7880232.}
+            \\ \hline 
+            
+            \flushleft{\textbf{[14]}} & \flushleft{\textit{Identifying risky areas of software code in Agile/Lean software development: An industrial experience report}} & \flushleft{ANTINYAN, Vard; STARON, Miroslaw; MEDING, Wilhelm; OSTERSTROM, Per; WIKSTROM, Erik; WRANKER, Johan; HENRIKSSON, Anders; HANSSON, Jorgen. Identifying risky areas of software code in Agile/Lean software development: an industrial experience report. \textbf{2014 Software Evolution Week - Ieee Conference On Software Maintenance, Reengineering, And Reverse Engineering (Csmr-Wcre)}, [S.L.], p. 154-163, fev. 2014. IEEE. http://dx.doi.org/10.1109/csmr-wcre.2014.6747165.}
+            \\ \hline \hline       
+ 
+            \flushleft{\textbf{[15]}} & \flushleft{\textit{Value-Risk Trade-off Analysis for Iteration Planning in Extreme Programming}} & \flushleft{DONG, Xin; YANG, Qiu-Song; WANG, Qing; ZHAI, Jian; RUHE, Gunther. Value-Risk Trade-off Analysis for Iteration Planning in Extreme Programming. \textbf{2011 18Th Asia-Pacific Software Engineering Conference}, [S.L.], p. 397-404, dez. 2011. IEEE. http://dx.doi.org/10.1109/apsec.2011.11.}
+            \\ \hline    
+            
+            \flushleft{\textbf{[16]}} & \flushleft{\textit{A case study for the implementation of an agile risk management process in multiple projects environments}} & \flushleft{RIBEIRO, Lucio; GUSMAO, Cristine; FEIJO, Wilmar; BEZERRA, Vicente. A case study for the implementation of an agile risk management process in multiple projects environments. \textbf{Picmet '09 - 2009 Portland International Conference On Management Of Engineering \& Technology}, [S.L.], p. 1396-1404, ago. 2009. IEEE. http://dx.doi.org/10.1109/picmet.2009.5262002.}
+            \\ \hline                
+
+            \flushleft{\textbf{[17]}} & \flushleft{\textit{A SYSML-Based Approach for Requirements Risk Management and Change Control}} & \flushleft{HAYAT, Faisal; ANWAR, Muhammad Waseem; AZAM, Farooque; KIRAN, Ayesha. A SYSML-Based Approach for Requirements Risk Management and Change Control. Proceedings Of The 2019 11Th International Conference On Information Management And Engineering, [S.L.], p. 20-24, 19 set. 2019. ACM. http://dx.doi.org/10.1145/3373744.3373751.}
+            \\ \hline \hline   
+            
+            \flushleft{\textbf{[18]}} & \flushleft{\textit{Risk Management for Agile Projects in Offshore Vietnam}} & \flushleft{CUONG, Le Gia; HUNG, Phan Duy; BACH, Nguyen Luu; TUNG, Ta Duc. Risk Management for Agile Projects in Offshore Vietnam. \textbf{Proceedings Of The Tenth International Symposium On Information And Communication Technology - Soict 2019}, [S.L.], p. 377-384, 2019. ACM Press. http://dx.doi.org/10.1145/3368926.3369718.}
+            \\ \hline    
+            
+            \flushleft{\textbf{[19]}} & \flushleft{\textit{An industrial case study of implementing software risk management}} & \flushleft{FREIMUT, Bernd; HARTKOPF, Susanne; KAISER, Peter; KONTIO, Jyrki; KOBITZSCH, Werner. An industrial case study of implementing software risk management. \textbf{Acm Sigsoft Software Engineering Notes}, [S.L.], v. 26, n. 5, p. 277-287, set. 2001. Association for Computing Machinery (ACM). http://dx.doi.org/10.1145/503271.503247.}
+            \\ \hline                
+            
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
+\end{longtable}
+
 
   \end{apendicesenv}
   % ---
