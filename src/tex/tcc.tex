@@ -50,7 +50,7 @@
   \usepackage{csquotes}
   \usepackage{longtable}
   \usepackage[table]{xcolor}
-\usepackage{multirow}
+  \usepackage{multirow}
 
   % ---
   % Pacotes de citações
@@ -568,12 +568,72 @@ A análise quantitativa dos riscos é descrita pelo \citeonline{PMBOK:2017} tal 
 Algumas entradas do processo descritas pelo \citeonline{PMBOK:2017}
 são o plano de gerenciamento de riscos, estimativas, relatórios e registros de riscos e estudos de projetos semelhantes. As ferramentas e técnicas que podem ser utilizadas são entrevistas, opiniões especializadas e formas de análise de dados como modelos de simulação, análise de sensibilidade e análise de árvore de decisão. 
 
-\subsection{Planejar Respostas aos Riscos}
+\subsection{Planejar as Respostas aos Riscos}
 
+O processo de Planejar as Respostas aos Riscos envolve criar estratégias para lidar com a exposição geral aos riscos e aos riscos individuais do projeto. Este processo ocorre ao longo do projeto e tem como principal objetivo minimizar os impactos negativos provenientes de riscos e maximizar oportunidades \cite{PMBOK:2017}.
 
+Estes planos devem ser colocados em prática antes que o risco ocorra. Pode-se classificar os riscos quanto a sua exposição para que se defina quando os planos devem ser desenhados. Por exemplo, riscos de alta exposição precisam de planos definidos ainda na fase de planejamento de projeto e riscos de média exposição não necessariamente precisam ser colocados em prática de imediato, podem ser guardados e executados se a exposição aumentar \cite{WAZLAWICK:2013}.
+
+Dessa forma, \citeonline{WAZLAWICK:2013} apresenta a seguinte tabela como uma maneira para calcular a exposição dos riscos:
+
+\begin{flushleft}
+\begin{longtable}{|p{2cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+    \caption{Cálculo para exposição de um risco}
+    \label{ExposicaoRisco}
+    \centering
+    \hline
+    \multicolumn{2}{|c|}{} & \multicolumn{3}{|c|}{\cellcolor{lightgray} Probabilidade } \\ \cline{3-5}
+    \multicolumn{2}{|c|}{} & Alta & Média & Baixa \\
+    \hline
+    \cellcolor{lightgray} Impacto & Alto & Alta exposição & Alta exposição & Média exposição \\
+    \cellcolor{lightgray} & Médio & Alta exposição & Média exposição  & Baixa exposição      \\
+    \cellcolor{lightgray} & Baixo & Média exposição & Baixa exposição & Baixa exposição \\
+    \hline
+    \addlinespace[0.2cm]
+    \caption*{\textbf{Fonte:} Adaptado de \citeonline{WAZLAWICK:2013}}
+\end{longtable}
+\end{flushleft}
+
+Para implementar o processo de Planejar as Respostas aos Riscos, o \citeonline{PMBOK:2017} sugere algumas estratégias. As cinco primeiras delas referem-se a riscos negativos. Sendo elas:
+\begin{itemize}
+    \item \textbf{Escalar: } Esta estratégia deve ser utilizada quando é determinado que a ameaça ultrapassa o escopo do projeto ou que a resposta apropriada requer uma autoridade maior que a do gerente do projeto. Assim, o risco é escalado para além do nível de projeto, podendo ser gerenciado no nível do programa, portfólio ou outra parte relevante da organização. Cabe ao gerente de projeto informar essa outra parte relevante sobre a ameaça e, a partir do momento que a parte aceitar responsabilidade sobre o risco, a equipe encerrará o monitoramento do risco.
+    \item \textbf{Prevenir: } Para prevenir um risco e necessário que a equipe se empenhe para eliminá-lo ou então para evitar que tal ameaça não impacte mais o projeto. Essa estratégia é adequada para riscos de alta exposição e pode demandar que o plano de projeto seja alterado ou que o objetivo referente a esse risco seja isolado. 
+    \item \textbf{Transferir: } A transferência ocorre quando se move a responsabilidade de uma ameaça a um terceiro. Esta estratégia costuma envolver o oferecimento de um prêmio ao terceiro e pode ser, por exemplo, a contratação de um seguro.
+    \item \textbf{Mitigar: } Esta estratégia objetiva que os possíveis efeitos negativos do risco sejam minimizados, seja através da redução de possibilidade de ocorrência do risco ou do impacto dessa ameaça. 
+    \item \textbf{Aceitar: } Ao aceitar um risco, a equipe assume a existência da ameaça porém não são adotadas ações quanto a isso. A estratégia pode ser adotada para riscos de baixa exposição ou quando não é possível tomar alguma ação, seja por impossibilidade econômica ou qualquer outro motivo.
+\end{itemize}
+
+Já para os riscos considerados positivos (oportunidades), o \citeonline{PMBOK:2017} sugere outras cinco estratégias:
+
+\begin{itemize}
+    \item \textbf{Escalar: } Da mesma forma que ameaças, as oportunidades também podem ser atribuídas a uma parte relevante da organização e não são mais monitoradas pela equipe.
+    \item \textbf{Explorar: } A exploração pode ser utilizada para oportunidades que a organização deseja que sejam realizadas. Busca-se garantir que tal oportunidade de fato ocorra.
+    \item \textbf{Compartilhar: } Ao adotar esta estratégia, transfere-se a responsabilidade da oportunidade a terceiros de forma que o benefício oferecido por ela seja compartilhado.   
+    \item \textbf{Melhorar: } Esta estratégia busca aumentar as chances do risco positivo ocorrer ou o impacto desse, assim maximizando os benefícios obtidos. 
+    \item \textbf{Aceitar: } Ao adotar esta estratégia, reconhece-se a existência da oportunidade mas não é tomada nenhuma ação quanto a ela. Assim como a aceitação de ameaças, isso pode ocorrer por impossibilidade econômica ou outros motivos.
+\end{itemize}
+
+Ao final do processo, pode ser necessário aplicar mudanças no cronograma, custos ou outros componentes do plano de gerenciamento do projeto \cite{PMBOK:2017}.
 
 \subsection{Implementar Respostas aos Riscos}
+
+Este processo prevê que sejam colocados os planos acordados de resposta aos riscos. Dessa forma, garante-se que aquilo que foi previamente planejado seja implementado corretamente \cite{PMBOK:2017}.
+
+Segundo o \citeonline{PMBOK:2017}, um problema comum é o fato de que algumas equipes identificam, analisam e planejam as respostas aos riscos, mas não são tomadas providências para colocar os planos em prática. Dessa forma, este processo demanda empenho dos responsáveis pelos riscos.
+
 \subsection{Monitorar Riscos}
+
+O monitoramento de riscos considera a natureza volúvel e imprevisível desses. Por causa disso, é possível que ao longo do projeto novos riscos sejam descobertos, ou que a exposição dos já documentados aumente. Dessa forma, é necessário revisitar frequentemente aquilo que já foi avaliado \cite{WAZLAWICK:2013}.
+
+Portanto, monitorar riscos é o processo de acompanhar a implementação das respostas aos riscos e também realizar novamente os outros processos, através da identificação e análise de novos riscos e elaboração de novos planos \cite{PMBOK:2017}.
+
+Para isso, é essencial que os riscos estejam corretamente documentados \cite{WAZLAWICK:2013}, pois tanto a equipe quanto as partes interessadas devem estar a par dos riscos e níveis de exposição \cite{PMBOK:2017}. 
+
+Assim, utiliza-se informações obtidas durante a execução do projeto para avaliar aspectos como, por exemplo, alterações nos \textit{status} dos riscos, surgimento de novos riscos ou efetividade dos planos implementados \cite{PMBOK:2017}.
+
+O \cite{PMBOK:2017} apresenta ferramentas e técnicas para auxiliar neste processo de monitoramento. Podem ser utilizadas auditorias ou reuniões recorrentes de monitoramento de riscos. As reuniões têm como objetivo analisar e documentar se as respostas aos riscos adotadas são efetivas, além de buscar reavaliar os riscos existentes e identificar novos. A auditoria pode ser incluída como parte da reunião ou pode ser realizada de forma separada. 
+
+O final do processo, assim como o planejamento de respostas aos riscos, pode exigir uma solicitação de mudança de custos, cronograma ou outros componentes do plano de gerenciamento do projeto \cite{PMBOK:2017}.
 
 \section{Métodos ágeis}
 
@@ -760,6 +820,23 @@ A \textit{Sprint review} e \textit{Sprint retrospective} devem ocorrer ao final 
 \subsection{Kanban}
 
 \section{Guia para gestão ágil de riscos}
+
+O Guia para gestão ágil de riscos foi desenvolvido no contexto do Grupo de Qualidade de Software da Universidade Federal de Santa Catarina (UFSC) em 2020. O trabalho foi elaborado pelo estudante de graduação de Sistemas de Informação Marcel Figueiredo Vieira como parte de sua monografia para conclusão de curso em conjunto com o orientador Jean Carlo Rossa Hauck. 
+
+O guia foi criado com foco em organizações de \textit{software} e utilizou como base a fundamentação teórica, levantamento do estado da arte e experiência dos autores para ser desenvolvido \cite{Vieira:2020}.
+
+Segundo \citeonline{Vieira:2020}, o guia apresenta os seguintes elementos em sua estrutura:
+
+\begin{itemize}
+    \item \textbf{Papéis: } Os papéis envolvidos na realização das tarefas presentes nas atividades para gerenciamento de risco.
+    \item \textbf{Cerimônias: } As cerimônias apresentadas pelo guia são reuniões com diferentes periodicidades e características. Estas reuniões preveem a participação de diversos papéis e são utilizadas para discussões sobre o projeto. 
+    \item \textbf{Atividades: } Apresentam ações com objetivos pré-determinados, podendo ser implementadas através de grupos de ações relacionadas ou de forma individual.
+    \item \textbf{Tarefas: } As tarefas estabelecem passos para se atingir um objetivo pré-determinado. As atividades podem ser compostas de uma ou mais tarefas. 
+    \item \textbf{Técnicas: } Os conjuntos de passos implementados pelas tarefas. As técnicas podem ser reutilizadas, diferentemente das tarefas que são únicas.
+    \item \textbf{Produtos de Trabalho: } As atividades, tarefas e técnicas resultam em produtos de trabalho, que permitem a avaliação quantitativa do trabalho.  
+    \item \textbf{Ferramentas: } As ferramentas são os recursos utilizados no desenvolvimento de uma tarefa. Essas podem ser físicas ou virtuais e fundamentais ou opcionais.
+\end{itemize}
+
 
 
 \chapter{Estado da arte}
