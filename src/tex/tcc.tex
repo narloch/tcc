@@ -283,6 +283,7 @@ TODO
     \item[PMI]  Project Management Institute
     \item[UFSC] Universidade Federal de Santa Catarina
     \item[RSL] Revisão Sistemática da Literatura
+    \item[WIP] Work in Progress
  \end{siglas}
   % ---
 
@@ -319,7 +320,7 @@ As técnicas de gerenciamento de riscos possibilitam a redução do impacto nega
 
 Diversas iniciativas têm surgido no intuito de auxiliar as organizações de \textit{software} que utilizam métodos ágeis a adotar técnicas explícitas de gestão de riscos. Um desses trabalhos é o “Guia para gestão ágil de riscos em projetos de \textit{software}” desenvolvido no contexto do Grupo de Qualidade de \textit{Software} (GQS/INE/CTC/UFSC). O conteúdo do guia foi fundamentado através da análise da literatura, da identificação do estado da arte na área de gestão ágil de riscos e das experiências empíricas dos autores. E, dispõe de diretrizes que visam auxiliar a prática da gestão explícita de riscos no ambiente de desenvolvimento ágil de \textit{software} \cite{Vieira:2020}. Contudo, o guia ainda não foi aplicado em um contexto real.
 
-A partir do panorama apresentado, este trabalho objetiva realizar um estudo de caso para avaliar o impacto da introdução de práticas explícitas de gerência de riscos no processo de desenvolvimento ágil de \textit{software}. A aplicação do estudo de caso busca selecionar empiricamente quais técnicas utilizadas na gestão de riscos se enquadram melhor no contexto do Laboratório Bridge da Universidade Federal de Santa Catarina, por meio da adoção de técnicas propostas no “Guia para gestão ágil de riscos” \cite{Vieira:2020} em equipes da organização durante o segundo semestre letivo de 2021. O Laboratório Bridge é um laboratório integrado ao Centro Tecnológico (CTC) e de Ciências da Saúde (CCS) da Universidade Federal de Santa Catarina (UFSC) criado em 2013. Atua na pesquisa e desenvolvimento de soluções tecnológicas para o Ministério da Saúde, como por exemplo \textit{softwares} para a estratégia e-SUS APS, Sistema de Monitoramento de Obras (SISMOB) e Registro Nacional de Implantes (RNI). Conta com 123 colaboradores divididos em 6 áreas/projetos, sendo o maior projeto o e-SUS APS com 64 colaboradores distribuídos em 8 equipes ágeis.
+A partir do panorama apresentado, este trabalho objetiva realizar um estudo de caso para avaliar o impacto da introdução de práticas explícitas de gerência de riscos no processo de desenvolvimento ágil de \textit{software}. A aplicação do estudo de caso busca selecionar empiricamente quais técnicas utilizadas na gestão de riscos se enquadram melhor no contexto do Laboratório Bridge da Universidade Federal de Santa Catarina, por meio da adoção de técnicas propostas no “Guia para gestão ágil de riscos” \cite{Vieira:2020} em equipes da organização durante o segundo semestre letivo de 2021. O Laboratório Bridge é um laboratório integrado ao Centro Tecnológico (CTC) e de Ciências da Saúde (CCS) da Universidade Federal de Santa Catarina (UFSC) criado em 2013. Atua na pesquisa e desenvolvimento de soluções tecnológicas para o Ministério da Saúde e mais recentemente para o Ministério da Educação, como por exemplo \textit{softwares} para a estratégia e-SUS APS, Sistema de Monitoramento de Obras (SISMOB) e Registro Nacional de Implantes (RNI). Conta com 123 colaboradores divididos em 6 áreas/projetos, sendo o maior projeto o e-SUS APS com 64 colaboradores distribuídos em 8 equipes ágeis.
 
 Para o desenvolvimento do estudo de caso, primeiramente será realizado um estudo inicial sobre o processo do laboratório bem como a organização desse. Após, utilizando como base a literatura, serão selecionadas técnicas do “Guia para gestão ágil de riscos” \cite{Vieira:2020} que melhor se enquadram com as características do Laboratório Bridge. A cada sprint, uma técnica escolhida será aplicada a uma equipe ágil participante. Ao final da iteração, será avaliado se a técnica trouxe algum benefício para o desempenho da equipe. Dessa forma, será possível definir quais técnicas são mais adequadas ao ambiente ágil do laboratório, bem como quais melhorias essas trouxeram ao processo da organização.
 
@@ -819,30 +820,56 @@ A \textit{Sprint review} e \textit{Sprint retrospective} devem ocorrer ao final 
 
 \subsection{Kanban}
 
+Kanban é um nome de origem japonesa que significa "sinal" ou "cartão" e surgiu dos sistemas de cartão utilizados para gerenciar o fluxo de trabalho em indústrias. Assim, o principal objetivo desse sistema é tornar o andamento do trabalho visível a todos os membros da equipe \cite{Mariotti:2012}. Esse modelo foi adaptado da indústria para o desenvolvimento de \textit{software} por David J. Anderson \cite{Ghisi:2012}. 
+
+As atividades essenciais para a implementação do Kanban consistem em: visualizar, limitar o trabalho em progresso, gerenciar o fluxo \cite{Mariotti:2012}. 
+
+Para a primeira atividade listada, faz-se uso do quadro kanban. O quadro num geral possui colunas que representam os passos do processo para diferenciar o estado atual de cada um dos cartões. Esses cartões descrevem itens de trabalho e destacam visualmente as tarefas a serem desenvolvidas \cite{ANDERSON:2016}. A Figura \ref{fig:kanban} apresenta uma possível representação de um quadro kanban.
+
+\begin{figure}[h!]
+    \centering
+    \caption{Quadro kanban.}
+    \includegraphics[width=0.8\textwidth]{src/tex/img/quadroKanban.png}\\
+    \textbf{Fonte:} \citeonline{Mariotti:2012}
+    \label{fig:kanban}
+\end{figure}
+
+Outra atividade é limitar o trabalho em progresso, do inglês WIP (\textit{work in progress}) \cite{Mariotti:2012}. Esta atividade considera que deve-se apenas começar novas tarefas quando o trabalho atual for concluído. Isso evita que a equipe acabe com muitas tarefas incompletas em mãos. Assim, o Kanban considera que é essencial que o WIP não possa ultrapassar o valor determinado pela equipe \cite{ANDERSON:2016}.
+
+O controle de fluxo leva em conta o \textit{lead time}, que corresponde ao tempo em que determinada tarefa leva para passar por todas as colunas até a entrega \cite{Mariotti:2012}. Assim, o gerenciamento do \textit{lead time} busca minimizar gargalos e tempo de espera, enquanto se maximiza a entrega de valor \cite{ANDERSON:2016}. 
+
 \section{Guia para gestão ágil de riscos}
 
-O Guia para gestão ágil de riscos foi desenvolvido no contexto do Grupo de Qualidade de Software da Universidade Federal de Santa Catarina (UFSC) em 2020. O trabalho foi elaborado pelo estudante de graduação de Sistemas de Informação Marcel Figueiredo Vieira como parte de sua monografia para conclusão de curso em conjunto com o orientador Jean Carlo Rossa Hauck. 
+O Guia para gestão ágil de riscos foi desenvolvido no contexto do Grupo de Qualidade de Software da Universidade Federal de Santa Catarina (UFSC) em 2020. O trabalho foi elaborado como parte de sua monografia para conclusão de curso de um estudante de Sistemas de Informação da UFSC.
 
-O guia foi criado com foco em organizações de \textit{software} e utilizou como base a fundamentação teórica, levantamento do estado da arte e experiência dos autores para ser desenvolvido \cite{Vieira:2020}.
+O guia contém práticas de gerenciamento ágil de riscos, tendo sido criado com foco em organizações que desenvolvem \textit{software} e utilizou como base a literatura, o estado da arte e a experiência dos autores \cite{Vieira:2020}.
 
 Segundo \citeonline{Vieira:2020}, o guia apresenta os seguintes elementos em sua estrutura:
 
 \begin{itemize}
     \item \textbf{Papéis: } Os papéis envolvidos na realização das tarefas presentes nas atividades para gerenciamento de risco.
     \item \textbf{Cerimônias: } As cerimônias apresentadas pelo guia são reuniões com diferentes periodicidades e características. Estas reuniões preveem a participação de diversos papéis e são utilizadas para discussões sobre o projeto. 
-    \item \textbf{Atividades: } Apresentam ações com objetivos pré-determinados, podendo ser implementadas através de grupos de ações relacionadas ou de forma individual.
+    \item \textbf{Atividades: } Apresentam ações com objetivos pré-determinados, podendo ser realizadas de forma agrupada ou individual.
     \item \textbf{Tarefas: } As tarefas estabelecem passos para se atingir um objetivo pré-determinado. As atividades podem ser compostas de uma ou mais tarefas. 
     \item \textbf{Técnicas: } Os conjuntos de passos implementados pelas tarefas. As técnicas podem ser reutilizadas, diferentemente das tarefas que são únicas.
-    \item \textbf{Produtos de Trabalho: } As atividades, tarefas e técnicas resultam em produtos de trabalho, que permitem a avaliação quantitativa do trabalho.  
+    \item \textbf{Produtos de Trabalho: } As atividades, tarefas e técnicas resultam em produtos de trabalho, que permitem a avaliação quantitativa ou qualitativa do trabalho realizado.  
     \item \textbf{Ferramentas: } As ferramentas são os recursos utilizados no desenvolvimento de uma tarefa. Essas podem ser físicas ou virtuais e fundamentais ou opcionais.
 \end{itemize}
 
+\begin{figure}
+    \centering
+    \caption{Estrutura padrão do Guia de gestão ágil de riscos.}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{src/tex/img/estrutura-guia.png}
+    \textbf{Fonte:} \citeonline{Vieira:2020}
+    \label{fig:my_label}
+\end{figure}
 
+Mesmo contendo práticas de gestão de riscos da literatura e das organizações que desenvolvem \textit{software} e ter sido avaliado por um painel de especialistas, o guia não chegou a ser avaliado na prática. Assim, são necessários resultados de sua aplicação empírica para validar as práticas documentadas.
 
 \chapter{Estado da arte}
 \label{sec:EstadoArte}
 
-O objetivo deste capítulo é apresentar o estado da arte do tema proposto por este trabalho. Para isso, foi realizada uma Revisão Sistemática da Literatura (RSL) nas bases de dados em conjunto com o trabalho de mestrado do aluno Fernando Vedoin Garcia. A RSL foi desenvolvida com base nas etapas propostas por \citeonline{Kitchenham:2004} no relatório "\textit{Procedures for performing systematic reviews}". 
+O objetivo deste capítulo é apresentar o estado da arte do tema proposto por este trabalho. Para isso, foi realizado um Mapeamento Sistemático da Literatura (MSL) em conjunto com o trabalho de mestrado do aluno Fernando Vedoin Garcia \cite{GARCIA:2021}. A RSL foi desenvolvida com base nas etapas propostas por \citeonline{Kitchenham:2004} no relatório "\textit{Procedures for performing systematic reviews}". 
 
 O foco principal desta Revisão Sistemática da Literatura é identificar e analisar os atuais estudos empíricos sobre a aplicação de técnicas de gestão de riscos em contextos de desenvolvimento ágil. Levando em consideração quais técnicas foram aplicadas e os resultados obtidos a partir da aplicação.
 
@@ -1121,19 +1148,6 @@ Nesta seção foi realizada a síntese e classificação dos estudos selecionado
             \addlinespace[0.2cm]
             \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
 \end{longtable}
-
-\subsection{Contexto das organizações}
-
-\subsection{Métodos ágeis utilizados}
-
-\subsection{Práticas de gestão de riscos adotadas}
-
-\subsection{Riscos gerenciados}
-
-\subsection{Resultados obtidos com os estudos}
-
-\section{Ameaças à validade}
-
 
 
 \chapter{Processo Atual da Organização}
