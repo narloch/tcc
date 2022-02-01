@@ -200,8 +200,8 @@
      \end{center}
 
      \assinatura{Dr. Prof. \imprimirorientador \\ Orientador}
-     \assinatura{Dr. Prof.  \\ Avaliador}
-     \assinatura{Dr. Prof.  \\ Avaliador}
+     \assinatura{Dr. Prof. Raul Sidnei Wazlawick  \\ Avaliador}
+     \assinatura{M.e. Thaísa Cardoso Lacerda  \\ Avaliador}
      %\assinatura{\textbf{Professor} \\ Convidado 3}
      %\assinatura{\textbf{Professor} \\ Convidado 4}
 
@@ -282,8 +282,15 @@ TODO
     \item[PMBOK] Project Management Body of Knowledge
     \item[PMI]  Project Management Institute
     \item[UFSC] Universidade Federal de Santa Catarina
-    \item[RSL] Revisão Sistemática da Literatura
+    \item[MSL] Mapeamento Sistemático da Literatura
     \item[WIP] Work in Progress
+    \item[CEO] Chief Executive Officer
+    \item[CXO] Chief Experience Officer
+    \item[COO] Chief Operating Officer
+    \item[CFO] Chief Financial Officer
+    \item[SM] Scrum Master
+    \item[PO] Product Owner
+
  \end{siglas}
   % ---
 
@@ -320,7 +327,7 @@ As técnicas de gerenciamento de riscos possibilitam a redução do impacto nega
 
 Diversas iniciativas têm surgido no intuito de auxiliar as organizações de \textit{software} que utilizam métodos ágeis a adotar técnicas explícitas de gestão de riscos. Um desses trabalhos é o “Guia para gestão ágil de riscos em projetos de \textit{software}” desenvolvido no contexto do Grupo de Qualidade de \textit{Software} (GQS/INE/CTC/UFSC). O conteúdo do guia foi fundamentado através da análise da literatura, da identificação do estado da arte na área de gestão ágil de riscos e das experiências empíricas dos autores. E, dispõe de diretrizes que visam auxiliar a prática da gestão explícita de riscos no ambiente de desenvolvimento ágil de \textit{software} \cite{Vieira:2020}. Contudo, o guia ainda não foi aplicado em um contexto real.
 
-A partir do panorama apresentado, este trabalho objetiva realizar um estudo de caso para avaliar o impacto da introdução de práticas explícitas de gerência de riscos no processo de desenvolvimento ágil de \textit{software}. A aplicação do estudo de caso busca selecionar empiricamente quais técnicas utilizadas na gestão de riscos se enquadram melhor no contexto do Laboratório Bridge da Universidade Federal de Santa Catarina, por meio da adoção de técnicas propostas no “Guia para gestão ágil de riscos” \cite{Vieira:2020} em equipes da organização durante o segundo semestre letivo de 2021. O Laboratório Bridge é um laboratório integrado ao Centro Tecnológico (CTC) e de Ciências da Saúde (CCS) da Universidade Federal de Santa Catarina (UFSC) criado em 2013. Atua na pesquisa e desenvolvimento de soluções tecnológicas para o Ministério da Saúde e mais recentemente para o Ministério da Educação, como por exemplo \textit{softwares} para a estratégia e-SUS APS, Sistema de Monitoramento de Obras (SISMOB) e Registro Nacional de Implantes (RNI). Conta com 123 colaboradores divididos em 6 áreas/projetos, sendo o maior projeto o e-SUS APS com 64 colaboradores distribuídos em 8 equipes ágeis.
+A partir do panorama apresentado, este trabalho objetiva realizar um estudo de caso para avaliar o impacto da introdução de práticas explícitas de gerência de riscos no processo de desenvolvimento ágil de \textit{software}. A aplicação do estudo de caso busca selecionar empiricamente quais técnicas utilizadas na gestão de riscos se enquadram melhor no contexto do Laboratório Bridge da Universidade Federal de Santa Catarina, por meio da adoção de técnicas propostas no “Guia para gestão ágil de riscos” \cite{Vieira:2020} em equipes da organização durante o segundo semestre letivo de 2021. O Laboratório Bridge é um laboratório integrado ao Centro Tecnológico (CTC) e de Ciências da Saúde (CCS) da Universidade Federal de Santa Catarina (UFSC) criado em 2013. Atua na pesquisa e desenvolvimento de soluções tecnológicas para o Ministério da Saúde e mais recentemente para o Ministério da Educação, como por exemplo \textit{softwares} para a estratégia e-SUS APS, Sistema de Monitoramento de Obras (SISMOB) e Registro Nacional de Implantes (RNI). Conta com 149 colaboradores divididos em 6 áreas/projetos, sendo o maior projeto o e-SUS APS com 8 equipes ágeis.
 
 Para o desenvolvimento do estudo de caso, primeiramente será realizado um estudo inicial sobre o processo do laboratório bem como a organização desse. Após, utilizando como base a literatura, serão selecionadas técnicas do “Guia para gestão ágil de riscos” \cite{Vieira:2020} que melhor se enquadram com as características do Laboratório Bridge. A cada sprint, uma técnica escolhida será aplicada a uma equipe ágil participante. Ao final da iteração, será avaliado se a técnica trouxe algum benefício para o desempenho da equipe. Dessa forma, será possível definir quais técnicas são mais adequadas ao ambiente ágil do laboratório, bem como quais melhorias essas trouxeram ao processo da organização.
 
@@ -828,7 +835,7 @@ Para a primeira atividade listada, faz-se uso do quadro kanban. O quadro num ger
 
 \begin{figure}[h!]
     \centering
-    \caption{Quadro kanban.}
+    \caption{Quadro kanban}
     \includegraphics[width=0.8\textwidth]{src/tex/img/quadroKanban.png}\\
     \textbf{Fonte:} \citeonline{Mariotti:2012}
     \label{fig:kanban}
@@ -869,13 +876,13 @@ Mesmo contendo práticas de gestão de riscos da literatura e das organizações
 \chapter{Estado da arte}
 \label{sec:EstadoArte}
 
-O objetivo deste capítulo é apresentar o estado da arte do tema proposto por este trabalho. Para isso, foi realizado um Mapeamento Sistemático da Literatura (MSL) em conjunto com o trabalho de mestrado do aluno Fernando Vedoin Garcia \cite{GARCIA:2021}. A RSL foi desenvolvida com base nas etapas propostas por \citeonline{Kitchenham:2004} no relatório "\textit{Procedures for performing systematic reviews}". 
+O objetivo deste capítulo é apresentar o estado da arte do tema proposto por este trabalho. Para isso, foi realizado um Mapeamento Sistemático da Literatura (MSL) em conjunto com o trabalho de mestrado do aluno Fernando Vedoin Garcia \cite{GARCIA:2021}. A MSL foi desenvolvida com base nas etapas propostas por \citeonline{Kitchenham:2004} no relatório "\textit{Procedures for performing systematic reviews}". 
 
 O foco principal desta Revisão Sistemática da Literatura é identificar e analisar os atuais estudos empíricos sobre a aplicação de técnicas de gestão de riscos em contextos de desenvolvimento ágil. Levando em consideração quais técnicas foram aplicadas e os resultados obtidos a partir da aplicação.
 
 \section{Revisão Sistemática da Literatura}
 
-A realização da RSL utilizou as três etapas definidas por \citeonline{Kitchenham:2004}, identificadas abaixo: 
+A realização da MSL utilizou as três etapas definidas por \citeonline{Kitchenham:2004}, identificadas abaixo: 
 
 \begin{enumerate}
     \item Planejamento da revisão
@@ -891,7 +898,7 @@ A realização da RSL utilizou as três etapas definidas por \citeonline{Kitchen
             \item Extração de dados e monitoramento
             \item Sintetização dos dados
         \end{enumerate}
-    \item Relatório da RSL
+    \item Relatório da MSL
 \end{enumerate}
 
 \section{Definição do Protocolo de Revisão}
@@ -951,10 +958,9 @@ Após a seleção das bases de dados, foram determinados critérios de busca par
 \begin{itemize}
     \item Critérios de inclusão
         \begin{itemize}
-            \item Estudos publicados em conferências, periódicos ou revistas científicas
-            \item Estudos em Inglês ou Português.
-            \item Artigos completos.
-            \item Estudos publicados a partir de 2001.
+            \item Estudos primários publicados que passaram por revisão por pares.            \item Estudos em Inglês ou Português.
+            \item Artigos completos (mínimo 4 páginas).
+            \item Estudos publicados até o ano de 2021.
         \end{itemize}
     \item Critérios de exclusão
         \begin{itemize}
@@ -962,12 +968,6 @@ Após a seleção das bases de dados, foram determinados critérios de busca par
             \item Estudos duplicados.
             \item Estudos que não estejam acessíveis pela rede da Universidade Federal de Santa Catarina (UFSC).
             \item Estudos sem foco principal em desenvolvimento de \textit{software}.
-        \end{itemize}
-    \item Critérios de qualidade
-        \begin{itemize}
-            \item Estudos primários publicados que passaram por revisão por pares.
-            \item Estudos do tipo empíricos.
-            \item Estudos que deixem explícito quais foram as estratégias e técnicas adotadas na gestão de risco.
         \end{itemize}
 \end{itemize}
 
@@ -977,7 +977,7 @@ Após a seleção das bases de dados, foram determinados critérios de busca par
 Foram selecionados, então, os termos de buscas mais relevantes para o tema deste trabalho. A Tabela \ref{tab:ResearchTerms} apresenta os termos utilizados para refinar as buscas nas bases de dados e seus respectivos sinônimos. Entre eles estão \textit{software}, \textit{Risk management} e \textit{agile}. Os termos foram extraídos a partir de alguns elementos do PICOC. \\ \\
 
 \begin{longtable}{|p{2.5cm}|p{4cm}|p{8cm}|}
-    \caption{Termos de busca.}
+    \caption{Termos de busca}
     \label{tab:ResearchTerms}
     \centering
               \centering
@@ -1024,14 +1024,14 @@ As \textit{strings} de busca sofreram adaptações para que retornassem resultad
             \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
 \end{longtable}
 
-As bases de dados retornaram no total 3339 estudos após a aplicação das \textit{strings}. E, os estudos foram distribuídos conforme a Figura \ref{EstudosRetornados}.
+As bases de dados retornaram no total 2815 estudos após a aplicação das \textit{strings}. E, os estudos foram distribuídos conforme a Figura \ref{EstudosRetornados}.
 
 \begin{figure}[h]
     \centering
     \caption{Estudos retornados em cada base de dados}
     \includegraphics[scale=0.55]{src/tex/img/graficoBuscas.png} \\
     \label{EstudosRetornados}
-    \textbf{Fonte:} Desenvolvido pela autora (2021).
+    \textbf{Fonte:} Desenvolvido pela autora (2022).
     \centering
 \end{figure}
 
@@ -1041,14 +1041,23 @@ Mesmo com as \textit{strings} de busca limitando o conteúdo dos estudos retorna
 
 A partir dos artigos restantes, fez-se uma segunda filtragem que teve como critério a leitura dos resumos e a estrutura geral dos artigos. Desta forma, foi possível aplicar os critérios de inclusão, exclusão e qualidade para cada um deles. 
 
-Enfim, após a segunda filtragem, foi realizada a leitura integral do texto de cada trabalho. Com base nesta leitura, foi possível identificar aqueles mais relevantes com base nas perguntas de pesquisa. Esses, então, foram selecionados para a extração e análise dos dados.
+Enfim, após a segunda filtragem, foi realizada a leitura integral do texto de cada trabalho. Com base nesta leitura, foi possível identificar aqueles mais relevantes com base nas perguntas de pesquisa. Esses, então, foram selecionados para a extração e análise dos dados. A figura abaixo demonstra a distribuição dos artigos selecionados por ano de publicação:
+
+\begin{figure}[h]
+    \centering
+    \caption{Artigos por ano de publicação}
+    \includegraphics[scale=0.55]{src/tex/img/artigosAno.png} \\
+    \label{EstudosRetornados}
+    \textbf{Fonte:} Desenvolvido pela autora (2022).
+    \centering
+\end{figure}
 
 \section{Extração de dados}
 
 Para realizar a coleta de dados, foram selecionados dados relevantes a serem levantados nos artigos com base nas perguntas de pesquisa. A partir de tais dados, foram criadas questões de análise. As questões foram definidas segundo a Tabela \ref{tab:QAnalise}.
 
 \begin{longtable}{|p{8cm}|p{5cm}|}
-    \caption{Questões de análise.}
+    \caption{Questões de análise}
     \label{tab:QAnalise}
     \centering
             \centering
@@ -1059,13 +1068,19 @@ Para realizar a coleta de dados, foram selecionados dados relevantes a serem lev
             \multirow{1}{12em}{\textbf{Q2.} Qual contexto de uso de práticas de gestão de riscos nos métodos ágeis?}
             & \textbf{Q2.1} Contexto de uso \\
             & \textbf{Q2.2} Método Ágil \\
-            & \textbf{Q2.3} Tipo do estudo
+            & \textbf{Q2.3} Tipo do estudo \\
+            & \textbf{Q2.4} Quantidade de organizações
             \\ \hline
             
             \multirow{1}{12em}{\textbf{Q3.} Quais as características do ambiente de aplicação?}
             & \textbf{Q3.1} Tamanho da equipe \\
             & \textbf{Q3.2} Domínio da aplicação \\
-            & \textbf{Q3.3} Tipo do produto 
+            & \textbf{Q3.3} Tamanho do produto \\
+            & \textbf{Q3.4} Duração do projeto
+            \\ \hline
+            
+            \multirow{1}{12em}{\textbf{Q4.} Qual a motivação para a introdução de práticas explícitas de gestão de riscos nos métodos ágeis?}
+            & \textbf{Q4.1} Lista de motivos \\ & \\ & \\ &
             \\ \hline
             
             \multirow{1}{12em}{\textbf{Q5.} Quais práticas de gestão de riscos são introduzidas nos métodos ágeis?}
@@ -1077,8 +1092,10 @@ Para realizar a coleta de dados, foram selecionados dados relevantes a serem lev
             \\ \hline
             
             \multirow{1}{12em}{\textbf{Q7.} Quais os resultados da introdução de práticas explícitas de gestão de riscos nos métodos ágeis?}
-            & \textbf{Q6.1} Lista de resultados \\ & \\ & \\ &
+            & \textbf{Q7.1} Lista de resultados \\ & \\ & \\ &
             \\ \hline
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
 \end{longtable}
 
 \section{Análise dos resultados}
@@ -1086,79 +1103,212 @@ Para realizar a coleta de dados, foram selecionados dados relevantes a serem lev
 Nesta seção foi realizada a síntese e classificação dos estudos selecionados, estes estão numerados e referenciados no Apêndice \ref{sec:ApendiceA}.
 
 \begin{longtable}{|p{4cm}|p{4cm}|p{8cm}|}
-    \caption{Classificação dos estudos.}
-    \label{tab:ClassificacaoEstudos}
+    \caption{Extração dos dados - Contexto}
+    \label{tab:ContextoEstudos}
     \centering
              \centering
              \cr \rowcolor{lightgray}
             \multicolumn{2}{|c|}{\textbf{Classificação}} & \textbf{Estudos} 
             \\ \hline 
             
-            \multirow{1}{10em}{Contexto de uso}
-            & Indústria & [1], [2], [3], [4], [5], [8], [9], [11], [13], [14], [15], [16], [17], [18], [19] \\ 
-            & Academia & [6], [7], [10], [12]
+            \multirow{1}{10em}{\textbf{Q2.1} Contexto de uso}
+            & Indústria & [1], [2], [4], [5], [8], [10], [11], [12], [13], [14], [15], [16], [17] \\ 
+            & Academia & [3], [6], [7], [9]
             \\ \hline
             
-            \multirow{1}{10em}{Métodos ágeis utilizados no estudo}
-            & \textit{Scrum} & [3], [5], [6], [7], [10], [11], [13], [18] \\ 
-            & Kanban & [9], [18] \\ 
-            & XP & [1], [13], [15], [18] \\
-            & DSDM & [13] \\
-            & Lean & [14] \\
-            & Não informado & [2], [4], [8], [12], [16], [17], [19]
+            \multirow{1}{10em}{\textbf{Q2.2} Métodos ágeis utilizados no estudo}
+            & \textit{Scrum} & [2], [5], [6], [7], [9], [10], [12], [14] \\ 
+            & Kanban & [8], [14] \\ 
+            & XP & [10], [11], [14] \\
+            & DSDM & [10] \\
+            & Não informado & [1], [3], [4], [13], [15], [16], [17]
             \\ \hline
             
-            \multirow{1}{10em}{Tipo do estudo}
-            & Experimento & [1], [10], [11], [12] \\ 
-            & Estudo de caso & [2], [3], [4], [5], [6], [8], [13], [14], [15], [16], [17], [18], [19] \\ 
-            & Prova de conceito & [9] 
+            \multirow{1}{10em}{\textbf{Q2.3} Tipo do estudo}
+            & Experimento & [3], [9] \\ 
+            & Estudo de caso & [1], [2], [4], [5], [6], [7], [10], [11], [12], [13], [14], [15], [16], [17] \\ 
+            & Prova de conceito & [8] 
             \\ \hline
             
-            \multirow{1}{10em}{Tamanho da equipe}
-            & <10 & [3], [5], [6], [7], [11], [12], [15], [16]\\ 
-            & >10 & [4], [5], [11] \\ 
-            & Não informado & [1], [2], [8], [10], [13], [14], [17], [18], [19]
+            \multirow{1}{10em}{\textbf{Q2.4} Quantidade de organizações}
+            & 1 &  [1], [2], [4], [5], [6], [7], [8], [11], [12], [13], [14], [15], [16] \\ 
+            & Entre 2 e 10 & [10], [17] \\ 
+            & Não informado & [3], [9]
             \\ \hline
             
-            \multirow{1}{10em}{Domínio da aplicação}
-            & Militar & [2]\\ 
-            & Financeiro & [3] \\ 
-            & \textit{E-commerce} & [4], [7], [9] \\
-            & Múltiplos domínios & [8], [13], [14] \\
-            & Gestão & [15], [16], [18] \\
-            & Saúde & [17], [18] \\
-            & Telecomunicação & [19] \\
-            & Não informado & [1], [5], [6], [10], [11], [12]
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
+            \end{longtable}
+
+\begin{longtable}{|p{4cm}|p{4cm}|p{8cm}|}
+    \caption{Extração dos dados - Ambiente}
+    \label{tab:AmbienteEstudos}
+    \centering
+             \centering
+             \cr \rowcolor{lightgray}
+            \multicolumn{2}{|c|}{\textbf{Classificação}} & \textbf{Estudos} 
+            \\ \hline 
+            
+            \multirow{1}{10em}{\textbf{Q3.1} Tamanho da equipe}
+            & Entre 1 e 5 & [2], [4], [6], [7]\\ 
+            & Entre 6 e 10 &  [2], [5], [6], [11]\\ 
+            & Mais de 10 & [4], [5] \\
+            & Não informado & [1], [3], [8], [9], [10], [12], [13], [14], [15], [16], [17]
             \\ \hline
             
-            \multirow{1}{10em}{Tamanho do produto}
-            & Grande & [2], [3], [4], [8], [9], [13], [14], [17], [18], [19] \\ 
+            \multirow{1}{10em}{\textbf{Q3.2} Domínio da aplicação}
+            & ETL & [14]\\
+            & Telecomunicações & [12], [15]\\
+            & Mobilidade & [10], [14]\\
+            & Militar & [1], [10]\\
+            & Financeiro & [2], [12], [16]\\
+            & E-commerce & [4], [7], [8], [10]\\
+            & E-learning & [10]\\
+            & Gestão & [10], [11], [14]\\
+            & Internet Banking & [10]\\
+            & Saúde & [10], [13], [14]\\
+            & Construção & [10], [12]\\
+            & Governo & [10]\\
+            & Não definido & [3], [5], [6], [9], [17]
+            \\ \hline
+            
+            \multirow{1}{10em}{\textbf{Q3.3} Tamanho do produto}
+            & Grande & [1], [2], [4], [8], [10], [13], [14], [15], [16], [17] \\ 
             & Pequeno & [6], [7] \\ 
-            & Não informado & [1], [5], [10], [11], [12], [15]
+            & Não informado & [3], [5], [9], [11], [12]
             \\ \hline
             
-            \multirow{1}{10em}{Tipo do produto}
-            & \textit{Mobile} & [16]\\ 
-            & Web & [2], [7], [16], [19] \\ 
-            & Misto & [1], [18] \\
-            & \textit{Hardware e software} & [17] \\
-            & Não informado & [3], [4], [5], [6], [8], [9], [10], [11], [12], [13], [14], [15]
+            \multirow{1}{10em}{\textbf{Q3.4} Duração do projeto}
+            & Entre 1 e 3 meses & [5], [7], [12]\\
+            & Entre 4 e 6 meses & [2]\\
+            & Mais de 6 meses & [15]\\
+            & Não informado & [1], [3], [4], [8], [9], [10], [11], [13], [14], [16], [17]
             \\ \hline
         
             \addlinespace[0.2cm]
-            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2022).}
 \end{longtable}
 
+\begin{longtable}{|p{10cm}|p{3cm}|}
+    \caption{Extração dos dados - Práticas}
+    \label{tab:PraticasEstudos}
+    \centering
+             \centering
+             \cr \rowcolor{lightgray}
+            \textbf{Prática} & \textbf{Estudos} \\
+            Feedback contínuo de usuários e partes interessadas & [1] \\
+            Integração contínua & [1], [3] \\
+            Programação em pares & [3] \\
+            Reuniões diárias & [3] \\
+            Entregas incrementais & [3] \\
+            Prototipação & [3] \\
+            %Planejamento da sprint/iteração & [3] \\
+            Reunião de refinamento do backlog do produto & [3] \\
+            Reunião semanal/bimensal de riscos  & [3] \\
+            %Especificações técnicas & [3] \\
+            Repositório de riscos & [3] \\
+            Comunicação e colaboração contínua & [3] \\
+            Revisão da sprint & [3] \\
+            %Alinhamento com o negócio  & [3] \\
+            %Plano de contingência & [3] \\
+            Retrospectiva da sprint & [3] \\
+            Análise de viabilidade de custo & [3] \\
+            Análise qualitativa e quantitativa & [3] \\
+            %Equipe multifuncional & [3] \\
+            Desenvolvimento dirigido a testes & [3] \\
+            Abordagem dirigida a valor & [3]
+            \\ \hline 
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2022).}
+\end{longtable}
 
 \chapter{Processo Atual da Organização}
+
+Esta seção objetiva apresentar o processo atual do Laboratório Bridge. Em primeiro lugar, será apresentado o contexto da organização, junto a uma breve introdução aos projetos desenvolvidos pelo laboratório. Após, serão apresentadas as equipes ágeis selecionadas para o estudo de caso bem como o produto desenvolvido por seus respectivos projetos e o processo de desenvolvimento de \textit{software} adotado por cada equipe.
+
 \label{sec:Processo}
+\section{Contexto}
 
+O Laboratório Bridge é integrado ao Centro Tecnológico da Universidade Federal de Santa Catarina e foi criado em 2012, porém instituido oficialmente apenas em 2016. Inicialmente o laboratório atuava no desenvolvimento de \textit{software} voltada à gestão de saúde pública, tendo como cliente o Ministério da Saúde. A partir de 2022, o laboratório também se dedicará ao projeto ``Jornada do Estudante'' acordado com o Ministério da Educação.
 
-\chapter{Proposta do Trabalho}
+O laboratório conta atualmente com 149 colaboradores, distribuídos entre o desenvolvimento de projetos e as equipes administrativa, de negócios, de gestão, suporte e qualidade. O laboratório também conta com um Coordenador Geral, supervisores, um CEO (\textit{Chief Executive Officer}, Diretor Executivo), um CXO (\textit{Chief Experience Officer}, Diretor de Experiência), um COO (\textit{Chief Operating Officer}, Diretor Operacional), um CFO (\textit{Chief Financial Officer}, Diretor Financeiro) e uma acessora jurídica.
+
+Os projetos desenvolvidos pelo Laboratório Bridge são:
+\begin{itemize}
+    \item \textbf{e-SUS APS (Atenção Primária de Saúde):}
+    \item \textbf{SISMOB (Sistema de Monitoramento de Obras):}
+    \item \textbf{RNI (Registro Nacional de Implantes):}
+    \item \textbf{DEGTS (Diretoria de Gestão do Trabalho e Educação na Saúde):}
+    \item \textbf{Jornada do Estudante:}
+\end{itemize}
+
+As equipes ágeis selecionadas atuam em dois projetos distintos, sendo eles o e-SUS APS e o Jornada do Estudante. Além disso, enquanto a equipe do e-SUS APS trabalha com desenvolvimento \textit{web}, a equipe da Jornada do Estudante trabalha na área de desenvolvimento \textit{mobile}. Assim, será possível analisar a aplicação das técnicas de gestão de risco em ambientes com características distintas.
+
+Dessa forma, a primeira equipe, que será chamada no decorrer do trabalho de equipe "F", faz parte do projeto e-SUS APS e conta com 5 membros, ocupando os cargos apresentados pela Tabela \ref{tab:EquipeF}:
+
+\begin{longtable}{|p{4cm}|p{4cm}|c|c|}
+    \caption{Membros da equipe F}
+    \label{tab:EquipeF}
+    \centering
+            \centering
+            \hline \rowcolor{lightgray}
+            \textbf{Cargo} & \textbf{Formação} & \textbf{Experiência} & \textbf{Tempo de projeto} 
+            \\ \hline 
+            SM e desenvolvedor & Bacharel em Ciências da Computação & x & x 
+            \\ \hline
+            PO & Graduando em Ciências da Computação & x & x 
+            \\ \hline 
+            Desenvolvedor & Bacharel em Ciências da Computação & x & x 
+            \\ \hline 
+            Bolsista de desenvolvimento & Graduando em Ciências da Computação & x & x 
+            \\ \hline 
+            Bolsista de desenvolvimento & Graduando em Sistemas de Informação & x & x 
+            \\ \hline 
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2022).}
+\end{longtable}
+
+Já a segunda equipe, está alocada no projeto Jornada do Estudante e será denominada equipe "C", tendo a distribuição de cargos conforme apresentada na Tabela \ref{tab:EquipeC}:
+
+\begin{longtable}{|p{4cm}|p{4cm}|c|c|}
+    \caption{Membros da equipe C}
+    \label{tab:EquipeC}
+    \centering
+            \centering
+            \hline \rowcolor{lightgray}
+            \textbf{Cargo} & \textbf{Formação} & \textbf{Experiência} & \textbf{Tempo de projeto} 
+            \\ \hline 
+            PO e SM & Bacharel em Sistemas de Informação & x & x 
+            \\ \hline
+            Desenvolvedor & x & x & x 
+            \\ \hline 
+            Analista de Qualidade & x & x & x 
+            \\ \hline 
+            Designer & x & x & x 
+            \\ \hline
+            Bolsista de análise de qualidade & x & x & x 
+            \\ \hline 
+            Bolsista de desenvolvimento & x & x & x 
+            \\ \hline 
+            Bolsista & x & x & x 
+            \\ \hline             
+            Bolsista & x & x & x 
+            \\ \hline             
+            Bolsista & x & x & x 
+            \\ \hline 
+            \addlinespace[0.2cm]
+            \caption*{\textbf{Fonte:} Desenvolvido pela autora (2022).}
+\end{longtable}
+
+Enquanto a equipe ``C'' possui membros próprios da área de design e qualidade, a equipe ``F'' compartilha os designers e membros da qualidade com outras equipes do projeto e-SUS APS. 
+
+\section{Processo de desenvolvimento}
+
+\chapter{Planejamento do estudo de caso}
 \label{sec:Proposta}
 
 
-\chapter{Experimentos e Discussão}
+\chapter{Execução do Estudo de Caso}
 \label{sec:Experimentos}
 
 
@@ -1194,24 +1344,24 @@ Nesta seção foi realizada a síntese e classificação dos estudos selecionado
   % Imprime uma página indicando o início dos apêndices
   \partapendices
   % ----------------------------------------------------------
- \chapter{Estudos Selecionados na Revisão Sistemática da Literatura}
+ \chapter{Estudos Selecionados no Mapeamento Sistemático da Literatura}
  \label{sec:ApendiceA}
  
- O quadro abaixo apresenta os estudos selecionados durante a Revisão Sistemática da Literatura.
+ O quadro abaixo apresenta os estudos selecionados durante a Mapeamento Sistemático da Literatura.
 
-\begin{longtable}{|p{1cm}|p{4cm}|p{9.5cm}|}
+\begin{longtable}{|p{1cm}|p{4cm}|p{10cm}|}
     \centering
             \rowcolor{lightgray}
             \textbf{ID} & \textbf{Título} & \textbf{Referência} 
             \\ \hline 
+
+            \flushleft{\textbf{[1]}} & \flushleft{\textit{Reference framework and model for integration of risk management in agile systems engineering lifecycle of the defense acquisition management framework}} & \flushleft{CROWE, Portia; MOSTASHARI, Ali; MANSOURI, Mo; CLOUTIER, Robert. 9.2.1 Reference Framework and Model for Integration of Risk Management in Agile Systems Engineering Lifecycle of the Defense Acquisition Management Framework. \textbf{Incose International Symposium}, [S.L.], v. 19, n. 1, p. 1391-1405, jul. 2009. Wiley. http://dx.doi.org/10.1002/j.2334-5837.2009.tb01022.x.}
+            \\ \hline
+
+            \flushleft{\textbf{[2]}} & \flushleft{\textit{A risk management framework for distributed scrum using prince2 methodology}} & \flushleft{ESTEKI, Mohammad; GANDOMANI, Taghi Javdani; FARSANI, Hadi Khosravi. A risk management framework for distributed scrum using PRINCE2 methodology. \textbf{Bulletin Of Electrical Engineering And Informatics}, [S.L.], v. 9, n. 3, p. 1299-1310, 1 jun. 2020. Institute of Advanced Engineering and Science. http://dx.doi.org/10.11591/eei.v9i3.1905.}
+            \\ \hline 
             
-            \flushleft{\textbf{[1]}} & \flushleft{\textit{Identifying Risks in XP Projects through Process Modelling}} & \flushleft{KIRK, D.; TEMPERO, E.. Identifying risks in XP projects through process modelling. \textbf{Australian Software Engineering Conference (Aswec'06)}, [S.L.], p. 10-420, 2006. IEEE. http://dx.doi.org/10.1109/aswec.2006.31.}
-            \\ \hline
-
-            \flushleft{\textbf{[2]}} & \flushleft{\textit{Reference framework and model for integration of risk management in agile systems engineering lifecycle of the defense acquisition management framework}} & \flushleft{CROWE, Portia; MOSTASHARI, Ali; MANSOURI, Mo; CLOUTIER, Robert. 9.2.1 Reference Framework and Model for Integration of Risk Management in Agile Systems Engineering Lifecycle of the Defense Acquisition Management Framework. \textbf{Incose International Symposium}, [S.L.], v. 19, n. 1, p. 1391-1405, jul. 2009. Wiley. http://dx.doi.org/10.1002/j.2334-5837.2009.tb01022.x.}
-            \\ \hline
-
-            \flushleft{\textbf{[3]}} & \flushleft{\textit{A risk management framework for distributed scrum using prince2 methodology}} & \flushleft{ESTEKI, Mohammad; GANDOMANI, Taghi Javdani; FARSANI, Hadi Khosravi. A risk management framework for distributed scrum using PRINCE2 methodology. \textbf{Bulletin Of Electrical Engineering And Informatics}, [S.L.], v. 9, n. 3, p. 1299-1310, 1 jun. 2020. Institute of Advanced Engineering and Science. http://dx.doi.org/10.11591/eei.v9i3.1905.}
+            \flushleft{\textbf{[3]}} & \flushleft{\textit{A Risk Management Tool for Agile Software Development}} & \flushleft{TAVARES, Breno Gontijo; KEIL, Mark; SILVA, Carlos Eduardo Sanches da; SOUZA, Adler Diniz de. A Risk Management Tool for Agile Software Development. \textbf{Journal Of Computer Information Systems}, [S.L.], p. 1-10, 7 dez. 2020. Informa UK Limited. http://dx.doi.org/10.1080/08874417.2020.1839813.}
             \\ \hline \hline
             
             \flushleft{\textbf{[4]}} & \flushleft{\textit{Improving Risk Management in a Scaled Agile Environment}} & \flushleft{SCHÖN, Eva-Maria; RADTKE, Dirk; JORDAN, Christian. Improving Risk Management in a Scaled Agile Environment. \textbf{Lecture Notes In Business Information Processing}, [S.L.], p. 132-141, 2020. Springer International Publishing. http://dx.doi.org/10.1007/978-3-030-49392-99}
@@ -1221,46 +1371,40 @@ Nesta seção foi realizada a síntese e classificação dos estudos selecionado
             \\ \hline
             
             \flushleft{\textbf{[6]}} & \flushleft{\textit{Agile risk management using software agents}} & \flushleft{ODZALY, Edzreena Edza; GREER, Des; STEWART, Darryl. Agile risk management using software agents. \textbf{Journal Of Ambient Intelligence And Humanized Computing}, [S.L.], v. 9, n. 3, p. 823-841, 2 maio 2017. Springer Science and Business Media LLC. http://dx.doi.org/10.1007/s12652-017-0488-2.}
-            \\ \hline                
+            \\ \hline               
 
             \flushleft{\textbf{[7]}} & \flushleft{\textit{A risk poker based testing model for scrum}} & \flushleft{GHAZALI, Siti Noor Hasanah; SALIM, Siti Salwah; INAYAT, Irum; HAMID, Siti Hafizah Ab. A Risk Poker Based Testing Model for Scrum. \textbf{Computer Systems Science And Engineering}, [S.L.], v. 33, n. 3, p. 169-185, 2018. Computers, Materials and Continua (Tech Science Press). http://dx.doi.org/10.32604/csse.2018.33.169.} 
-            \\ \hline \hline
+            \\ \hline \hline  
             
-            \flushleft{\textbf{[8]}} & \flushleft{\textit{Characterization and prediction of issue-related risks in software projects}} & \flushleft{CHOETKIERTIKUL, Morakot; DAM, Hoa Khanh; TRAN, Truyen; GHOSE, Aditya. Characterization and Prediction of Issue-Related Risks in Software Projects. \textbf{2015 Ieee/Acm 12Th Working Conference On Mining Software Repositories}, [S.L.], maio 2015. IEEE. http://dx.doi.org/10.1109/msr.2015.33.}
-            \\ \hline    
-            
-            \flushleft{\textbf{[9]}} & \flushleft{\textit{Agile approach with Kanban in information security risk management}} & \flushleft{DORCA, Vasile; MUNTEANU, Radu; POPESCU, Sorin; CHIOREANU, Adrian; PELESKEI, Claudius. Agile approach with Kanban in information security risk management. \textbf{2016 Ieee International Conference On Automation, Quality And Testing, Robotics (Aqtr)}, [S.L.], p. 1-6, maio 2016. IEEE. http://dx.doi.org/10.1109/aqtr.2016.7501278.}
+            \flushleft{\textbf{[8]}} & \flushleft{\textit{Agile approach with Kanban in information security risk management}} & \flushleft{DORCA, Vasile; MUNTEANU, Radu; POPESCU, Sorin; CHIOREANU, Adrian; PELESKEI, Claudius. Agile approach with Kanban in information security risk management. \textbf{2016 Ieee International Conference On Automation, Quality And Testing, Robotics (Aqtr)}, [S.L.], p. 1-6, maio 2016. IEEE. http://dx.doi.org/10.1109/aqtr.2016.7501278.}
             \\ \hline                
-            
-            \flushleft{\textbf{[10]}} & \flushleft{\textit{Integrating Risk Management in Scrum Framework}} & \flushleft{HAMMAD, Muhammad; INAYAT, Irum. Integrating Risk Management in Scrum Framework.\textbf{ 2018 International Conference On Frontiers Of Information Technology (Fit)}, [S.L.], p. 158-163, dez. 2018. IEEE. http://dx.doi.org/10.1109/fit.2018.00035.}
-            \\ \hline                
-            
-            \flushleft{\textbf{[11]}} & \flushleft{\textit{Risk Assessment Forum}} & \flushleft{CARVALLO, Juliette Michelle Parada; OKTABA, Hanna; HERNANDEZ, Elsa Ramirez. Risk Assessment Forum. \textbf{2018 6Th International Conference In Software Engineering Research And Innovation (Conisoft)}, [S.L.], out. 2018. IEEE. http://dx.doi.org/10.1109/conisoft.2018.8645949.}
-            \\ \hline \hline
-
-            \flushleft{\textbf{[12]}} & \flushleft{\textit{A Risk Management Tool for Agile Software Development}} & \flushleft{TAVARES, Breno Gontijo; KEIL, Mark; SILVA, Carlos Eduardo Sanches da; SOUZA, Adler Diniz de. A Risk Management Tool for Agile Software Development. \textbf{Journal Of Computer Information Systems}, [S.L.], p. 1-10, 7 dez. 2020. Informa UK Limited. http://dx.doi.org/10.1080/08874417.2020.1839813.}
-            \\ \hline
-
-            \flushleft{\textbf{[13]}} & \flushleft{\textit{Prioritizing and optimizing risk factors in agile software development}} & \flushleft{ AGRAWAL, Ruchi; SINGH, Deepali; SHARMA, Ashish. Prioritizing and optimizing risk factors in agile software development. \textbf{2016 Ninth International Conference On Contemporary Computing (Ic3)}, [S.L.], p. 1-7, ago. 2016. IEEE. http://dx.doi.org/10.1109/ic3.2016.7880232.}
-            \\ \hline 
-            
-            \flushleft{\textbf{[14]}} & \flushleft{\textit{Identifying risky areas of software code in Agile/Lean software development: An industrial experience report}} & \flushleft{ANTINYAN, Vard; STARON, Miroslaw; MEDING, Wilhelm; OSTERSTROM, Per; WIKSTROM, Erik; WRANKER, Johan; HENRIKSSON, Anders; HANSSON, Jorgen. Identifying risky areas of software code in Agile/Lean software development: an industrial experience report. \textbf{2014 Software Evolution Week - Ieee Conference On Software Maintenance, Reengineering, And Reverse Engineering (Csmr-Wcre)}, [S.L.], p. 154-163, fev. 2014. IEEE. http://dx.doi.org/10.1109/csmr-wcre.2014.6747165.}
-            \\ \hline \hline       
  
-            \flushleft{\textbf{[15]}} & \flushleft{\textit{Value-Risk Trade-off Analysis for Iteration Planning in Extreme Programming}} & \flushleft{DONG, Xin; YANG, Qiu-Song; WANG, Qing; ZHAI, Jian; RUHE, Gunther. Value-Risk Trade-off Analysis for Iteration Planning in Extreme Programming. \textbf{2011 18Th Asia-Pacific Software Engineering Conference}, [S.L.], p. 397-404, dez. 2011. IEEE. http://dx.doi.org/10.1109/apsec.2011.11.}
-            \\ \hline    
+            \flushleft{\textbf{[9]}} & \flushleft{\textit{Integrating Risk Management in Scrum Framework}} & \flushleft{HAMMAD, Muhammad; INAYAT, Irum. Integrating Risk Management in Scrum Framework.\textbf{ 2018 International Conference On Frontiers Of Information Technology (Fit)}, [S.L.], p. 158-163, dez. 2018. IEEE. http://dx.doi.org/10.1109/fit.2018.00035.}
+            \\ \hline         
             
-            \flushleft{\textbf{[16]}} & \flushleft{\textit{A case study for the implementation of an agile risk management process in multiple projects environments}} & \flushleft{RIBEIRO, Lucio; GUSMAO, Cristine; FEIJO, Wilmar; BEZERRA, Vicente. A case study for the implementation of an agile risk management process in multiple projects environments. \textbf{Picmet '09 - 2009 Portland International Conference On Management Of Engineering \& Technology}, [S.L.], p. 1396-1404, ago. 2009. IEEE. http://dx.doi.org/10.1109/picmet.2009.5262002.}
+            \flushleft{\textbf{[10]}} & \flushleft{\textit{Prioritizing and optimizing risk factors in agile software development}} & \flushleft{ AGRAWAL, Ruchi; SINGH, Deepali; SHARMA, Ashish. Prioritizing and optimizing risk factors in agile software development. \textbf{2016 Ninth International Conference On Contemporary Computing (Ic3)}, [S.L.], p. 1-7, ago. 2016. IEEE. http://dx.doi.org/10.1109/ic3.2016.7880232.}
+            \\ \hline
+ 
+            \flushleft{\textbf{[11]}} & \flushleft{\textit{Value-Risk Trade-off Analysis for Iteration Planning in Extreme Programming}} & \flushleft{DONG, Xin; YANG, Qiu-Song; WANG, Qing; ZHAI, Jian; RUHE, Gunther. Value-Risk Trade-off Analysis for Iteration Planning in Extreme Programming. \textbf{2011 18Th Asia-Pacific Software Engineering Conference}, [S.L.], p. 397-404, dez. 2011. IEEE. http://dx.doi.org/10.1109/apsec.2011.11.}
+            \\ \hline \hline
+            
+            \flushleft{\textbf{[12]}} & \flushleft{\textit{A case study for the implementation of an agile risk management process in multiple projects environments}} & \flushleft{RIBEIRO, Lucio; GUSMAO, Cristine; FEIJO, Wilmar; BEZERRA, Vicente. A case study for the implementation of an agile risk management process in multiple projects environments. \textbf{Picmet '09 - 2009 Portland International Conference On Management Of Engineering \& Technology}, [S.L.], p. 1396-1404, ago. 2009. IEEE. http://dx.doi.org/10.1109/picmet.2009.5262002.}
             \\ \hline                
 
-            \flushleft{\textbf{[17]}} & \flushleft{\textit{A SYSML-Based Approach for Requirements Risk Management and Change Control}} & \flushleft{HAYAT, Faisal; ANWAR, Muhammad Waseem; AZAM, Farooque; KIRAN, Ayesha. A SYSML-Based Approach for Requirements Risk Management and Change Control. Proceedings Of The 2019 11Th International Conference On Information Management And Engineering, [S.L.], p. 20-24, 19 set. 2019. ACM. http://dx.doi.org/10.1145/3373744.3373751.}
+            \flushleft{\textbf{[13]}} & \flushleft{\textit{A SYSML-Based Approach for Requirements Risk Management and Change Control}} & \flushleft{HAYAT, Faisal; ANWAR, Muhammad Waseem; AZAM, Farooque; KIRAN, Ayesha. A SYSML-Based Approach for Requirements Risk Management and Change Control. Proceedings Of The 2019 11Th International Conference On Information Management And Engineering, [S.L.], p. 20-24, 19 set. 2019. ACM. http://dx.doi.org/10.1145/3373744.3373751.}
             \\ \hline \hline   
             
-            \flushleft{\textbf{[18]}} & \flushleft{\textit{Risk Management for Agile Projects in Offshore Vietnam}} & \flushleft{CUONG, Le Gia; HUNG, Phan Duy; BACH, Nguyen Luu; TUNG, Ta Duc. Risk Management for Agile Projects in Offshore Vietnam. \textbf{Proceedings Of The Tenth International Symposium On Information And Communication Technology - Soict 2019}, [S.L.], p. 377-384, 2019. ACM Press. http://dx.doi.org/10.1145/3368926.3369718.}
+            \flushleft{\textbf{[14]}} & \flushleft{\textit{Risk Management for Agile Projects in Offshore Vietnam}} & \flushleft{CUONG, Le Gia; HUNG, Phan Duy; BACH, Nguyen Luu; TUNG, Ta Duc. Risk Management for Agile Projects in Offshore Vietnam. \textbf{Proceedings Of The Tenth International Symposium On Information And Communication Technology - Soict 2019}, [S.L.], p. 377-384, 2019. ACM Press. http://dx.doi.org/10.1145/3368926.3369718.}
+            \\ \hline \hline   
+            
+            \flushleft{\textbf{[15]}} & \flushleft{\textit{An industrial case study of implementing software risk management}} & \flushleft{FREIMUT, Bernd; HARTKOPF, Susanne; KAISER, Peter; KONTIO, Jyrki; KOBITZSCH, Werner. An industrial case study of implementing software risk management. \textbf{Acm Sigsoft Software Engineering Notes}, [S.L.], v. 26, n. 5, p. 277-287, set. 2001. Association for Computing Machinery (ACM). http://dx.doi.org/10.1145/503271.503247.}
             \\ \hline    
             
-            \flushleft{\textbf{[19]}} & \flushleft{\textit{An industrial case study of implementing software risk management}} & \flushleft{FREIMUT, Bernd; HARTKOPF, Susanne; KAISER, Peter; KONTIO, Jyrki; KOBITZSCH, Werner. An industrial case study of implementing software risk management. \textbf{Acm Sigsoft Software Engineering Notes}, [S.L.], v. 26, n. 5, p. 277-287, set. 2001. Association for Computing Machinery (ACM). http://dx.doi.org/10.1145/503271.503247.}
-            \\ \hline                
+            \flushleft{\textbf{[16]}} & \flushleft{\textit{Characterization of risky projects based on project managers' evaluation}} & \flushleft{MIZUNO, Osamu; KIKUNO, Tohru; TAKAGI, Yasunari; SAKAMOTO, Keishi. 22ND INTERNATIONAL CONFERENCE ON SOFTWARE ENGINEERING (ICSE '00), 2000, Limerick. \textbf{Characterization of risky projects based on project managers' evaluation.} Nova Iorque: Association For Computing Machinery, 2000.}
+            \\ \hline   
+            
+            \flushleft{\textbf{[17]}} & \flushleft{\textit{Characterization and prediction of issue-related risks in software projects}} & \flushleft{CHOETKIERTIKUL, Morakot; DAM, Hoa Khanh; TRAN, Truyen; GHOSE, Aditya. Characterization and Prediction of Issue-Related Risks in Software Projects. \textbf{2015 Ieee/Acm 12Th Working Conference On Mining Software Repositories}, [S.L.], maio 2015. IEEE. http://dx.doi.org/10.1109/msr.2015.33.}
+            \\ \hline 
             
             \addlinespace[0.2cm]
             \caption*{\textbf{Fonte:} Desenvolvido pela autora (2021).}
