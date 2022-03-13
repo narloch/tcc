@@ -51,6 +51,7 @@
   \usepackage{longtable}
   \usepackage[table]{xcolor}
   \usepackage{multirow}
+  \definecolor{shadecolor}{rgb}{0.8,0.8,0.8}
 
   % ---
   % Pacotes de citações
@@ -290,6 +291,7 @@ TODO
     \item[CFO] Chief Financial Officer
     \item[SM] Scrum Master
     \item[PO] Product Owner
+    \item[PEC] Prontuário Eletrônico do Cidadão
 
  \end{siglas}
   % ---
@@ -1224,7 +1226,7 @@ Nesta seção foi realizada a síntese e classificação dos estudos selecionado
 
 \chapter{Processo Atual da Organização}
 
-Esta seção objetiva apresentar o processo atual do Laboratório Bridge. Em primeiro lugar, será apresentado o contexto da organização, junto a uma breve introdução aos projetos desenvolvidos pelo laboratório. Após, serão apresentadas as equipes ágeis selecionadas para o estudo de caso bem como o produto desenvolvido por seus respectivos projetos e o processo de desenvolvimento de \textit{software} adotado por cada equipe.
+Esta seção objetiva apresentar o processo atual do Laboratório Bridge. Em primeiro lugar, será apresentado o contexto da organização, junto a uma breve introdução aos projetos desenvolvidos pelo laboratório. Após, serão apresentadas as equipes ágeis selecionadas para o estudo de caso bem como o produto desenvolvido por seus respectivos projetos e o processo de desenvolvimento de \textit{software} adotado pelas equipes.
 
 \label{sec:Processo}
 \section{Contexto}
@@ -1233,16 +1235,26 @@ O Laboratório Bridge é integrado ao Centro Tecnológico da Universidade Federa
 
 O laboratório conta atualmente com 149 colaboradores, distribuídos entre o desenvolvimento de projetos e as equipes administrativa, de negócios, de gestão, suporte e qualidade. O laboratório também conta com um Coordenador Geral, supervisores, um CEO (\textit{Chief Executive Officer}, Diretor Executivo), um CXO (\textit{Chief Experience Officer}, Diretor de Experiência), um COO (\textit{Chief Operating Officer}, Diretor Operacional), um CFO (\textit{Chief Financial Officer}, Diretor Financeiro) e uma acessora jurídica.
 
-Os projetos desenvolvidos pelo Laboratório Bridge são:
+Os projetos desenvolvidos pelo Laboratório Bridge para gestão pública são \cite{Bridge:2022}:
 \begin{itemize}
-    \item \textbf{e-SUS APS (Atenção Primária de Saúde):}
-    \item \textbf{SISMOB (Sistema de Monitoramento de Obras):}
-    \item \textbf{RNI (Registro Nacional de Implantes):}
-    \item \textbf{DEGTS (Diretoria de Gestão do Trabalho e Educação na Saúde):}
-    \item \textbf{Jornada do Estudante:}
+    \item \textbf{e-SUS APS (Atenção Primária de Saúde):} "A estratégia e-SUS APS (antigo e-SUS AB) promove avanço tecnológico e aprimoramento das ferramentas utilizadas nas ações de cuidado e gestão na APS, e seu propósito é reestruturar as informações da Atenção Primária em nível nacional e auxiliar os municípios e os profissionais na gestão efetiva e incorporação de inteligência clínica."
+    
+    \item \textbf{SISMOB (Sistema de Monitoramento de Obras):} "O Sistema de Monitoramento de Obras permite ao gestores municipais, estaduais e distritais o acompanhamento de obras e infraestrutura na Saúde financiados pelo Ministério da Saúde, dando mais autonomia para os estados e municípios e reforçando os processos de monitoramento. Além disso, a plataforma web permite que cidadãos acompanhem a situação das obras em qualquer local."
+    
+    \item \textbf{RNI (Registro Nacional de Implantes):} "Desenvolvido em parceria com a Agência Nacional de Vigilância Sanitária (ANVISA) e as sociedades médicas, o RNI controla a qualidade dos componentes implantáveis e regulação econômica de mercado, e possibilita o registro do método utilizado para a implantação e a rastreabilidade dos produtos."
+    
+    \item \textbf{SIGRESIDÊNCIAS:} "O Sistema de Informações Gerenciais do Pró-Residências permite a gestão de informações de programas em residência médica e multiprofissional com autonomia e transparência para as instituições de ensino. Utilizando o SIG, as instituições podem realizar o controle das informações de seus programas de residências, além de permitir o acesso pelos residentes."
+    
+    \item \textbf{Jornada do Estudante:} "[...] tem por objetivo contribuir diretamente no estabelecimento de uma visão integrada da trajetória dos alunos do país com a disponibilização de um aplicativo mobile gratuito, multiplataforma (Android/IOS), contendo os dados pessoais do estudante, institucionais, cursos e disciplinas, além dos documentos digitais, como o histórico escolar digital ou diploma digital, bem como, permitindo o compartilhamento dos documentos assinados eletronicamente." \cite{MEC:2021}
 \end{itemize}
 
-As equipes ágeis selecionadas atuam em dois projetos distintos, sendo eles o e-SUS APS e o Jornada do Estudante. Além disso, enquanto a equipe do e-SUS APS trabalha com desenvolvimento \textit{web}, a equipe da Jornada do Estudante trabalha na área de desenvolvimento \textit{mobile}. Assim, será possível analisar a aplicação das técnicas de gestão de risco em ambientes com características distintas.
+Dentro do escopo da estratégia e-SUS APS está o desenvolvimento do Prontuário Eletrônico do Cidadão (PEC). O PEC é responsável por registrar atendimentos clínicos e também oferecer acesso a módulos de digitação de fichas CDS (resumo dos dados dos cidadãos associados ao atendimento clínico) e transmissão de dados para o Centralizador Nacional \cite{Bridge:2022}.
+
+Os projetos são desenvolvidos por meio de um Termo de Execução Descentralizada (TED), que é um instrumento para a execução de projetos governamentais. Neste termo é definido o que deve ser entregue ao cliente ao final do prazo proposto. 
+
+Para o desenvolvimento do projeto também é previsto o apoio de um Grupo de Trabalho (GT) que atua como o \textit{stakeholder} do projeto. O GT é formado por um grupo de colaboradores do Ministério da Saúde ou Ministério da Educação que possuem amplo conhecimento sobre a necessidade do cliente e regras de negócio.
+
+As equipes ágeis selecionadas atuam em dois projetos distintos, sendo eles o e-SUS APS (mais especificamente no Prontuário Eletrônico do Cidadão) e o Jornada do Estudante. Além disso, enquanto a equipe do e-SUS APS trabalha com desenvolvimento \textit{web}, a equipe da Jornada do Estudante trabalha na área de desenvolvimento \textit{mobile}. Assim, será possível analisar a aplicação das técnicas de gestão de risco em ambientes com características distintas.
 
 Dessa forma, a primeira equipe, que será chamada no decorrer do trabalho de equipe "F", faz parte do projeto e-SUS APS e conta com 5 membros, ocupando os cargos apresentados pela Tabela \ref{tab:EquipeF}:
 
@@ -1252,7 +1264,7 @@ Dessa forma, a primeira equipe, que será chamada no decorrer do trabalho de equ
     \centering
             \centering
             \hline \rowcolor{lightgray}
-            \textbf{Cargo} & \textbf{Formação} & \textbf{Experiência} & \textbf{Tempo de projeto} 
+            \textbf{Cargo} & \textbf{Formação} & \textbf{Experiência na área} & \textbf{Tempo de projeto} 
             \\ \hline 
             SM e desenvolvedor & Bacharel em Ciências da Computação & x & x 
             \\ \hline
@@ -1276,25 +1288,25 @@ Já a segunda equipe, está alocada no projeto Jornada do Estudante e será deno
     \centering
             \centering
             \hline \rowcolor{lightgray}
-            \textbf{Cargo} & \textbf{Formação} & \textbf{Experiência} & \textbf{Tempo de projeto} 
+            \textbf{Cargo} & \textbf{Formação} & \textbf{Experiência na área} & \textbf{Tempo de projeto} 
             \\ \hline 
-            PO e SM & Bacharel em Sistemas de Informação & x & x 
+            PO e SM & Graduando em Sistemas de Informação & 4 anos & 8 anos 
             \\ \hline
-            Desenvolvedor & x & x & x 
+            Desenvolvedor & Bacharel em Sistemas de Informação & 2 anos & 1,5 anos 
             \\ \hline 
-            Analista de Qualidade & x & x & x 
+            Analista de Qualidade & Bacharel em Sistemas de Informação & 4 anos & 4 anos 
             \\ \hline 
-            Designer & x & x & x 
+            Designer & Bacharel em Sistemas de Informação & 1 ano & 3 meses 
             \\ \hline
-            Bolsista de análise de qualidade & x & x & x 
+            Bolsista de análise de qualidade & Graduando em Sistemas de Informação & 6 meses & 6 meses 
             \\ \hline 
-            Bolsista de desenvolvimento & x & x & x 
+            Bolsista de desenvolvimento & Graduando em Ciências da Computação & 1 ano & 6 meses 
             \\ \hline 
-            Bolsista & x & x & x 
+            Bolsista de desenvolvimento & Graduando em Sistemas de Informação & 1 ano & 6 meses 
             \\ \hline             
-            Bolsista & x & x & x 
+            Bolsista de desenvolvimento & Graduando em Sistemas de Informação & 10 meses & 10 meses 
             \\ \hline             
-            Bolsista & x & x & x 
+            Bolsista de análise & Graduando em Sistemas de Informação & 4 meses & 4 meses 
             \\ \hline 
             \addlinespace[0.2cm]
             \caption*{\textbf{Fonte:} Desenvolvido pela autora (2022).}
@@ -1302,18 +1314,75 @@ Já a segunda equipe, está alocada no projeto Jornada do Estudante e será deno
 
 Enquanto a equipe ``C'' possui membros próprios da área de design e qualidade, a equipe ``F'' compartilha os designers e membros da qualidade com outras equipes do projeto e-SUS APS. 
 
-\section{Processo de desenvolvimento}
+\section{Processo de desenvolvimento das equipes}
 
-\chapter{Planejamento do estudo de caso}
+Está subseção trata dos processos de desenvolvimento adotados pelas equipes "F" e "C". Em geral, o processo das equipes possui muitas similaridades, por isso serão descritos em conjunto e quando necessário as diferenças entre as equipes serão sinalizadas.
+
+A metodologia Scrum descrita no capítulo 2.3.3 é a base do processo de desenvolvimento de ambas as equipes. Porém, não necessariamente são utilizados todos os conceitos e técnicas descritos na metologia. Assim, as equipes desenvolveram adaptações para integrar o \textit{framework} no próprio contexto.
+
+As equipes trabalham em \textit{sprints} de duas semanas que são iniciadas através de uma fase de planejamento. Nela são estimadas e definidas as tarefas a serem realizadas no decorrer daquela \textit{sprint}. Em geral, existem 3 tipos de tarefa: as de novo produto, as de evolução do produto e as corretivas. As últimas não costumam passar por um processo minucioso de análise e podem ser criadas por qualquer membro da equipe que tenha identificado algum erro no produto.
+
+Já as duas primeiras categorias demandam um maior esforço do analista ou PO, que fica responsável pela análise da tarefa. Esse responsável irá especificar os requisitos da tarefa com base no próprio conhecimento sobre o produto e regras de negócio e também a partir de informações extraídas em entrevistas com os \textit{stakeholders}. O analista ou PO também entra em contato com o designer designado da equipe para a criação conjunta do protótipo de alta fidelidade. Por fim, analisa-se em conjunto com a equipe os possíveis impactos que essa nova demanda criará no sistema. Porém, os impactos muitas vezes não são registrados na tarefa e apenas são descritos na documentação formal do sistema.
+
+Após o processo de análise, a tarefa é criada na ferramenta Github Projects e permanece no \textit{backlog} da equipe até que seja selecionada para fazer parte de uma \textit{sprint}. A seleção das tarefas é feita por toda a equipe a partir da estimação do esforço de cada uma delas. Esse esforço leva em consideração o tempo e complexidade da análise, desenvolvimento e teste da tarefa. Em geral, para a realização dessa estimativa é utilizada a ferramenta \textit{Planning Poker}.
+
+Especificamente na equipe "F", as tarefas de novo produto e manutenção evolutiva fazem parte de um escopo maior que é a História de Usuário. Nesse contexto, o PO da equipe cria uma funcionalidade completa a ser entregue ao final da \textit{sprint} e a partir dela cria uma história que engloba as tarefas necessárias para concluir tal funcionalidade. Isso significa que no último dia da \textit{sprint} a equipe deve entregar algo que já possa ser utilizado pelo usuário. Dessa forma, nesta equipe prioriza-se a escolha de tarefas de uma mesma história. 
+
+Depois de estimadas, as tarefas estão prontas para serem desenvolvidas e são selecionadas para fazer parte do \textit{Backlog} da \textit{Sprint}, que contém todas as tarefas que devem ser concluídas nas próximas duas semanas. Esse processo de seleção é realizado durante o \textit{Sprint Planning Meeting}, que ocorre no primeiro dia da \textit{sprint}. Durante essa cerimônia a equipe discute em conjunto com o PO as tarefas mais prioritárias e define quais entrarão no \titleit{backlog} daquela \textit{sprint}. As equipes mantém um histórico das \textit{sprints} passadas para que o esforço total das tarefas selecionadas não ultrapasse a capacidade de desenvolvimento da equipe. 
+
+Após a fase de planejamento, é iniciada a fase de desenvolvimento que prevê a realização das tarefas selecionadas bem como uma reunião diária, denominada \textit{Daily Scrum}. É uma reunião curta que costuma durar em média 15 minutos e que possui como objetivo o acompanhamento do andamento do desenvolvimento bem como a remoção de impedimentos nas tarefas.
+
+Para o controle do fluxo das tarefas também é utilizado um quadro Kanban elicitado no capítulo 2.3.4. Para isso, as equipes fazem uso da ferramenta Github Projects, que permite a criação de um \textit{taskboard} com tarefas associadas ao código fabricado para resolvê-la. Essa ferramente é utilizada para um melhor controle de versão do código e do fluxo de desenvolvimento. Em ambas as equipes as tarefas passam por colunas de \textit{Sprint backlog}, desenvolvimento, teste e finalizada.
+
+As tarefas que saem do backlog da sprint passam para o desenvolvimento, que é quando um membro da equipe se designa responsável por ela e inicia a fabricação do código que irá cumprir os requisitos dela. Quando finalizada, a tarefa passa então por um processo de revisão de código, em que outros membros da equipe fazem comentários gerais sobre erros, melhoria da estrutura do código, dúvidas ou falta de algum requisito. Enquanto na equipe "F" todos os membros da equipe devem fazer a revisão sobre todos os códigos desenvolvidos, na equipe "C" são necessários apenas dois revisores por tarefa.
+
+Quando o código é aprovado, antes de ser integrado ao código do projeto ele ainda passa pela etapa de testes. Nesta etapa, um membro da equipe de fato confere se o que foi desenvolvido está de acordo com os requisitos descritos. Na equipe "C" isso é feito pelos analistas de qualidade. Já a equipe "F", como citado anteriormente, não possui um membro exclusivo para essa tarefa. Então, todos os desenvolvedores da equipe desempenham esse papel de maneira alternada. Assim que a tarefa passa por esse último processo de inspeção, ela é integrada ao código principal do projeto e a tarefa passa para a coluna de finalizada. 
+
+Quando as tarefas são finalizadas, a equipe "F" utiliza a cerimônia \textit{Daily Scrum} para discutir se a estimativa de esforço dada estava correta. E, caso a tarefa tenha sido mais ou menos complexa do que o esperado, a estimativa é alterada para que o esforço total realizado naquela \textit{sprint} esteja de acordo com a realidade.
+
+Durante a \textit{sprint} as equipes também realizam outras cerimônias previstas no Scrum. A primeira delas é a \textit{Scrum of Scrums} da qual apenas os \textit{Scrum Masters} participam para reportar o andamento do projeto. Essa cerimônia é semanal e repasses são feitos informalmente para a equipe caso necessário.
+
+A outra cerimônia prevista é o \textit{Sprint Review} no qual a equipe apresenta ao PO o que foi desenvolvido até o momento. Essa é uma reunião que ocorre a cada \textit{sprint}, porém especificamente na equipe "F" ela é feita de maneira informal e sob demanda durante a \textit{Daily Scrum}.
+
+Por fim, ao final da \textit{sprint} é realizada a \textit{Sprint Retrospective}, na qual o time realiza uma reflexão sobre o que ocorreu no decorrer da \textit{sprint} e identifica pontos necessários de melhoria ou mudança.
+
+
+\chapter{Planejamento do Estudo de Caso}
 \label{sec:Proposta}
+
+Neste capítulo é realizado o planejamento do estudo de caso utilizando como base a abordagem para o desenvolvimento de estudos de caso para Engenharia de \textit{Software} proposta por \citeonline{RUNESON:2009} no artigo \textit{Guidelines for conducting and reporting case study research in software engineering}.
+
+Segundo o artigo, um estudo de caso em Engenharia de \textit{Software} possui 5 etapas fundamentais: Planejamento, Preparação, Coleta, Análise e Relatório. Na primeira etapa, deve-se definir o objetivo do estudo de caso e planejar de que maneira será realizada a execução desse. Já a Preparação prevê a definição dos procedimentos para coleta dos dados. Na Coleta, deve-se aplicar o estudo de caso e coletar os dados. Em seguida, os dados coletados são analisados e a partir dos dados e da análise é gerado um relatório \cite{RUNESON:2009}.
+
+\section{Objetivos do estudo de caso}
+
+Conforme elucidado na seção 1.3, o objetivo deste estudo de caso é aplicar e avaliar as técnicas de gestão de riscos presentes no “Guia para gestão ágil de riscos” \cite{Vieira:2020} em um contexto real de desenvolvimento de \textit{software}. A partir desse objetivo, foi definida a pergunta de pesquisa para esse estudo de caso: \textit{"De que forma a implantação de técnicas de gestão ágil de riscos impactam no processo, qualidade do produto e prazo de entrega de um time de desenvolvimento de software?"}. 
+
+Para \citeonline{LINGS:2005}, a avaliação de impacto é a análise das consequências de alguma alteração implementada em um processo ou organização. No caso específico deste estudo, o impacto será avaliado nas seguintes condições: (i) esforço despendido pelas equipes participantes do estudo, (ii) produtividade das equipes do estudo e (iii) custo-benefício das técnicas implantadas no processo da equipe. 
+
+Conforme a metodologia de pesquisa definida na seção 1.4, os primeiros passos para a realização deste trabalho eram desenvolver a fundamentação teórica e analisar o estado da arte. Tais etapas foram contempladas nos capítulos 2 e 3, respectivamente. Após, o estudo de caso deve ser definido, aplicado e analisado. Para isso, foi realizado um diagnóstico inicial do contexto da organização, conforme descrito no capítulo 4. Após, foi elaborado o planejamento do estudo de caso através da abordagem GQM - \textit{Goal/Question/Metric}.
+
+\section{Perguntas e medidas}
+\section{Planejamento da coleta dos dados}
+
 
 
 \chapter{Execução do Estudo de Caso}
 \label{sec:Experimentos}
 
+A aplicação do estudo de caso ocorrerá entre os meses de outubro e dezembro de 2022 conforme descrito no capítulo 5.
 
-\chapter{Conclusões e Trabalhos Futuros}
+\chapter{Cronograma}
 \label{sec:Conclusoes}
+
+Abaixo está apresentado o cronograma para o desenvolvimento das próximas etapas do trabalho:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{src/tex/img/cronograma.png}
+    \caption{Cronograma}
+    \label{fig:cronograma}
+\end{figure}
 
 
   \postextual
