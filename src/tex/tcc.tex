@@ -223,6 +223,19 @@
   % Agradecimentos
   % ---
   \begin{agradecimentos}
+  
+  Primeiramente, agradeço aos meus pais, Luciana e José, os quais me ensinaram o valor dos estudos e que em todos os momentos me ofereceram incentivos, conselhos e abraços de consolo. A dedicação de vocês me permitiram chegar até aqui e esta conquista é nossa. Ao meu irmão Leonardo que sempre me proporcionou boas risadas, momentos de descontração e uma parceria sem igual. Aos meus avós, Zita, Néa, Antônio e José que contribuíram para que eu me tornasse quem sou. Muito obrigada família, por tudo, eu amo vocês.
+  
+  Também agradeço ao meu eterno veterano e, hoje, noivo João, que desde o início da graduação se fez presente e me guiou e apoiou através de todos os percalços encontrados no curso e na vida. Muito obrigada, meu amor, conhecer você fez eu ter certeza de que estava seguindo o caminho correto. Esteja certo de que essa conquista também é sua. 
+  
+  À minha Ada, que desde que chegou em minha vida a tornou mais leve e divertida, tirando um pouco o peso das dificuldades.
+  
+  Aos meus queridos amigos que conheci durante a vida pelo companheirismo, risadas e troca de conhecimento. Em especial, aos meus amigos e colegas que tornaram este trabalho possível, Monique, Rodrigo Garcia e Rodrigo Costa.
+  
+  Ao meu orientador Jean Hauck e ao colega Fernando Vedoin, que tornaram um momento assustador que é escrever o TCC em algo leve e do qual me orgulho. 
+  
+  E, por fim, à Universidade Federal de Santa Catarina e aos professores que  contribuíram para que eu me tornasse a profissional que sou hoje.
+  
   \end{agradecimentos}
   % ---
 
@@ -332,7 +345,7 @@ As técnicas de gerenciamento de riscos possibilitam a redução do impacto nega
 
 Diversas iniciativas na academia têm surgido no intuito de auxiliar as organizações de \textit{software} que utilizam métodos ágeis a adotar técnicas explícitas de gestão de riscos, como ferramentas \cite{TAVARES:2020} e \textit{frameworks} \cite{GANDOMANI:2020} para gestão de risco.  Um desses trabalhos é o “Guia para gestão ágil de riscos em projetos de \textit{software}” desenvolvido no contexto do Grupo de Qualidade de \textit{Software} (GQS/INE/CTC/UFSC). O conteúdo do guia foi fundamentado através da análise da literatura, da identificação do estado da arte na área de gestão ágil de riscos e das experiências empíricas dos autores. E, dispõe de diretrizes que visam auxiliar a prática da gestão explícita de riscos no ambiente de desenvolvimento ágil de \textit{software} \cite{Vieira:2020}. Contudo, o guia ainda não foi aplicado em um contexto real. 
 
-A partir do panorama apresentado, este trabalho objetiva realizar um estudo de caso para avaliar o impacto da introdução de práticas explícitas de gerência de riscos no processo de desenvolvimento ágil de \textit{software} e, então, qualificar o "Guia para gestão ágil de riscos em projetos de \textit{software}” desenvolvido no Grupo de Qualidade de \textit{Software}. A aplicação do estudo de caso busca selecionar empiricamente quais técnicas utilizadas na gestão de riscos se enquadram melhor no contexto do Laboratório Bridge da Universidade Federal de Santa Catarina, por meio da adoção de técnicas propostas no “Guia para gestão ágil de riscos” \cite{Vieira:2020} em equipes da organização durante o segundo semestre letivo de 2021. O Laboratório Bridge é um laboratório integrado ao Centro Tecnológico (CTC) e de Ciências da Saúde (CCS) da Universidade Federal de Santa Catarina (UFSC) criado em 2013. Atua na pesquisa e desenvolvimento de soluções tecnológicas para o Ministério da Saúde e mais recentemente para o Ministério da Educação, como por exemplo \textit{softwares} para a estratégia e-SUS APS, Sistema de Monitoramento de Obras (SISMOB), Registro Nacional de Implantes (RNI), O Brasil Conta Comigo e Jornada do Estudante.
+A partir do panorama apresentado, este trabalho objetiva realizar um estudo de caso para avaliar o impacto da introdução de práticas explícitas de gerência de riscos no processo de desenvolvimento ágil de \textit{software} e, então, qualificar o ``Guia para gestão ágil de riscos em projetos de \textit{software}'' desenvolvido no Grupo de Qualidade de \textit{Software}. A aplicação do estudo de caso busca selecionar empiricamente quais técnicas utilizadas na gestão de riscos se enquadram melhor no contexto do Laboratório Bridge da Universidade Federal de Santa Catarina, por meio da adoção de técnicas propostas no “Guia para gestão ágil de riscos” \cite{Vieira:2020} em equipes da organização durante o segundo semestre letivo de 2021. O Laboratório Bridge é um laboratório integrado ao Centro Tecnológico (CTC) e de Ciências da Saúde (CCS) da Universidade Federal de Santa Catarina (UFSC) criado em 2013. Atua na pesquisa e desenvolvimento de soluções tecnológicas para o Ministério da Saúde e mais recentemente para o Ministério da Educação, como por exemplo \textit{softwares} para a estratégia e-SUS APS, Sistema de Monitoramento de Obras (SISMOB), Registro Nacional de Implantes (RNI), O Brasil Conta Comigo e Jornada do Estudante.
 
 Para o desenvolvimento do estudo de caso, primeiramente será realizado um estudo inicial sobre o processo do laboratório bem como a organização desse. Após, utilizando como base a literatura, serão selecionadas técnicas do “Guia para gestão ágil de riscos” \cite{Vieira:2020} que melhor se enquadram com as características do Laboratório Bridge. Ao final da iteração, será avaliado se a técnica trouxe algum benefício para o desempenho da equipe. Dessa forma, será possível definir se as técnicas se adequaram ao processo do laboratório, bem como quais impactos essas trouxeram ao processo da organização.
 
@@ -394,7 +407,7 @@ Neste capítulo serão apresentados conceitos relevantes relacionados a gerênci
 
 \section{Gerência de projetos}
 
-Segundo o PMBOK \cite{PMBOK:2017}: "Projeto é um esforço temporário empreendido para criar um produto, serviço ou resultado único.". Os projetos são de natureza temporária, assim, devem possuir data de início e término definidas. Eles se dão por concluídos quando os objetivos são alcançados ou quando o projeto falha por algum fator como, por exemplo, recursos esgotados, mudança de estratégia ou motivos legais. Um projeto que obtenha sucesso no cumprimento dos objetivos gerará, então, um produto, serviço ou resultado único. 
+Segundo o PMBOK \cite{PMBOK:2017}: ``Projeto é um esforço temporário empreendido para criar um produto, serviço ou resultado único.''. Os projetos são de natureza temporária, assim, devem possuir data de início e término definidas. Eles se dão por concluídos quando os objetivos são alcançados ou quando o projeto falha por algum fator como, por exemplo, recursos esgotados, mudança de estratégia ou motivos legais. Um projeto que obtenha sucesso no cumprimento dos objetivos gerará, então, um produto, serviço ou resultado único. 
 
 A área de gerência de projetos objetiva que estes empreendimentos temporários sejam executados de forma eficaz e eficiente. Para que, dessa maneira, as organizações sejam bem sucedidas no cumprimento dos requisitos dos projetos. Este suporte é realizado através da aplicação de conhecimentos, habilidades, ferramentas e técnicas às atividades do projeto \cite{PMBOK:2017}. 
 
@@ -483,10 +496,10 @@ O SWEBOK \cite{SWEBOK:2014} também enfatiza que existe um distanciamento entre 
 
 \section{Gestão de riscos}
 
-Em 1983, a Royal Society britânica publicou um relatório denominado \textit{"Risk assessment: a Study Group Report"}, que definiu risco como: A probabilidade de que um determinado evento adverso ocorra durante um período de tempo definido ou resulte de determinado desafio. Como na probabilidade no sentido da teoria estatística, o risco obedece a todas as leis formais das probabilidades combinatórias \cite{ADAMS:1995}. 
+Em 1983, a Royal Society britânica publicou um relatório denominado \textit{``Risk assessment: a Study Group Report''}, que definiu risco como: A probabilidade de que um determinado evento adverso ocorra durante um período de tempo definido ou resulte de determinado desafio. Como na probabilidade no sentido da teoria estatística, o risco obedece a todas as leis formais das probabilidades combinatórias \cite{ADAMS:1995}. 
 
-Já o PMBOK \cite{PMBOK:2017} inclui neste conceito a possibilidade de que riscos tenham também um efeito positivo no projeto. No guia são definidos dois tipos de risco: o risco individual do projeto e o risco geral do projeto. Para o PMBOK, o primeiro "é um evento ou condição incerta que, se ocorrer, provocará um efeito positivo ou
-negativo em um ou mais objetivos do projeto.". E o risco geral do projeto " é o efeito da incerteza do projeto no seu todo, decorrente de todas as fontes de incerteza, incluindo riscos individuais, representando a exposição das partes interessadas às implicações de variações no resultado do projeto, sejam positivas ou negativas."
+Já o PMBOK \cite{PMBOK:2017} inclui neste conceito a possibilidade de que riscos tenham também um efeito positivo no projeto. No guia são definidos dois tipos de risco: o risco individual do projeto e o risco geral do projeto. Para o PMBOK, o primeiro ``é um evento ou condição incerta que, se ocorrer, provocará um efeito positivo ou
+negativo em um ou mais objetivos do projeto.''. E o risco geral do projeto ``é o efeito da incerteza do projeto no seu todo, decorrente de todas as fontes de incerteza, incluindo riscos individuais, representando a exposição das partes interessadas às implicações de variações no resultado do projeto, sejam positivas ou negativas.''
 
 \citeonline{SOMMERVILLE:2011} ainda cita três categorias de risco relacionados a projetos de \textit{software}, são elas:
 
@@ -785,12 +798,12 @@ Outra prática é o Desenvolvimento Orientado a Testes (TDD), ou seja, implement
 No XP, o código deve ser de posse coletiva e, dessa forma, estabelece que esse pode ser modificado por qualquer membro da equipe sem a necessidade de permissão. Além disso, o desenvolvimento deve manter um ritmo sustentável, sem a exigência de muitas horas extras, que podem prejudicar a qualidade do produto. E, por fim, o XP considera o cliente como parte da equipe e ele deve estar disponível para diminuir possíveis barreiras de comunicação \cite{WAZLAWICK:2013}.
 
 \subsection{\textit{Scrum}}
-As bases do método ágil \textit{Scrum} foram definidas em 1986 a partir do artigo: "\textit{The New New Product Development Game} de \citeonline{Takeuchi:1986}. Esse artigo ilustrava o modelo de produção de automóveis da Honda que demonstrava algumas influências da filosofia \textit{Lean} \cite{WAZLAWICK:2013}.
+As bases do método ágil \textit{Scrum} foram definidas em 1986 a partir do artigo: ``\textit{The New New Product Development Game}'' de \citeonline{Takeuchi:1986}. Esse artigo ilustrava o modelo de produção de automóveis da Honda que demonstrava algumas influências da filosofia \textit{Lean} \cite{WAZLAWICK:2013}.
 
-Na área de desenvolvimento de \textit{software}, \textit{Scrum} é um \textit{framework} ágil formalizado por \citeonline{Sutherland:2013} através do "Um guia definitivo para o \textit{Scrum}: As regras do jogo". O nome do método tem origem em um termo de rúgbi e é um momento onde os jogadores se unem aos companheiros de time e trabalham em equipe para empurrar a bola em direção ao fundo do campo \cite{PRESSMAN:2011}. 
+Na área de desenvolvimento de \textit{software}, \textit{Scrum} é um \textit{framework} ágil formalizado por \citeonline{Sutherland:2013} através do ``Um guia definitivo para o \textit{Scrum}: As regras do jogo''. O nome do método tem origem em um termo de rúgbi e é um momento onde os jogadores se unem aos companheiros de time e trabalham em equipe para empurrar a bola em direção ao fundo do campo \cite{PRESSMAN:2011}. 
 
-Segundo o Guia do \textit{Scrum} \cite{Sutherland:2013}, "o \textit{framework} \textit{Scrum} consiste nos times do Scrum associadas a papéis, eventos, artefatos e
-regras." E, a partir desse \textit{framework}, as equipes podem resolver problemas complexos e adaptativos, ao mesmo tempo que garantem uma entrega de alto valor. 
+Segundo o Guia do \textit{Scrum} \cite{Sutherland:2013}, ``o \textit{framework} \textit{Scrum} consiste nos times do Scrum associadas a papéis, eventos, artefatos e
+regras.'' E, a partir desse \textit{framework}, as equipes podem resolver problemas complexos e adaptativos, ao mesmo tempo que garantem uma entrega de alto valor. 
 
 Os papéis do time de \textit{Scrum} são: \textit{Scrum master} (mestre de \textit{Scrum}), \textit{product owner} (dono do produto) e \textit{development team} (equipe de desenvolvimento). O primeiro papel representa um membro da equipe com bastante conhecimento na aplicação do \textit{Scrum}. Apesar de representar um papel de lideranças, o \textit{Scrum} master não atua tal qual um gerente, ele age como um facilitador para aproximar a equipe das regras do \textit{Scrum} \cite{WAZLAWICK:2013}.
 
@@ -824,7 +837,7 @@ Os \textit{backlogs} são o registro de trabalhos pendentes. Consiste em uma lis
 
 As \textit{sprints} recebem esse nome por serem associadas à corridas de curta distância. Elas consistem em uma janela de tempo em que os trabalhos do \textit{sprint backlog} devem ser desenvolvidos. Elas ocorrem em forma de iterações, ao término o \textit{sprint backlog} é ajustado \cite{PRESSMAN:2011}.
 
-Tratando agora das cerimônias do \textit{Scrum}, no começo de cada nova \textit{sprint} é feito o \textit{Sprint planning}, uma reunião na qual a equipe seleciona os elementos do \textit{product backlog} a serem desenvolvidos naquele ciclo. Essa reunião responde as perguntas: "O que pode ser entregue como resultado do incremento da próxima Sprint?" e "Como o trabalho necessário para entregar o incremento será realizado?" \cite{Sutherland:2013}.
+Tratando agora das cerimônias do \textit{Scrum}, no começo de cada nova \textit{sprint} é feito o \textit{Sprint planning}, uma reunião na qual a equipe seleciona os elementos do \textit{product backlog} a serem desenvolvidos naquele ciclo. Essa reunião responde as perguntas: ``O que pode ser entregue como resultado do incremento da próxima Sprint?'' e ``Como o trabalho necessário para entregar o incremento será realizado?'' \cite{Sutherland:2013}.
 
 A \textit{Daily scrum} é uma reunião diária que tem como o objetivo inspecionar o trabalho desenvolvido pela equipe desde a última \textit{Daily scrum} e também identificar obstáculos que estejam impedindo o progresso do time de desenvolvimento \cite{Sutherland:2013}. 
 
@@ -832,7 +845,7 @@ A \textit{Sprint review} e \textit{Sprint retrospective} devem ocorrer ao final 
 
 \subsection{Kanban}
 
-Kanban é um nome de origem japonesa que significa "sinal" ou "cartão" e surgiu dos sistemas de cartão utilizados para gerenciar o fluxo de trabalho em indústrias. Assim, o principal objetivo desse sistema é tornar o andamento do trabalho visível a todos os membros da equipe \cite{Mariotti:2012}. Esse modelo foi adaptado da indústria para o desenvolvimento de \textit{software} por David J. Anderson \cite{Ghisi:2012}. 
+Kanban é um nome de origem japonesa que significa ``sinal'' ou ``cartão'' e surgiu dos sistemas de cartão utilizados para gerenciar o fluxo de trabalho em indústrias. Assim, o principal objetivo desse sistema é tornar o andamento do trabalho visível a todos os membros da equipe \cite{Mariotti:2012}. Esse modelo foi adaptado da indústria para o desenvolvimento de \textit{software} por David J. Anderson \cite{Ghisi:2012}. 
 
 As atividades essenciais para a implementação do Kanban consistem em: visualizar, limitar o trabalho em progresso, gerenciar o fluxo \cite{Mariotti:2012}. 
 
@@ -881,7 +894,7 @@ Mesmo contendo práticas de gestão de riscos da literatura e das organizações
 \chapter{Estado da arte}
 \label{sec:EstadoArte}
 
-O objetivo deste capítulo é apresentar o estado da arte do tema proposto por este trabalho. Para isso, foi realizado um Mapeamento Sistemático da Literatura (MSL) em conjunto com o trabalho de mestrado do aluno Fernando Vedoin Garcia \cite{GARCIA:2021}. A MSL foi desenvolvida com base nas etapas propostas por \citeonline{Kitchenham:2004} no relatório "\textit{Procedures for performing systematic reviews}". 
+O objetivo deste capítulo é apresentar o estado da arte do tema proposto por este trabalho. Para isso, foi realizado um Mapeamento Sistemático da Literatura (MSL) em conjunto com o trabalho de mestrado do aluno Fernando Vedoin Garcia \cite{GARCIA:2021}. A MSL foi desenvolvida com base nas etapas propostas por \citeonline{Kitchenham:2004} no relatório ``\textit{Procedures for performing systematic reviews}''. 
 
 O foco principal desta Revisão Sistemática da Literatura é identificar e analisar os atuais estudos empíricos sobre a aplicação de técnicas de gestão de riscos em contextos de desenvolvimento ágil. Levando em consideração quais técnicas foram aplicadas e os resultados obtidos a partir da aplicação.
 
@@ -908,7 +921,7 @@ A realização da MSL utilizou as três etapas definidas por \citeonline{Kitchen
 
 \section{Definição do Protocolo de Revisão}
 
-Com base nos objetivos da pesquisa identificada para este trabalho, foi definida a seguinte questão geral de pesquisa: "Quais são os resultados dos estudos empíricos de gestão de riscos em métodos ágeis?".
+Com base nos objetivos da pesquisa identificada para este trabalho, foi definida a seguinte questão geral de pesquisa: ``Quais são os resultados dos estudos empíricos de gestão de riscos em métodos ágeis?''.
 
 Após, foi utilizada a metodologia PICOC, sigla de População, Intervenção, Comparação, \textit{Outcome} (Resultado) e Contexto derivada da estratégia PICO utilizada na área médica \cite{SANTOS:2007}. Assim, foram definidos os seguintes elementos:
 
@@ -1016,13 +1029,13 @@ As \textit{strings} de busca sofreram adaptações para que retornassem resultad
             \textbf{Base de dados} & \textbf{\textit{Strings} adaptadas} 
             \\ \hline 
             
-            ACM Digital Library & (Abstract:(risk) AND Abstract:(agile OR scrum OR xp OR "extreme programming" OR lean OR kanban OR scrumban OR fdd OR "feature driven development" OR  Crystal OR "Iterative Development")) OR (Title:(risk) AND Title:(agile OR scrum OR xp OR "extreme programming" OR lean OR kanban OR scrumban OR fdd OR "feature driven development" OR  Crystal OR "Iterative Development"))
+            ACM Digital Library & (Abstract:(risk) AND Abstract:(agile OR scrum OR xp OR ``extreme programming'' OR lean OR kanban OR scrumban OR fdd OR ``feature driven development'' OR  Crystal OR ``Iterative Development'')) OR (Title:(risk) AND Title:(agile OR scrum OR xp OR ``extreme programming'' OR lean OR kanban OR scrumban OR fdd OR ``feature driven development'' OR  Crystal OR ``Iterative Development''))
             \\ \hline
             
-            IEEEXplore & All Metadata":risk AND ("All Metadata":agile OR "All Metadata":scrum OR "All Metadata":xp OR "All Metadata":"extreme programming" OR "All Metadata":lean OR "All Metadata":kanban OR "All Metadata":scrumban OR "All Metadata":fdd OR "All Metadata":“feature driven development” OR "All Metadata":Crystal OR "All Metadata":"Iterative Development")
+            IEEEXplore & ``All Metadata'':risk AND (``All Metadata'':agile OR ``All Metadata'':scrum OR ``All Metadata'':xp OR ``All Metadata'':``extreme programming'' OR ``All Metadata'':lean OR ``All Metadata'':kanban OR ``All Metadata'':scrumban OR ``All Metadata'':fdd OR ``All Metadata'':“feature driven development” OR ``All Metadata'':Crystal OR ``All Metadata'':``Iterative Development'')
             \\ \hline
 
-            Scopus & (TITLE-ABS-KEY (risk) AND (TITLE-ABS-KEY(agile) OR TITLE-ABS-KEY (scrum) OR TITLE-ABS-KEY (xp) OR TITLE-ABS-KEY (extreme AND programming) OR TITLE-ABS-KEY (lean) OR TITLE-ABS-KEY (kanban) OR TITLE-ABS-KEY (scrumban) OR TITLE-ABS-KEY (fdd) OR TITLE-ABS-KEY (feature AND driven AND development) OR TITLE-ABS-KEY (crystal) OR TITLE-ABS-KEY (iterative AND development)) AND (LIMIT-TO (SUBJAREA,"COMP")))
+            Scopus & (TITLE-ABS-KEY (risk) AND (TITLE-ABS-KEY(agile) OR TITLE-ABS-KEY (scrum) OR TITLE-ABS-KEY (xp) OR TITLE-ABS-KEY (extreme AND programming) OR TITLE-ABS-KEY (lean) OR TITLE-ABS-KEY (kanban) OR TITLE-ABS-KEY (scrumban) OR TITLE-ABS-KEY (fdd) OR TITLE-ABS-KEY (feature AND driven AND development) OR TITLE-ABS-KEY (crystal) OR TITLE-ABS-KEY (iterative AND development)) AND (LIMIT-TO (SUBJAREA,``COMP'')))
             \\ \hline
 
             \addlinespace[0.2cm]
@@ -1327,17 +1340,17 @@ O laboratório conta atualmente com 149 colaboradores, distribuídos entre o des
 
 Os projetos desenvolvidos pelo Laboratório Bridge para gestão pública são \cite{Bridge:2022}:
 \begin{itemize}
-    \item \textbf{e-SUS APS (Atenção Primária de Saúde):} "A estratégia e-SUS APS (antigo e-SUS AB) promove avanço tecnológico e aprimoramento das ferramentas utilizadas nas ações de cuidado e gestão na APS, e seu propósito é reestruturar as informações da Atenção Primária em nível nacional e auxiliar os municípios e os profissionais na gestão efetiva e incorporação de inteligência clínica."
+    \item \textbf{e-SUS APS (Atenção Primária de Saúde):} ``A estratégia e-SUS APS (antigo e-SUS AB) promove avanço tecnológico e aprimoramento das ferramentas utilizadas nas ações de cuidado e gestão na APS, e seu propósito é reestruturar as informações da Atenção Primária em nível nacional e auxiliar os municípios e os profissionais na gestão efetiva e incorporação de inteligência clínica.''
     
-    \item \textbf{SISMOB (Sistema de Monitoramento de Obras):} "O Sistema de Monitoramento de Obras permite ao gestores municipais, estaduais e distritais o acompanhamento de obras e infraestrutura na Saúde financiados pelo Ministério da Saúde, dando mais autonomia para os estados e municípios e reforçando os processos de monitoramento. Além disso, a plataforma web permite que cidadãos acompanhem a situação das obras em qualquer local."
+    \item \textbf{SISMOB (Sistema de Monitoramento de Obras):} ``O Sistema de Monitoramento de Obras permite ao gestores municipais, estaduais e distritais o acompanhamento de obras e infraestrutura na Saúde financiados pelo Ministério da Saúde, dando mais autonomia para os estados e municípios e reforçando os processos de monitoramento. Além disso, a plataforma web permite que cidadãos acompanhem a situação das obras em qualquer local.''
     
-    \item \textbf{RNI (Registro Nacional de Implantes):} "Desenvolvido em parceria com a Agência Nacional de Vigilância Sanitária (ANVISA) e as sociedades médicas, o RNI controla a qualidade dos componentes implantáveis e regulação econômica de mercado, e possibilita o registro do método utilizado para a implantação e a rastreabilidade dos produtos."
+    \item \textbf{RNI (Registro Nacional de Implantes):} ``Desenvolvido em parceria com a Agência Nacional de Vigilância Sanitária (ANVISA) e as sociedades médicas, o RNI controla a qualidade dos componentes implantáveis e regulação econômica de mercado, e possibilita o registro do método utilizado para a implantação e a rastreabilidade dos produtos.''
     
-    \item \textbf{SIGRESIDÊNCIAS:} "O Sistema de Informações Gerenciais do Pró-Residências permite a gestão de informações de programas em residência médica e multiprofissional com autonomia e transparência para as instituições de ensino. Utilizando o SIG, as instituições podem realizar o controle das informações de seus programas de residências, além de permitir o acesso pelos residentes."
+    \item \textbf{SIGRESIDÊNCIAS:} ``O Sistema de Informações Gerenciais do Pró-Residências permite a gestão de informações de programas em residência médica e multiprofissional com autonomia e transparência para as instituições de ensino. Utilizando o SIG, as instituições podem realizar o controle das informações de seus programas de residências, além de permitir o acesso pelos residentes.''
     
-    \item \textbf{O Brasil Conta Comigo:} "A Ação Estratégica “O Brasil Conta Comigo” surgiu durante a pandemia da Covid-19, como uma solução para auxiliar os gestores locais na busca por profissionais dispostos a atuar na assistência à saúde. A Ação ultrapassou um milhão de cadastrados até 30 de julho de 2021, compondo o maior banco de dados auto declaratório de profissionais de saúde da história do Brasil."
+    \item \textbf{O Brasil Conta Comigo:} ``A Ação Estratégica “O Brasil Conta Comigo” surgiu durante a pandemia da Covid-19, como uma solução para auxiliar os gestores locais na busca por profissionais dispostos a atuar na assistência à saúde. A Ação ultrapassou um milhão de cadastrados até 30 de julho de 2021, compondo o maior banco de dados auto declaratório de profissionais de saúde da história do Brasil.''
     
-    \item \textbf{Jornada do Estudante:} "[...] tem por objetivo contribuir diretamente no estabelecimento de uma visão integrada da trajetória dos alunos do país com a disponibilização de um aplicativo mobile gratuito, multiplataforma (Android/IOS), contendo os dados pessoais do estudante, institucionais, cursos e disciplinas, além dos documentos digitais, como o histórico escolar digital ou diploma digital, bem como, permitindo o compartilhamento dos documentos assinados eletronicamente." \cite{MEC:2021}
+    \item \textbf{Jornada do Estudante:} ``[...] tem por objetivo contribuir diretamente no estabelecimento de uma visão integrada da trajetória dos alunos do país com a disponibilização de um aplicativo mobile gratuito, multiplataforma (Android/IOS), contendo os dados pessoais do estudante, institucionais, cursos e disciplinas, além dos documentos digitais, como o histórico escolar digital ou diploma digital, bem como, permitindo o compartilhamento dos documentos assinados eletronicamente.'' \cite{MEC:2021}
 \end{itemize}
 
 Dentro do escopo da estratégia e-SUS APS está o desenvolvimento do Prontuário Eletrônico do Cidadão (PEC). O PEC é responsável por registrar atendimentos clínicos e também oferecer acesso a módulos de digitação de fichas CDS (resumo dos dados dos cidadãos associados ao atendimento clínico) e transmissão de dados para o Centralizador Nacional \cite{Bridge:2022}.
@@ -1348,41 +1361,45 @@ Para o desenvolvimento do projeto também é previsto o apoio de um Grupo de Tra
 
 As equipes ágeis selecionadas atuam em dois projetos distintos, sendo eles o e-SUS APS (mais especificamente no Prontuário Eletrônico do Cidadão) e o Jornada do Estudante. Além disso, enquanto a equipe do e-SUS APS trabalha com desenvolvimento \textit{web}, a equipe da Jornada do Estudante trabalha na área de desenvolvimento \textit{mobile}. Assim, será possível analisar a aplicação das técnicas de gestão de risco em ambientes com características distintas.
 
-Dessa forma, a primeira equipe, que será chamada no decorrer do trabalho de equipe "F", faz parte do projeto e-SUS APS e conta com 5 membros, ocupando os cargos apresentados pela Tabela \ref{tab:EquipeF}:
+Dessa forma, a primeira equipe, que será chamada no decorrer do trabalho de equipe ``F'', faz parte do projeto e-SUS APS e conta com 5 membros, ocupando os cargos apresentados pela Tabela \ref{tab:EquipeF}:
 
 \begin{longtable}{|p{4cm}|p{4cm}|c|c|}
-    \caption{Membros da equipe F}
+    \caption{Membros da equipe ``F''}
     \label{tab:EquipeF}
     \centering
             \centering
             \hline \rowcolor{lightgray}
             \textbf{Cargo} & \textbf{Formação} & \textbf{Experiência na área} & \textbf{Tempo de projeto} 
             \\ \hline 
-            SM e desenvolvedor & Bacharel em Ciências da Computação & 8 anos & 8 anos
+            SM & Bacharel em Ciências da Computação & 8 anos & 8 anos
             \\ \hline
-            PO & Graduando em Ciências da Computação & 3 anos & 3 anos 
+            PO & Graduando em Ciências da Computação & 4 anos & 4 anos 
             \\ \hline 
-            Desenvolvedor & Bacharel em Ciências da Computação & 7,5 anos & 7,5 anos
+            Desenvolvedor & Bacharel em Ciências da Computação & 8,5 anos & 8,5 anos
+            \\ \hline 
+            Desenvolvedor & Bacharel em Sistemas de Informação & 3 anos & 3 anos
             \\ \hline 
             Bolsista de desenvolvimento & Graduando em Ciências da Computação & 1 ano & 1 ano
             \\ \hline 
-            Bolsista de desenvolvimento & Graduando em Sistemas de Informação & 1,5 ano & 7 meses
+            Bolsista de desenvolvimento & Graduando em Sistemas de Informação & 1 mês & 1 mês
             \\ \hline 
             \addlinespace[0.2cm]
             \caption*{\textbf{Fonte:} Desenvolvido pela autora (2022).}
 \end{longtable}
 
-Já a segunda equipe, está alocada no projeto Jornada do Estudante e será denominada equipe "FN", tendo a distribuição de cargos conforme apresentada na Tabela \ref{tab:EquipeC}:
+Já a segunda equipe, está alocada no projeto Jornada do Estudante e será denominada equipe ``FN'', tendo a distribuição de cargos conforme apresentada na Tabela \ref{tab:EquipeC}:
 
 \begin{longtable}{|p{4cm}|p{4cm}|c|c|}
-    \caption{Membros da equipe FN}
+    \caption{Membros da equipe ``FN''}
     \label{tab:EquipeC}
     \centering
             \centering
             \hline \rowcolor{lightgray}
             \textbf{Cargo} & \textbf{Formação} & \textbf{Experiência na área} & \textbf{Tempo de projeto} 
             \\ \hline 
-            PO e SM & Graduando em Sistemas de Informação & 8 anos & 8 anos 
+            SM & Bacharel em & 3 anos & 3 meses 
+            \\ \hline 
+            PO & Graduando em Sistemas de Informação & 1 ano & 6 meses  
             \\ \hline
             Desenvolvedor & Bacharel em Sistemas de Informação & 2 anos & 1,5 anos 
             \\ \hline 
@@ -1408,7 +1425,7 @@ Enquanto a equipe ``FN'' possui membros próprios da área de design e qualidade
 
 \section{Processo de desenvolvimento das equipes}
 
-Está subseção trata dos processos de desenvolvimento adotados pelas equipes "F" e "FN". Em geral, o processo das equipes possui muitas similaridades, por isso serão descritos em conjunto e quando necessário as diferenças entre as equipes serão sinalizadas.
+Está subseção trata dos processos de desenvolvimento adotados pelas equipes ``F'' e ``FN''. Em geral, o processo das equipes possui muitas similaridades, por isso serão descritos em conjunto e quando necessário as diferenças entre as equipes serão sinalizadas.
 
 A metodologia Scrum descrita no capítulo 2.3.3 é a base do processo de desenvolvimento de ambas as equipes. Porém, não necessariamente são utilizados todos os conceitos e técnicas descritos na metologia. Assim, as equipes desenvolveram adaptações para integrar o \textit{framework} no próprio contexto.
 
@@ -1418,7 +1435,7 @@ Já as duas primeiras categorias demandam um maior esforço do analista ou PO, q
 
 Após o processo de análise, a tarefa é criada na ferramenta Github Projects e permanece no \textit{backlog} da equipe até que seja selecionada para fazer parte de uma \textit{sprint}. A seleção das tarefas é feita por toda a equipe a partir da estimação do esforço de cada uma delas. Esse esforço leva em consideração o tempo e complexidade da análise, desenvolvimento e teste da tarefa. Em geral, para a realização dessa estimativa é utilizada a ferramenta \textit{Planning Poker}.
 
-Especificamente na equipe "F", as tarefas de novo produto e manutenção evolutiva fazem parte de um escopo maior que é a História de Usuário. Nesse contexto, o PO da equipe cria uma funcionalidade completa a ser entregue ao final da \textit{sprint} e a partir dela cria uma história que engloba as tarefas necessárias para concluir tal funcionalidade. Isso significa que no último dia da \textit{sprint} a equipe deve entregar algo que já possa ser utilizado pelo usuário. Dessa forma, nesta equipe prioriza-se a escolha de tarefas de uma mesma história. 
+Especificamente na equipe ``F'', as tarefas de novo produto e manutenção evolutiva fazem parte de um escopo maior que é a História de Usuário. Nesse contexto, o PO da equipe cria uma funcionalidade completa a ser entregue ao final da \textit{sprint} e a partir dela cria uma história que engloba as tarefas necessárias para concluir tal funcionalidade. Isso significa que no último dia da \textit{sprint} a equipe deve entregar algo que já possa ser utilizado pelo usuário. Dessa forma, nesta equipe prioriza-se a escolha de tarefas de uma mesma história. 
 
 Depois de estimadas, as tarefas estão prontas para serem desenvolvidas e são selecionadas para fazer parte do \textit{Backlog} da \textit{Sprint}, que contém todas as tarefas que devem ser concluídas nas próximas duas semanas. Esse processo de seleção é realizado durante o \textit{Sprint Planning Meeting}, que ocorre no primeiro dia da \textit{sprint}. Durante essa cerimônia a equipe discute em conjunto com o PO as tarefas mais prioritárias e define quais entrarão no \titleit{backlog} daquela \textit{sprint}. As equipes mantém um histórico das \textit{sprints} passadas para que o esforço total das tarefas selecionadas não ultrapasse a capacidade de desenvolvimento da equipe. 
 
@@ -1426,18 +1443,19 @@ Após a fase de planejamento, é iniciada a fase de desenvolvimento que prevê a
 
 Para o controle do fluxo das tarefas também é utilizado um quadro Kanban elicitado no capítulo 2.3.4. Para isso, as equipes fazem uso da ferramenta Github Projects, que permite a criação de um \textit{taskboard} com tarefas associadas ao código fabricado para resolvê-la. Essa ferramente é utilizada para um melhor controle de versão do código e do fluxo de desenvolvimento. Em ambas as equipes as tarefas passam por colunas de \textit{Sprint backlog}, desenvolvimento, teste e finalizada.
 
-As tarefas que saem do backlog da sprint passam para o desenvolvimento, que é quando um membro da equipe se designa responsável por ela e inicia a fabricação do código que irá cumprir os requisitos dela. Quando finalizada, a tarefa passa então por um processo de revisão de código, em que outros membros da equipe fazem comentários gerais sobre erros, melhoria da estrutura do código, dúvidas ou falta de algum requisito. Enquanto na equipe "F" todos os membros da equipe devem fazer a revisão sobre todos os códigos desenvolvidos, na equipe "FN" são necessários apenas dois revisores por tarefa.
+As tarefas que saem do backlog da sprint passam para o desenvolvimento, que é quando um membro da equipe se designa responsável por ela e inicia a fabricação do código que irá cumprir os requisitos dela. Quando finalizada, a tarefa passa então por um processo de revisão de código, em que outros membros da equipe fazem comentários gerais sobre erros, melhoria da estrutura do código, dúvidas ou falta de algum requisito. Enquanto na equipe ``F'' todos os membros da equipe devem fazer a revisão sobre todos os códigos desenvolvidos, na equipe ``FN'' são necessários apenas dois revisores por tarefa.
 
-Quando o código é aprovado, antes de ser integrado ao código do projeto ele ainda passa pela etapa de testes. Nesta etapa, um membro da equipe de fato confere se o que foi desenvolvido está de acordo com os requisitos descritos. Na equipe "FN" isso é feito pelos analistas de qualidade. Já a equipe "F", como citado anteriormente, não possui um membro exclusivo para essa tarefa. Então, todos os desenvolvedores da equipe desempenham esse papel de maneira alternada. Assim que a tarefa passa por esse último processo de inspeção, ela é integrada ao código principal do projeto e a tarefa passa para a coluna de finalizada. 
+Quando o código é aprovado, antes de ser integrado ao código do projeto ele ainda passa pela etapa de testes. Nesta etapa, um membro da equipe de fato confere se o que foi desenvolvido está de acordo com os requisitos descritos. Na equipe ``FN'' isso é feito pelos analistas de qualidade. Já a equipe ``F'', como citado anteriormente, não possui um membro exclusivo para essa tarefa. Então, todos os desenvolvedores da equipe desempenham esse papel de maneira alternada. Assim que a tarefa passa por esse último processo de inspeção, ela é integrada ao código principal do projeto e a tarefa passa para a coluna de finalizada. 
 
-Quando as tarefas são finalizadas, a equipe "F" utiliza a cerimônia \textit{Daily Scrum} para discutir se a estimativa de esforço dada estava correta. E, caso a tarefa tenha sido mais ou menos complexa do que o esperado, a estimativa é alterada para que o esforço total realizado naquela \textit{sprint} esteja de acordo com a realidade.
+Quando as tarefas são finalizadas, a equipe ``F'' utiliza a cerimônia \textit{Daily Scrum} para discutir se a estimativa de esforço dada estava correta. E, caso a tarefa tenha sido mais ou menos complexa do que o esperado, a estimativa é alterada para que o esforço total realizado naquela \textit{sprint} esteja de acordo com a realidade.
 
 Durante a \textit{sprint} as equipes também realizam outras cerimônias previstas no Scrum. A primeira delas é a \textit{Scrum of Scrums} da qual apenas os \textit{Scrum Masters} participam para reportar o andamento do projeto. Essa cerimônia é semanal e repasses são feitos informalmente para a equipe caso necessário.
 
-A outra cerimônia prevista é o \textit{Sprint Review} no qual a equipe apresenta ao PO o que foi desenvolvido até o momento. Essa é uma reunião que ocorre a cada \textit{sprint}, porém especificamente na equipe "F" ela é feita de maneira informal e sob demanda durante a \textit{Daily Scrum}.
+A outra cerimônia prevista é o \textit{Sprint Review} no qual a equipe apresenta ao PO o que foi desenvolvido até o momento. Essa é uma reunião que ocorre a cada \textit{sprint}, porém especificamente na equipe ``F'' ela é feita de maneira informal e sob demanda durante a \textit{Daily Scrum}.
 
-Por fim, ao final da \textit{sprint} é realizada a \textit{Sprint Retrospective}, na qual o time realiza uma reflexão sobre o que ocorreu no decorrer da \textit{sprint} e identifica pontos necessários de melhoria ou mudança.
+Ao final da \textit{sprint} é realizada a \textit{Sprint Retrospective}, na qual o time realiza uma reflexão sobre o que ocorreu no decorrer da \textit{sprint} e identifica pontos necessários de melhoria ou mudança.
 
+Por fim, a unidade organizacional também conta com uma cerimônia denominada Roda Ágil, que ocorre a cada ciclo de 3 meses. Essa cerimônia prevê uma autoavaliação pelas equipes de categorias como habilidades em desenvolvimento e tecnologias, maturidade da equipe com relação ao contato com o cliente e usuários, comunicação interna e compartilhamento de conhecimento. Ao final da avaliação, as equipes criam planos de ação para melhorar os pontos com maior deficiência. 
 
 \chapter{Planejamento do Estudo de Caso}
 \label{sec:Proposta}
@@ -1448,13 +1466,13 @@ Segundo o artigo, um estudo de caso em Engenharia de \textit{Software} possui 5 
 
 \section{Objetivos do estudo de caso}
 
-Conforme elucidado na seção 1.3, o objetivo deste estudo de caso é aplicar e avaliar as técnicas de gestão de riscos presentes no “Guia para gestão ágil de riscos” \cite{Vieira:2020} em um contexto real de desenvolvimento de \textit{software}. A partir desse objetivo, foi definida a pergunta de pesquisa para esse estudo de caso: \textit{"De que forma a implantação de técnicas de gestão ágil de riscos impactam no processo e prazo de entrega de um time de desenvolvimento de software?"}. 
+Conforme elucidado na seção 1.3, o objetivo deste estudo de caso é aplicar e avaliar as técnicas de gestão de riscos presentes no “Guia para gestão ágil de riscos” \cite{Vieira:2020} em um contexto real de desenvolvimento de \textit{software}. A partir desse objetivo, foi definida a pergunta de pesquisa para esse estudo de caso: \textit{``De que forma a implantação de técnicas de gestão ágil de riscos impactam no processo e prazo de entrega de um time de desenvolvimento de software?''}. 
 
 Para \citeonline{LINGS:2005}, a avaliação de impacto é a análise das consequências de alguma alteração implementada em um processo ou organização. No caso específico deste estudo, o impacto será avaliado nas seguintes condições: (i) esforço despendido pelas equipes participantes do estudo, (ii) produtividade das equipes do estudo e (iii) custo-benefício das técnicas implantadas no processo da equipe. 
 
 Conforme a metodologia de pesquisa definida na seção 1.4, os primeiros passos para a realização deste trabalho eram desenvolver a fundamentação teórica e analisar o estado da arte. Tais etapas foram contempladas nos capítulos 2 e 3, respectivamente. Após, o estudo de caso deve ser definido, aplicado e analisado. Para isso, foi realizado um diagnóstico inicial do contexto da organização, conforme descrito no capítulo 4. Após, foi elaborado o planejamento do estudo de caso através da abordagem GQM - \textit{Goal/Question/Metric} \cite{KOZIOLEK:2005}. Por fim, será feita a execução do estudo de caso bem como a coleta de dados e análise dos resultados.
 
-A execução do estudo de caso ocorrerá entre Outubro e Dezembro de 2022. Para a participação do estudo foram selecionadas duas equipes do Laboratório Bridge uma delas pertencente ao projeto e-SUS APS e a outra ao projeto Jornada do Estudante. A primeira equipe é a equipe "F" que possui 5 membros, enquanto a segunda é a "FN" e possui 9 membros. A contextualização e o aprofundamento do processo de desenvolvimento das equipes estão descritos no capítulo 4.
+A execução do estudo de caso ocorrerá entre Outubro e Dezembro de 2022. Para a participação do estudo foram selecionadas duas equipes do Laboratório Bridge uma delas pertencente ao projeto e-SUS APS e a outra ao projeto Jornada do Estudante. A primeira equipe é a equipe ``F'' que possui 5 membros, enquanto a segunda é a ``FN'' e possui 9 membros. A contextualização e o aprofundamento do processo de desenvolvimento das equipes estão descritos no capítulo 4.
 
 A seguir serão definidos os objetivos das medições que serão realizadas no decorrer do estudo de caso. Seguindo a abordagem GQM \cite{KOZIOLEK:2005}, deve-se definir as medidas através de uma metologia \textit{top-down}, ou seja, inicialmente é definido o que se deseja obter através das medições e a partir dos objetivos são desenhadas as perguntas. Por fim, são escolhidas medidas capazes de satisfazer as necessidades dos objetivos.
 
@@ -1462,7 +1480,7 @@ A seguir serão definidos os objetivos das medições que serão realizadas no d
 
 Os objetivos de medição abaixo foram derivados do objetivo deste estudo que é analisar o impacto de técnicas de gestão de risco em um contexto de desenvolvimento ágil de \textit{software} em termos de esforço, produtividade e custo-benefício. Para isso, o termo custo-benefício foi dividido em: (i) dificuldade para a aplicação das técnicas de gestão de risco e (ii) aceitação para a aplicação das técnicas de gestão de risco. Dessa forma, foram definidos os seguintes objetivos de medição:
 
-\textbf{Objetivo de Medição 1:} Analisar o esforço e a produtividade da equipe durante a aplicação das técnicas de gestão de risco, sob o ponto de vista das áreas de análise, desenvolvimento e teste de \textit{software} no contexto do Laboratório Bridge.
+\textbf{Objetivo de Medição 1:} Analisar o esforço e a produtividade da equipe durante a aplicação das técnicas de gestão de risco no contexto do Laboratório Bridge.
 
 \textbf{Objetivo de Medição 2:} Analisar as dificuldades para aplicação das técnicas de gestão de risco nas equipes ágeis do Laboratório Bridge.
 
@@ -1477,7 +1495,7 @@ Após a definição dos objetivos, a abordagem GQM \cite{KOZIOLEK:2005} estabele
 \begin{itemize}[label={}]
 \item
 \begin{itemize}
-        \item \textbf{Pergunta 1.1:} Qual o esforço total despendido pelas áreas de análise, desenvolvimento e teste para aplicação de técnicas de gestão de risco?
+        \item \textbf{Pergunta 1.1:} Qual o esforço total despendido para aplicação de técnicas de gestão de risco?
             \begin{itemize}[label={}]
                 \item \textbf{Medição 1.1 - } Esforço total em horas pelo número de participantes.
             \end{itemize}
@@ -1506,7 +1524,13 @@ Após a definição dos objetivos, a abordagem GQM \cite{KOZIOLEK:2005} estabele
             \begin{itemize}[label={}]
                 \item \textbf{Medição 2.4 -} 
                 Diferença percentual entre a estimativa de esforço da equipe ao aplicar técnicas de gestão de risco em relação a estimativa de esforço da mesma equipe antes da aplicação da abordagem.
+            \end{itemize}    
+        \item \textbf{Pergunta 2.5:} Houve impacto no aproveitamento da equipe ao aplicar técnicas de gestão de risco?
+            \begin{itemize}[label={}]
+                \item \textbf{Medição 2.5 -} 
+                Diferença entre a porcentagem de pontos de história planejados e concluídos pela equipe ao aplicar técnicas de gestão de risco e a porcentagem de história planejados e concluídos pela mesma equipe antes da aplicação da abordagem.
             \end{itemize}        
+
 \end{itemize}
 \end{itemize}
 
@@ -1519,7 +1543,7 @@ Após a definição dos objetivos, a abordagem GQM \cite{KOZIOLEK:2005} estabele
             \begin{itemize}[label={}]
                 \item \textbf{Medição 3.1 - } Impressão subjetiva da experiência com a aplicação.
             \end{itemize}
-        \item \textbf{Pergunta 3.2:} Quais foram os principais pontos positivos, sob o ponto de vista das áreas de análise, desenvolvimento e teste, na aplicação das técnicas para gestão de risco?
+        \item \textbf{Pergunta 3.2:} Quais foram os principais pontos positivos na aplicação das técnicas para gestão de risco?
             \begin{itemize}[label={}]
                 \item \textbf{Medição 3.2 - } Impressão subjetiva sobre os pontos positivos da aplicação das técnicas de gestão de risco.
             \end{itemize}    
@@ -1533,7 +1557,7 @@ A Gerência do Laboratório Bridge aprovou explicitamente a participação neste
 
 Após a definição das perguntas, foi elaborado um questionário com perguntas discursivas para a coleta de dados qualitativos. O questionário para a avaliação encontra-se no Apêndice \ref{sec:ApendiceB} deste trabalho.
 
-Já para a coleta de dados quantitativos, serão utilizadas as ferramentas de gerência de projetos já usadas pelas equipes "F" e "FN", neste caso, o Github Projects. Além disso, também serão utilizadas as planilhas de acompanhamento para coletar o esforço demandado nas \textit{sprints}. Por fim, as técnicas serão aplicadas durante cerimônias das equipes de forma que será possível cronometrar o tempo gasto durante a aplicação. 
+Já para a coleta de dados quantitativos, serão utilizadas as ferramentas de gerência de projetos já usadas pelas equipes ``F'' e ``FN'', neste caso, o Github Projects. Além disso, também serão utilizadas as planilhas de acompanhamento para coletar o esforço demandado nas \textit{sprints}. Por fim, as técnicas serão aplicadas durante cerimônias das equipes de forma que será possível cronometrar o tempo gasto durante a aplicação. 
 
 A Tabela \ref{tab:coletaMedidas} apresenta as medidas e os respectivos procedimentos de coleta.
 
@@ -1554,6 +1578,9 @@ A Tabela \ref{tab:coletaMedidas} apresenta as medidas e os respectivos procedime
             \\ \hline
             Medida 2.4 & PO, SM, analista de sistemas, desenvolvedor e analista de qualidade & [(Diferença entre a estimativa de esforço antes e após aplicar as técnicas) / (Estimativa antes da abordagem)] x 100 & Github Projects e planilhas de acompanhamento 
             \\ \hline
+            Medida 2.5 & PO, SM, analista de sistemas, desenvolvedor e analista de qualidade & Diferença entre a porcentagem de tarefas planejadas concluídas antes e após aplicar as técnicas & Github Projects e planilhas de acompanhamento 
+            \\ \hline
+
             Medida 3.1 & PO, SM, analista de sistemas, desenvolvedor e analista de qualidade & Perguntas do questionário & Questionário (APÊNDICE \ref{sec:ApendiceB})
             \\ \hline
             Medida 3.2 & PO, SM, analista de sistemas, desenvolvedor e analista de qualidade & Perguntas do questionário & Questionário (APÊNDICE \ref{sec:ApendiceB})
@@ -1572,13 +1599,13 @@ Durante a execução do estudo de caso houve acompanhamento das aplicações com
 
 \section{Estratégias para a implantação dos métodos de gestão de risco}
 
-Em um primeiro momento, foram selecionadas as principais técnicas do Guia para Gestão Ágil de Risco a serem implementadas no contexto do Laboratório Bridge. Essa seleção foi feita com base nas técnicas presentes no guia e também em uma inferência estatística derivada a partir do Mapeamento Sistemático da Literatura presente neste trabalho \cite{GARCIA:2022}. Os dados utilizados para a seleção foram:
+Em um primeiro momento, foram selecionadas as principais técnicas do Guia para Gestão Ágil de Risco a serem implementadas no contexto do Laboratório Bridge. Essa seleção foi feita com base nas técnicas presentes no guia e também em um estudo estatístico derivada a partir do Mapeamento Sistemático da Literatura presente neste trabalho \cite{GARCIA:2022}. Os dados utilizados para a seleção foram:
 
 \begin{itemize}
     \item \textbf{Método ágil utilizado na equipe:} Scrum;
     \item \textbf{Tamanho da equipe:} Até 10 integrantes;
-    \item \textbf{Domínio de aplicação:} Saúde para a equipe F e educação para a equipe FN;
-    \item \textbf{Tipo de produto:} Web para a equipe F e mobile para a equipe FN;
+    \item \textbf{Domínio de aplicação:} Saúde para a equipe ``F'' e educação para a equipe ``FN'';
+    \item \textbf{Tipo de produto:} Web para a equipe ``F'' e mobile para a equipe ``FN'';
 \end{itemize}
 
 Com base nessas informações, as técnicas selecionadas a partir do estudo estatístico foram as definidas abaixo. Cada uma delas está acompanhada da descrição da técnica presente no Guia para Gestão Ágil de Riscos \cite{Vieira:2020}.
@@ -1592,7 +1619,7 @@ Com base nessas informações, as técnicas selecionadas a partir do estudo esta
 
 O guia, então, serviu como base para a preparação de pequenas apresentações sobre as principais técnicas para que as equipes possam escolher empiricamente as que mais se adaptam em seus contextos de trabalho.
 
-Foi realizada uma reunião informal com dois membros em posição de liderança de cada equipe. Na equipe F participaram \textit{Product Owner} e \textit{Tech Lead}, já na equipe FN os membros envolvidos foram \textit{Product Owner} e \textit{Scrum Master}. No primeiro momento da reunião foram apresentadas as técnicas de gestão de risco selecionadas e foi dada uma breve explicação sobre cada uma delas. Após, foi dado um espaço para os membros das equipes tirarem dúvidas e, então, escolherem com base em suas experiências as técnicas que melhor se adequam ao contexto da equipe. 
+Foi realizada uma reunião informal com dois membros em posição de liderança de cada equipe. Na equipe ``F'' participaram \textit{Product Owner} e \textit{Tech Lead}, já na equipe ``FN'' os membros envolvidos foram \textit{Product Owner} e \textit{Scrum Master}. No primeiro momento da reunião foram apresentadas as técnicas de gestão de risco selecionadas e foi dada uma breve explicação sobre cada uma delas. Após, foi dado um espaço para os membros das equipes tirarem dúvidas e, então, escolherem com base em suas experiências as técnicas que melhor se adequam ao contexto da equipe. 
 
 A partir dessa reunião, as duas equipes selecionaram as técnicas Checklist de Riscos e Matriz de Riscos. O Brainstorming foi descartado por demandar uma cerimônia síncrona para a fase de identificação dos riscos, o que causaria perda significativa de tempo dentro da \textit{sprint}. E, o Plano de riscos não foi selecionado por demandar a criação e implementação de planos de ação, que não poderiam ser corretamente aplicados dentro do tempo reduzido de implementação deste estudo de caso. 
 
@@ -1606,7 +1633,7 @@ Após definidas as técnicas, foi necessária a criação de uma ferramenta faci
 
 Criou-se, então, um formulário no Google Forms para cada equipe, que é posteriormente mapeado para uma tabela no Google Sheets. Este formulário lista riscos comuns em desenvolvimento de \textit{software} encontrados a partir do Mapeamento Sistemático da Literatura e também oferece um campo aberto para que os membros preencham outros riscos encontrados. Dessa forma, foi possível que as equipes identificassem riscos de maneira assíncrona e sem a necessidade de utilizar ou criar uma cerimônias para esse fim. 
 
-A lista de riscos presente no formulário foi criada para servir de apoio e facilitar a identificação de riscos. Os riscos selecionados para a lista de apoio foram em sua maioria embasados no artigo "A Model for Assessing and Mitigating  Knowledge Sharing Risks in Agile Software Development" \cite{Ghobadi:2017} e adaptados à realidade do laboratório. A lista completa encontra-se abaixo:
+A lista de riscos presente no formulário foi criada para servir de apoio e facilitar a identificação de riscos. Os riscos selecionados para a lista de apoio foram em sua maioria embasados no artigo ``A Model for Assessing and Mitigating  Knowledge Sharing Risks in Agile Software Development'' \cite{Ghobadi:2017} e adaptados à realidade do laboratório. A lista completa encontra-se abaixo:
 
 \begin{itemize}
     \item Distância física entre os membros da equipe
@@ -1643,7 +1670,7 @@ O modelo de formulário enviado para as equipes é o apresentado pela Figura \re
     \label{fig:form_model}
 \end{figure}
 
-Depois de identificados, os riscos são automaticamente alocados em uma linha da planilha e podem, então, ser posteriormente analisados de acordo com a técnica selecionada pela equipe. Além da descrição do risco, a planilha também permite que os membros das equipes avaliem o risco em Impacto ("Insignificante", "Moderado" e "Catastrófico") e em Probabilidade ("Baixa", "Média" e "Alta"). Na Figura \ref{fig:checklist_ex} é apresentado o modelo de planilha utilizado pelas equipes. Também foi disponibilizada a Matriz de Riscos abaixo para que as equipes possam definir a prioridade do risco. 
+Depois de identificados, os riscos são automaticamente alocados em uma linha da planilha e podem, então, ser posteriormente analisados de acordo com a técnica selecionada pela equipe. Além da descrição do risco, a planilha também permite que os membros das equipes avaliem o risco em Impacto (``Insignificante'', ``Moderado'' e ``Catastrófico'') e em Probabilidade (``Baixa'', ``Média'' e ``Alta''). Na Figura \ref{fig:checklist_ex} é apresentado o modelo de planilha utilizado pelas equipes. Também foi disponibilizada a Matriz de Riscos abaixo para que as equipes possam definir a prioridade do risco. 
 
 \begin{table}[H]
 \centering
@@ -1682,18 +1709,18 @@ O início das aplicações dos métodos ocorreu no dia 26 de Setembro de 2022 em
 
 Assim, durante as próximas três \textit{sprints} de duas semanas cada, os participantes ficaram livres para aplicar as técnicas da forma que considerassem mais adequada para o contexto da equipe. 
 
-\subsection{Aplicação na equipe F}
+\subsection{Aplicação na equipe ``F''}
 
 Em primeiro lugar, o vídeo explicativo foi disponibilizado no canal da equipe da ferramenta Slack no dia 26 de Setembro de 2022. Em conjunto ao vídeo, também foram disponibilizadas as ferramentas para identificação e análise dos riscos. 
 
-O formulário da equipe F recebeu 6 respostas durante a primeira \textit{sprint} de aplicação da técnica de identificação de riscos e, segundo os participantes, cada membro respondeu ao formulário uma única vez. 
+O formulário da equipe ``F'' recebeu 6 respostas durante a primeira \textit{sprint} de aplicação da técnica de identificação de riscos e, segundo os participantes, cada membro respondeu ao formulário uma única vez. 
 
-Os riscos identificados pela equipe foram majoritariamente os já presentes na lista de apoio. Com maior aparição dos riscos "Projeto complexo" e "Dependência de tecnologias legadas". Na Figura \ref{fig:result_found} é apresentada a relação de cada risco identificado e a porcentagem de respostas que o incluíram.
+Os riscos identificados pela equipe foram majoritariamente os já presentes na lista de apoio. Com maior aparição dos riscos ``Projeto complexo'' e ``Dependência de tecnologias legadas''. Na Figura \ref{fig:result_found} é apresentada a relação de cada risco identificado e a porcentagem de respostas que o incluíram.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{src/tex/img/resultado-foundation.png}
-    \caption{Resultado da identificação de riscos da equipe F}
+    \caption{Resultado da identificação de riscos da equipe ``F''}
     \label{fig:result_found}
 \end{figure}
 
@@ -1704,15 +1731,17 @@ A discussão teve início às 15h58 e estendeu-se por 53 minutos até 16h51. Dur
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{src/tex/img/riscos_founds.png}
-    \caption{Resultado da análise de riscos da equipe F}
+    \caption{Resultado da análise qualitativa de riscos da equipe ``F''}
     \label{fig:result_found}
 \end{figure}
 
-A equipe F obteve 6 riscos de alta prioridade, 7 de média e 3 de baixa. Além disso, um risco que foi preenchido através do campo "Outro" no formulário não foi compreendido pela equipe e, sendo assim, não foi avaliado.
+A equipe ``F'' obteve 6 riscos de alta prioridade, 7 de média e 3 de baixa. Além disso, um risco que foi preenchido através do campo ``Outro'' no formulário não foi compreendido pela equipe e, sendo assim, não foi avaliado.
 
-\subsection{Aplicação na equipe FN}
+Além disso, alguns riscos identificados foram levados para a cerimônia de Roda Ágil para serem discutidos com maior profundidade. Isso culminou na criação de um plano de ação de forma espontânea pela equipe para melhora da comunicação assíncrona entre os membros, o plano foi derivado do risco ``Distância física entre os membros da equipe''.
 
-A equipe FN também teve os vídeos explicativos e ferramentas divulgados no mesmo dia da equipe F. Porém, em um primeiro momento a equipe apresentou dificuldades na identificação de riscos. As primeiras respostas foram obtidas apenas durante a segunda \textit{sprint} da aplicação e apenas uma identificou um risco no projeto: "Organizações burocráticas e centralizadas". Em duas outras respostas os membros relataram não terem identificado riscos.
+\subsection{Aplicação na equipe ``FN''}
+
+A equipe ``FN'' também teve os vídeos explicativos e ferramentas divulgados no mesmo dia da equipe ``F''. Porém, em um primeiro momento a equipe apresentou dificuldades na identificação de riscos. As primeiras respostas foram obtidas apenas durante a segunda \textit{sprint} da aplicação e apenas uma identificou um risco no projeto: ``Organizações burocráticas e centralizadas''. Em duas outras respostas os membros relataram não terem identificado riscos.
 
 Contudo, durante a terceira \textit{sprint}, foram obtidas novas respostas ao formulário que englobavam tanto riscos presentes na Checklist quanto riscos identificados individualmente pelos participantes. O risco de maior destaque foi a imprevisibilidade por parte do cliente.
 
@@ -1721,7 +1750,7 @@ A relação dos riscos identificados pela equipe se encontra na figura abaixo:
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{src/tex/img/riscos-fruit.png}
-    \caption{Resultado da identificação de riscos da equipe FN}
+    \caption{Resultado da identificação de riscos da equipe ``FN''}
     \label{fig:risk_fruit}
 \end{figure}
 
@@ -1730,16 +1759,24 @@ Alguns riscos obtidos precisaram ser ajustados para a planilha, pois continham m
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{src/tex/img/resultado-fruit.png}
-    \caption{Resultado da análise de riscos da equipe FN}
+    \caption{Resultado da análise qualitativa de riscos da equipe ``FN''}
     \label{fig:result_fruit}
 \end{figure}
 
 \subsection{Coleta de dados}
 
-O período de coleta de dados iniciou-se em conjunto com a aplicação do estudo de caso, no dia 26 de Setembro de 2022, e foi encerrado no dia 18 de Novembro de 2022. Primeiramente, não foi realizada uma intervenção para a coleta de dados e foram apenas reunidas as estimativas de esforço de cada equipe. Os artefatos gerados pelas duas equipes durante a aplicação também foram coletados e podem ser encontrados no Apêndice \ref{sec:ApendiceC}. 
-Já para a coleta de medidas referentes aos objetivos 2 e 3 das medições, foi aplicado um questionário (vide Apêndice \ref{sec:ApendiceB}) ao final da terceira \textit{sprint}, entre os dias 7 e 18 de Novembro. O questionário foi enviado a todos os membros das equipes participantes. Já a medida relacionada ao tempo gasto para a aplicação das técnicas foi obtido através de um cronômetro digital utilizado durante as cerimônias para priorização dos riscos. Contudo, apenas a equipe "F" fez uso dessa ferramenta, pois a equipe "FN" realizou esta etapa de maneira assíncrona.
+O período de coleta de dados iniciou-se em conjunto com a aplicação do estudo de caso, no dia 26 de Setembro de 2022, e foi encerrado no dia 18 de Novembro de 2022. Primeiramente, não foi realizada uma intervenção para a coleta de dados e foram apenas reunidas as estimativas de esforço de cada equipe através das planilhas de acompanhamento já utilizadas por elas. Os artefatos gerados pelas duas equipes durante a aplicação também foram coletados e podem ser encontrados no Apêndice \ref{sec:ApendiceC}. 
+
+Já para a coleta de medidas referentes aos objetivos 2 e 3 das medições, foi aplicado um questionário (vide Apêndice \ref{sec:ApendiceB}) ao final da terceira \textit{sprint}, entre os dias 7 e 18 de Novembro. O questionário foi enviado a todos os membros das equipes participantes, ao total foram recebidas 6 respostas, sendo 4 de membros pertencentes à equipe ``F'' e apenas 2 de membros da equipe ``FN''. Alguns participantes também fizeram comentários oralmente durante a aplicação do questionário que foram levados em consideração.
+
+A medida relacionada ao tempo gasto para a aplicação das técnicas foi obtida através de um cronômetro digital utilizado durante as cerimônias para priorização dos riscos. Contudo, apenas a equipe ``F'' fez uso dessa ferramenta, pois a equipe ``FN'' realizou esta etapa de maneira assíncrona.
 
 \section{Análise dos dados}
+
+Ao fim da coleta de dados, esses foram analisados para verificar se os objetivos delimitados foram atendidos. A análise foi realizada de forma individual para cada objetivo, agrupando as respostas das perguntas de acordo com as medidas. 
+\\
+
+\textbf{Objetivo de Medição 1:} Analisar o esforço e a produtividade da equipe durante a aplicação das técnicas de gestão de risco no contexto do Laboratório Bridge.
 
 \begin{table}[H]
 \begin{tabular}{|
@@ -1751,6 +1788,12 @@ Já para a coleta de medidas referentes aos objetivos 2 e 3 das medições, foi 
 \end{tabular}
 \end{table}
 
+Em sua maioria, as técnicas foram aplicadas de maneira assíncrona. Assim, não foi possível coletar o tempo de aplicação de forma estruturada em especial durante a identificação de riscos.
+
+Apenas a equipe ``F'' realizou a análise dos riscos de maneira síncrona ao fim de uma cerimônia de Daily Scrum. O tempo da reunião foi cronometrado e durou 53 minutos e envolveu 6 participantes, resultando em 5 horas e 18 minutos. \\
+
+\textbf{Objetivo de Medição 2:} Analisar as dificuldades para aplicação das técnicas de gestão de risco nas equipes ágeis do Laboratório Bridge.
+
 \begin{table}[H]
 \begin{tabular}{|
 >{\columncolor[HTML]{C0C0C0}}l |l|}
@@ -1761,7 +1804,16 @@ Já para a coleta de medidas referentes aos objetivos 2 e 3 das medições, foi 
 \end{tabular}
 \end{table}
 
-Como você classificaria a facilidade de compreensão e utilização das técnicas de gestão de risco apresentadas? Por quê?
+Para obter esses dados, foi utilizada a pergunta número 1 do questionário no Apêndice \ref{sec:ApendiceB}. Para 66,7\%(4) dos participantes que responderam ao questionário, a aplicação foi considerada \textbf{muito fácil}. Já 33\%(2) consideraram a aplicação \textbf{fácil} (Figura \ref{fig:result_facil}).
+
+Alguns colaboradores também desenvolveram o motivo de terem classificado a facilidade de aplicação dessa forma. 1 colaborador comentou que a forma de aplicação estava bastante simplificada devido à ferramenta oferecida, que era intuitiva e rápida de utilizar. 1 outro participante destacou que o fato da \textit{Checklist} já possuir riscos comuns e de fácil entendimento listados, a identificação de riscos foi bastante simples.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{src/tex/img/resultado-facilidade.drawio.png}
+    \caption{Respostas para a pergunta 1}
+    \label{fig:result_facil}
+\end{figure}
 
 \begin{table}[H]
 \begin{tabular}{|
@@ -1773,19 +1825,39 @@ Como você classificaria a facilidade de compreensão e utilização das técnic
 \end{tabular}
 \end{table}
 
-Quão benéfica foi para a equipe a aplicação das técnicas? Por quê?\\
+Para 50\%(3) dos participantes da pesquisa, a aplicação de técnicas de gestão de risco foi \textbf{benéfica} para a equipe. Já 33,3\%(2) afirmaram que a aplicação foi \textbf{muito benéfica}. Enquanto 16,7\%(1) considerou a aplicação \textbf{nem benéfica e nem prejudicial} (Figura \ref{fig:result_benef}). 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{src/tex/img/resultado-benefica.png}
+    \caption{Respostas para a pergunta 3}
+    \label{fig:result_benef}
+\end{figure}
+
+1 colaborador que respondeu que a aplicação foi \textbf{benéfica} para a equipe comentou que o processo de análise dos riscos envolveu a equipe em discussões sobre questões importantes que não haviam sido identificadas anteriormente. Também destacou que as técnicas permitiram algumas reflexões que trouxeram maior clareza entre os membros dos times em relação ao processo da equipe.
+
+Já 2 participantes levantaram o ponto de que apesar de terem sido fomentadas discussões, não houve tempo durante o estudo para o desenvolvimento e execução de planos de ação para a mitigação de riscos, o que prejudicou os resultados da aplicação. Por isso, 1 dos membros respondeu que o estudo de caso não trouxe nem benefícios nem prejuízos para a equipe. \\
 
 \begin{table}[H]
 \begin{tabular}{|
 >{\columncolor[HTML]{C0C0C0}}l |l|}
 \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} \textbf{Pergunta 2.3}}} &  \begin{tabular}[c]{@{}l@{}}Quais foram as principais dificuldades encontradas na aplicação \\das técnicas de gestão de risco?\end{tabular}
+\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} \textbf{Pergunta 2.3}}} &  \begin{tabular}[c]{@{}l@{}}Quais foram as principais dificuldades encontradas na aplicação das\\ técnicas de gestão de risco?\end{tabular}
  \\ \hline
 {\color[HTML]{333333} \textbf{Medição 2.3}}                                                & \begin{tabular}[c]{@{}l@{}}Impressão subjetiva das principais técnicas de gestão de risco apli-\\cadas.\end{tabular} \\ \hline
 \end{tabular}
 \end{table}
 
-Quais foram as principais dificuldades encontradas na aplicação das técnicas? \\ \\
+Para essa questão, 4 participantes da equipe ``F'' destacaram que uma dificuldade foi a compreensão de um dos riscos levantados no campo ``Outros''. Segundo os membros, a descrição do risco foi vaga e a pessoa responsável pela identificação de tal risco optou por não se pronunciar para esclarecer a questão. Assim, esses 4 participantes afirmaram que o fato da identificação de riscos através da ferramenta ser anônima pode causar tais conflitos.
+
+Outro fato levantado por 2 membros dessa equipe foi que, como a identificação foi feita individualmente e só depois levada para discussão, existe a possibilidade do participante ter se sentido constrangido em explicar o risco preenchido por ele. Pois, a explicação demandaria a quebra da anonimato. 
+
+1 participante comentou que uma possível dificuldade encontrada foi o número de riscos identificados, segundo ele, foi um valor superior ao esperado. Isso ocasionou um tempo considerável dedicado à análise dos riscos. Contudo, esse participante afirmou que apesar disso o tempo de análise não foi grande o suficiente para ser considerado um problema.
+
+2 participantes da equipe ``FN'' responderam que um obstáculo encontrado foi gerar engajamento entre os membros do time para a participação da aplicação. A justificativa foi que a equipe ainda não possui um processo ágil bem estruturado e também está trabalhando em um projeto relativamente novo. Portanto, a adição de novas cerimônias e rotinas se torna mais complexa e faz com que os membros acabem priorizando o que já é conhecido por eles. 
+
+Por fim, 1 membro comentou que a falta de familiaridade com riscos em projeto ocasionaram um estranhamento inicial entre os membros da equipe e dificuldade para identificar os riscos mesmo com o auxílio da \textit{Checklist}.
+ \\ 
 
 \begin{table}[H]
 \begin{tabular}{|
@@ -1793,10 +1865,61 @@ Quais foram as principais dificuldades encontradas na aplicação das técnicas?
 \hline
 \multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} \textbf{Pergunta 2.4}}} &  \begin{tabular}[c]{@{}l@{}} Houve impacto na velocidade da equipe ao aplicar técnicas de \\gestão de risco?\end{tabular}
  \\ \hline
-{\color[HTML]{333333} \textbf{Medição 2.4}}                                                & \begin{tabular}[c]{@{}l@{}}Diferença percentual entre a estimativa de esforço da equipe ao \\aplicar técnicas de gestão de risco em relação a estimativa de
-esforço \\da mesma equipe antes da aplicação da abordagem.\end{tabular} \\ \hline
+{\color[HTML]{333333} \textbf{Medição 2.4}}                                                & \begin{tabular}[c]{@{}l@{}}Diferença percentual entre a estimativa de esforço da equipe ao \\aplicar técnicas de gestão de risco em relação a estimativa de es-\\forço da mesma equipe antes da aplicação da abordagem.\end{tabular} \\ \hline
 \end{tabular}
 \end{table}
+
+Durante as quatro \textit{sprints} anteriores à aplicação das técnicas para gestão de risco, a equipe ``F'' possuía uma velocidade média de 19,9 pontos de história. Já durante as três \textit{sprints} em que o estudo de caso foi aplicado, a velocidade da equipe caiu para 17,41 pontos. Ocasionando uma diferença de aproximadamente -12.5\%.
+
+A Figura \ref{fig:vel_founds} apresenta a evolução da velocidade da equipe ``F'' por \textit{sprint}, considerando que as quatro primeiras \textit{sprints} são anteriores ao início da aplicação.
+
+Já a equipe ``FN'', por possuir um processo ágil menos estruturado passou a utilizar pontos de história apenas a partir de 2 \textit{sprints} anteriores à aplicação do estudo. Assim, a velocidade média dessas duas \textit{sprints} foi de 11 pontos de história. Já durante as \textit{sprints} em que foram aplicadas as técnicas, a velocidade média foi de 13,5 pontos. Resultando, dessa forma, um aumento de 22.7\%.
+
+A Figura \ref{fig:vel_fruit} apresenta a evolução da velocidade da equipe ``FN'' por \textit{sprint}, sendo as duas primeiras as \textit{sprints} realizadas antes do início do estudo de caso.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{src/tex/img/vel-founds.png}
+    \caption{Velocidade por Sprint da equipe ``F''}
+    \label{fig:vel_founds}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{src/tex/img/vel-fruit.png}
+    \caption{Velocidade por Sprint da equipe ``FN''}
+    \label{fig:vel_fruit}
+\end{figure}
+
+\begin{table}[H]
+\begin{tabular}{|
+>{\columncolor[HTML]{C0C0C0}}l |l|}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} \textbf{Pergunta 2.5}}} &  \begin{tabular}[c]{@{}l@{}} Houve impacto no aproveitamento da equipe ao aplicar técnicas de gestão\\ de risco?\end{tabular}
+ \\ \hline
+{\color[HTML]{333333} \textbf{Medição 2.5}}                                                & \begin{tabular}[c]{@{}l@{}}Diferença entre a porcentagem de pontos de história planejados concluídos\\ pela equipe ao aplicar técnicas de gestão de risco e a porcentagem de pon-\\tos de história planejados concluídos pela mesma equipe antes da aplicação \\da abordagem.\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+
+Para a equipe ``F'', a porcentagem média de pontos de história que foram planejados e concluídos nas 4 \textit{sprints} anteriores ao início do estudo foi de 67,5\%. Após o início do estudo, a porcentagem média foi de 73,6\%. Resultando em um aumento de 6,1\%.
+
+Já para a equipe ``FN'', o valor médio nas 2 \textit{sprints} anteriores foi de 64\%. Após o início do estudo, o valor médio de pontos de história concluídos foi de 97\%. Resultando em um aumento de 33\%.
+
+As Figuras \ref{fig:aprov_founds} e \ref{fig:aprov_fruit} demonstram essa evolução por \textit{sprint}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{src/tex/img/aprov-founds.png}
+    \caption{Porcentagem de pontos de história concluídos pela ``F'' em relação aos pontos planejados}
+    \label{fig:aprov_founds}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{src/tex/img/aprov-fruit.png}
+    \caption{Porcentagem de pontos de história concluídos pela ``FN'' em relação aos pontos planejados}
+    \label{fig:aprov_fruit}
+\end{figure}
 
 \begin{table}[H]
 \begin{tabular}{|
@@ -1808,22 +1931,92 @@ esforço \\da mesma equipe antes da aplicação da abordagem.\end{tabular} \\ \h
 \end{tabular}
 \end{table}
 
-Você continuaria utilizando uma das técnicas apresentadas? Por quê? \\ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{src/tex/img/resultado-usaria.png}
+    \caption{Respostas para a pergunta 2}
+    \label{fig:result_cont}
+\end{figure}
+
+100\%(6) dos participantes do questionário responderam que continuariam utilizando as duas técnicas de gestão de riscos aplicadas. O motivo principal, destacado por 3 membros foi que a \textit{Checklist} contribuiu para identificação de riscos que existiam no projeto mas que não haviam sido notados anteriormente. 
+
+Além disso, 2 participantes comentaram que as discussões que ocorreram durante o processo de análise dos riscos foram levadas para demais cerimônias, como a reunião de Roda Ágil. E foi possível criar planos de ação em cima dessas questões.
+
+Por fim, 1 membro comentou que a identificação de riscos agrega no desempenho futuro da equipe por permitir que problemas sejam registrados como pontos de atenção ou tratados antes de causarem maiores danos. 
+\\ 
 
 \begin{table}[H]
 \begin{tabular}{|
 >{\columncolor[HTML]{C0C0C0}}l |l|}
 \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} \textbf{Pergunta 2.4}}} &  \begin{tabular}[c]{@{}l@{}} Quais foram os principais pontos positivos, sob o ponto de vista das \\áreas de análise, desenvolvimento e teste, na aplicação das técnicas\\ para gestão de risco?\end{tabular}
+\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}{\color[HTML]{333333} \textbf{Pergunta 3.2}}} &  \begin{tabular}[c]{@{}l@{}} Quais foram os principais pontos positivos na aplicação das técnicas\\ para gestão de risco?\end{tabular}
  \\ \hline
-{\color[HTML]{333333} \textbf{Medição 2.4}}                                                & \begin{tabular}[c]{@{}l@{}}Impressão subjetiva das principais técnicas de gestão de risco apli-\\cadas.\end{tabular} \\ \hline
+{\color[HTML]{333333} \textbf{Medição 3.2}}                                                & \begin{tabular}[c]{@{}l@{}}Impressão subjetiva das principais técnicas de gestão de risco apli-\\cadas.\end{tabular} \\ \hline
 \end{tabular}
 \end{table}
 
-    Quais foram os principais pontos positivos resultantes da aplicação das técnicas para gestão de riscos? \\ \\
+Num geral, o maior ponto positivo identificado foi o início da utilização de um método formal para a identificação e registro dos riscos do projeto. 4 membros comentaram sobre a importância de tal formalidade e, desses, 2 argumentaram que a gestão de riscos não era presente no contexto da unidade organizacional até então.
+
+Além disso, 3 membros comentaram que as discussões e reflexões que ocorreram durante o processo de análise de riscos auxiliaram para que os membros da equipe entendessem melhor o ponto de vista dos outros, fazendo com que a comunicação interna da equipe melhorasse. 
+
+Finalmente, 1 participante destacou que a presença da \textit{Checklist} auxiliou a identificação de riscos para os membros que tinham maior dificuldade para encontrar possíveis problemas no projeto. Outro membro afirmou que a aplicação das técnicas fez com que a equipe se sentisse mais preparada para identificar e conter novos riscos que poderiam aparecer no futuro.\\
 
 
 \section{Discussão}
+
+A partir dos resultados obtidos, é possível destacar que o tempo de aplicação das técnicas de gestão de risco não foi considerado um problema para as equipes participantes. Pois, as ferramentas permitiram que as equipes inserissem o processo de forma assíncrona no cotidiano.
+
+Além disso, pode-se concluir que as técnicas e ferramentas utilizadas foram facilmente compreendidas pelos participantes. Para a equipe mais madura em relação às metodologias ágeis utilizadas pela unidade organizacional, as técnicas também foram incorporadas sem grandes dificuldades na rotina da equipe. Já para a equipe que trabalha em um projeto mais novo, foi possível notar que houve maior resistência à adição de novas tarefas ao processo do time.
+
+Outro ponto de destaque é o fato das técnicas utilizadas terem sido consideradas benéficas para a equipe. Contudo, percebeu-se que é importante que sejam aplicadas todas as etapas de gestão de riscos para um melhor resultado. Pois, apesar das etapas de identificação e análise terem sido bem sucedidas, os participantes sentiram falta de uma estruturação para o planejamento e implementação de respostas aos riscos. 
+
+Também é possível afirmar que a aplicação não afetou diretamente o desempenho das equipes envolvidas. Para a equipe ``F'' (Figura \ref{fig:comp_founds}), a queda da velocidade do time foi justificada pela entrada de um novo bolsista de desenvolvimento e a saída de um desenvolvedor durante à aplicação das técnicas. Além disso, é possível perceber que, num geral, os pontos de história totais realizados pela equipe tiveram apenas uma pequena variação e se aproximaram mais do valor planejado no período de aplicação.
+
+Já a equipe ``FN'' foi capaz de aumentar a velocidade e produtividade durante a aplicação (Figura \ref{fig:comp_fruit}). Assim, pode-se concluir que foi possível a integração das técnicas de gestão de risco no processo da equipe sem influenciar negativamente o desempenho dessas.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{src/tex/img/comp-founds.png}
+    \caption{Pontos planejados x realizados - Equipe ``F''}
+    \label{fig:comp_founds}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{src/tex/img/comp-fruit.png}
+    \caption{Pontos planejados x realizados - Equipe ``FN''}
+    \label{fig:comp_fruit}
+\end{figure}
+
+Finalmente, é possível notar que a aplicação das técnicas foi útil às equipes em especial ao fomentar discussões e reflexões sobre o projeto e processos desenvolvidos. E que, num geral, as equipes se beneficiaram tanto da \textit{Checklist} de riscos quanto da Matriz de riscos.
+
+
+\subsection{Ameaças à validade}
+
+Existem diversos fatores que podem influenciar os resultados obtidos por esse estudo de caso. Tais fatores podem, assim, ameaçar a validade desses resultados. Em primeiro lugar, o estudo foi realizado em apenas uma unidade organizacional e com apenas duas equipes em um curto período de tempo. Dessa forma, as conclusões apresentadas pelo estudo não podem ser generalizadas. Além disso, durante a coleta dos resultados do questionário (Apêndice \ref{sec:ApendiceB}), foram agrupadas respostas que continham termos semelhantes ou sinônimos, com o intuito de apresentar resultados concisos. Contudo, não foram utilizados métodos indutivos de mapeamento para tal.
+
+Outro fator que pode ameaçar o resultado foi a baixa taxa de resposta ao questionário, em especial dos membros da equipe ``FN'' em que houveram apenas duas respostas. Por conta do tempo limitado, não foi possível prorrogar o tempo para o recebimento de respostas, por isso, os resultados obtidos para a equipe ``FN'' podem ser ameaçados ao não representarem a maioria da equipe.
+
+Enfim, apesar de a autora não ser membro das equipes que participaram do estudo, o fato dessa conhecer e conviver com alguns dos participantes pode influenciar a opinião dos colaboradores sobre a impressão subjetiva da abordagem. 
+
+\chapter{Conclusão}
+
+O presente trabalho descreve a experiência de duas equipes ágeis de desenvolvimento de \textit{software}, inseridas no contexto do Laboratório Bridge da Universidade Federal de Santa Catarina (UFSC), na aplicação de técnicas de gestão de riscos presentes no “Guia para gestão ágil de riscos
+em projetos de software” \cite{Vieira:2020}. A partir disso, foram avaliados os impactos da aplicação no processo das equipes. Esses impactos foram divididos entre a avaliação do esforço despendido para a aplicação das técnicas, as dificuldades encontradas pelas equipes e a aceitação das técnicas por parte das equipes. Portanto, este trabalho visa validar o “Guia para gestão ágil de riscos em projetos de software” e contribuir para a aplicação de técnicas de gestão ágil de riscos em outras organizações com contextos similares aos dos projetos do Laboratório Bridge.
+
+Em primeiro lugar, foi realizada a análise e fundamentação teórica, onde foram elencados conceitos relacionados ao tema deste trabalho como gerência de projetos, gestão de riscos, métodos ágeis e o guia utilizado como base para o trabalho. Assim, o entendimento dos conceitos fundamentais para a aplicação do estudo de caso foi possibilitado.
+
+Para o conhecimento do estado da arte da gestão de riscos em projetos de \textit{software} que utilizam métodos ágeis, foi realizado um mapeamento sistemático da literatura. A partir do mapeamento, foi possível compreender questões como o contexto de uso das técnicas de gestão de riscos, quais técnicas costumam ser utilizadas em ambientes ágeis, quais riscos são comumente gerenciados e resultados da introdução de tais práticas. Assim, esse conhecimento gerado foi utilizado de embasamento para a escolha das técnicas apresentadas às equipes durante a etapa de aplicação do estudo de caso.
+
+Além disso, antes do início da aplicação, foi analisado o contexto das equipes participantes e do Laboratório Bridge tanto para auxiliar na escolha das técnicas e ferramentas aplicadas quanto para apoiar a compilação dos resultados.
+
+Com a fundamentação teórica, revisão do contexto atual da gestão de risco em métodos ágeis e a análise de contexto das equipes, foi iniciada a aplicação da abordagem. Em um primeiro momento foram selecionadas as técnicas a serem apresentadas às equipes com base em um estudo estatístico obtido a partir do mapeamento sistemático da literatura. Após, tais técnicas foram apresentadas às equipes, as quais escolheram empiricamente aquelas que se encaixavam melhor no cotidiano do time. 
+
+Após definidas as técnicas, essas foram aplicadas nas equipes selecionadas durante três \textit{sprints} de desenvolvimento. Durante esse processo, foram coletados dados relacionados à produtividade da equipe e esforço para a aplicação das técnicas. Também foram coletados os artefatos gerados pelas equipes após a aplicação. Por fim, a aplicação das técnicas foram avaliadas para verificar o impacto causado nas equipes. Essa avaliação foi realizada utilizando o método GQM e através de um questionário enviado aos membros das duas equipes. 
+
+Com a coleta dos resultados, concluiu-se que as técnicas foram facilmente compreendidas pelos membros das equipes e que ambas obtiveram sucesso ao implementar as etapas de identificação e análise qualitativa de riscos no processo. Dessa forma, os resultados apontam que é simples aplicar as técnicas avaliadas em equipes com contexto similar às apresentadas no estudo. E, que o “Guia para gestão ágil de riscos em projetos de software” pode ser utilizado para embasar a aplicação dessas técnicas e a criação de ferramentas. 
+
+Por fim, os resultados do presente trabalho também indicam a importância de que todas as etapas de gestão de risco estejam presentes no processo da equipe. A aplicação de técnicas de monitoramento de riscos e planejamento e implementação de respostas aos riscos não foi realizada devido à limitação de tempo.
 
   \postextual
 
@@ -1942,7 +2135,7 @@ parte de seu Trabalho de Conclusão de Curso. Tem como proposta implantar e aval
 
  \chapter{Artefatos gerados pelas equipes}
  \label{sec:ApendiceC}
- \section{Equipe F}
+ \section{Equipe ``F''}
 \subsection{Dados brutos planilha}
 
 \begin{figure}[H]
@@ -1961,7 +2154,7 @@ parte de seu Trabalho de Conclusão de Curso. Tem como proposta implantar e aval
 \includepdf[pages=-]{form-founds.pdf}
  
  
-\section{Equipe FN}
+\section{Equipe ``FN''}
 \subsection{Dados brutos planilha}
 
 \begin{figure}[H]
